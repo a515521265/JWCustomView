@@ -12,6 +12,10 @@
 
 @property (nonatomic,strong) NSMutableArray <UIView *> * allSubviwes;
 
+@property (nonatomic,  copy) void(^tapSelectRow)(NSInteger);
+
+@property (nonatomic,assign) BOOL isGestureEnabled;
+
 -(void)setScrollviewSubViewsArr:(NSMutableArray *)views;
 
 -(void)removeViewWithTag:(NSInteger)ViewTag;
@@ -19,5 +23,7 @@
 -(void)reloadViews;
 
 -(void)removeAllSubViews;
+
+-(void)allSubViewsClipsToBounds;
 
 @end

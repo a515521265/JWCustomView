@@ -18,6 +18,8 @@
 
 @property (nonatomic,strong) JWTextField * rightTextField;
 
+@property (nonatomic,strong) UIColor * lineColor;
+
 -(instancetype)initWithFrame:(CGRect)frame;
 
 -(void)setUPSpacing:(CGFloat)upSpacing andDownSpacing:(CGFloat)downSpacing;

@@ -21,7 +21,7 @@
 @implementation JWScrollviewCell
 
 -(UIView *)contentView{
-
+    
     if (!_contentView) {
         _contentView = [[UIView alloc]init];
         _contentView.backgroundColor = [UIColor whiteColor];
@@ -31,7 +31,7 @@
 }
 
 -(JWLabel *)leftLabel{
-
+    
     if (!_leftLabel) {
         _leftLabel = [[JWLabel alloc]initWithFrame:CGRectMake(20, 0, kScreenWidth-40, self.contentView.height)];
         [self.contentView addSubview:_leftLabel];
@@ -49,7 +49,7 @@
 }
 
 -(instancetype)initWithFrame:(CGRect)frame{
-
+    
     self = [super initWithFrame:frame];
     if (self) {
         
@@ -59,7 +59,7 @@
         [self addSubview:self.upLine];
         self.downLine = [JWLabel addLineLabel:CGRectMake(0, self.height-1, kScreenWidth, 1)];
         [self addSubview:self.downLine];
-
+        
         self.contentView.frame = CGRectMake(0, CGRectGetMaxY(self.upLine.frame), kScreenWidth, self.height-self.upLine.height - self.downLine.height);
         [self addSubview:self.contentView];
         
@@ -68,7 +68,7 @@
 }
 
 -(void)setUPSpacing:(CGFloat)upSpacing andDownSpacing:(CGFloat)downSpacing{
-
+    
     self.upLine.height  = upSpacing;
     
     self.downLine.height = downSpacing;
@@ -77,11 +77,16 @@
 }
 
 -(void)layoutSubviews{
-
-//    self.height = self.height + self.upLine.height + self.downLine.height;
+    
     self.contentView.y = CGRectGetMaxY(self.upLine.frame);
     self.downLine.y = CGRectGetMaxY(self.contentView.frame);
     self.height = CGRectGetMaxY( self.downLine.frame);
+    
+}
+
+-(void)setLineColor:(UIColor *)lineColor{
+    
+    self.downLine.backgroundColor =self.upLine.backgroundColor = lineColor;
     
 }
 

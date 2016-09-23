@@ -12,7 +12,6 @@
 
 @interface JWScrollView ()
 
-//@property (nonatomic,strong) NSMutableArray <UIView *> * subViewsArr;
 
 @end
 
@@ -29,10 +28,25 @@
 -(void)reloadSubViews:(NSMutableArray<UIView *> *)views{
     
     if (!views.count)return;
-    UIView * view = [views firstObject];
-    [self addSubview:view];
+    UIView * firstView = [views firstObject];
+    firstView.tag = 1992;
+    if (self.isGestureEnabled) {
+        UITapGestureRecognizer *firstTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapAction:)];
+        firstTap.numberOfTapsRequired = 1;
+        firstTap.numberOfTouchesRequired = 1;
+        [firstView addGestureRecognizer:firstTap];
+    }
+    [self addSubview:firstView];
+    
     for (int i =1; i<views.count; i++) {
         UIView * view = views[i];
+        view.tag = 1992+i;
+        if (self.isGestureEnabled) {
+            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapAction:)];
+            tap.numberOfTapsRequired = 1;
+            tap.numberOfTouchesRequired = 1;
+            [view addGestureRecognizer:tap];
+        }
         view.y = self.subviews.lastObject.y + self.subviews.lastObject.height;
         [self addSubview:view];
         
@@ -42,8 +56,14 @@
     }
 }
 
--(void)removeViewWithTag:(NSInteger)ViewTag{
+-(void)viewTapAction:(UITapGestureRecognizer *)tap{
+    
+    !_tapSelectRow ? : _tapSelectRow(tap.view.tag-1992);
+    
+}
 
+-(void)removeViewWithTag:(NSInteger)ViewTag{
+    
     [self.allSubviwes enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
         if (obj.tag ==ViewTag) {
@@ -65,9 +85,19 @@
 }
 
 -(void)reloadViews{
-
+    
     [self reloadSubViews:self.allSubviwes];
+    
+}
 
+-(void)allSubViewsClipsToBounds{
+    
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        obj.clipsToBounds = true;
+        
+    }];
+    
 }
 
 @end
