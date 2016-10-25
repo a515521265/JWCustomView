@@ -23,6 +23,8 @@
 
 -(void)removeAllSubviews;
 
+-(void)setViewHidden;
+
 -(UIViewController *)getController;
 /**
  *  添加弹性动画

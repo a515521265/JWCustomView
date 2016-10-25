@@ -25,6 +25,11 @@
     return objc_getAssociatedObject(self,_cmd);
 }
 
+-(void)setViewHidden{
+    self.height = 0;
+    self.clipsToBounds = true;
+}
+
 - (void)setX:(CGFloat)x
 {
     CGRect frame = self.frame;
