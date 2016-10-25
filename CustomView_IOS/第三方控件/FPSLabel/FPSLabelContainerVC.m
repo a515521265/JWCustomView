@@ -32,7 +32,7 @@
     
     //屏幕中间,偏移52个点
     CGFloat heightOffset = 0;
-    CGFloat widthOffset = (CGRectGetWidth(self.view.bounds) - adjustedSize.width) / 2.0 + 52;
+    CGFloat widthOffset = (CGRectGetWidth(self.view.bounds) - adjustedSize.width);
     
     CGRect frame = CGRectMake(widthOffset, heightOffset, adjustedSize.width, adjustedSize.height);
     

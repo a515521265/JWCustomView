@@ -15,8 +15,11 @@
 @implementation JSPatchDemoViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //查看文件-->第三方控件-->JSPatch-->JWDemo.js
+    
 }
 
 @end
