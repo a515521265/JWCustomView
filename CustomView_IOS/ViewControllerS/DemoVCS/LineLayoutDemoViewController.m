@@ -80,7 +80,6 @@
         JWScrollviewCell * cell2 = [[JWScrollviewCell alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 50)];
         cell2.leftLabel.text = [NSString stringWithFormat:@"用户名%d",i];
         cell2.rightTextField.placeholder = @"请输入用户名啊";
-//        [cell2.rightTextField setPlaceholderColor:cell1.leftLabel.textColor];
         [cell2.rightTextField setPlaceholderFont:cell1.leftLabel.font];
         [cell2 setUPSpacing:0 andDownSpacing:1];
         [arr addObject:cell2];
