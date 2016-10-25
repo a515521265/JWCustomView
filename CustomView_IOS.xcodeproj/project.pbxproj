@@ -125,6 +125,11 @@
 		1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143521C1D7FBAA5009EE8F8 /* DynamicLoop.m */; };
 		114352201D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */; };
 		114352231D7FBEB1009EE8F8 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 114352221D7FBEB1009EE8F8 /* UITabBar+Badge.m */; };
+		118E0AA41DBF33D20079569B /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118E0AA31DBF33D20079569B /* JSPatchPlatform.framework */; };
+		118E0AA71DBF33F80079569B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118E0AA61DBF33F80079569B /* JavaScriptCore.framework */; };
+		118E0AA91DBF34B00079569B /* JWDemo.js in Resources */ = {isa = PBXBuildFile; fileRef = 118E0AA81DBF34B00079569B /* JWDemo.js */; };
+		118E0AAC1DBF356B0079569B /* JSPatchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */; };
+		118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAE1DBF374F0079569B /* TooltipView.m */; };
 		11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */; };
 		11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A751D751ABE00247B10 /* DWBankModel.m */; };
 		11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A791D751AFC00247B10 /* ChineseInclude.m */; };
@@ -407,6 +412,13 @@
 		1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLoopDemoViewController.m; sourceTree = "<group>"; };
 		114352211D7FBEB1009EE8F8 /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
 		114352221D7FBEB1009EE8F8 /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
+		118E0AA31DBF33D20079569B /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
+		118E0AA61DBF33F80079569B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		118E0AA81DBF34B00079569B /* JWDemo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JWDemo.js; sourceTree = "<group>"; };
+		118E0AAA1DBF356B0079569B /* JSPatchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchDemoViewController.h; sourceTree = "<group>"; };
+		118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchDemoViewController.m; sourceTree = "<group>"; };
+		118E0AAD1DBF374F0079569B /* TooltipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TooltipView.h; sourceTree = "<group>"; };
+		118E0AAE1DBF374F0079569B /* TooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipView.m; sourceTree = "<group>"; };
 		11D36A711D751A5000247B10 /* SearchBankDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBankDemoViewController.h; sourceTree = "<group>"; };
 		11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBankDemoViewController.m; sourceTree = "<group>"; };
 		11D36A741D751ABE00247B10 /* DWBankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBankModel.h; sourceTree = "<group>"; };
@@ -458,6 +470,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118E0AA71DBF33F80079569B /* JavaScriptCore.framework in Frameworks */,
+				118E0AA41DBF33D20079569B /* JSPatchPlatform.framework in Frameworks */,
 				0758E9E31D6FF3AE00E7FCE7 /* libz.tbd in Frameworks */,
 				0758E9E11D6FF3A600E7FCE7 /* libsqlite3.tbd in Frameworks */,
 			);
@@ -486,6 +500,7 @@
 				0758E8EA1D6FF37A00E7FCE7 /* CustomView_IOS */,
 				0758E9E41D6FF42600E7FCE7 /* Supporting Files */,
 				0758E8B51D6FF22900E7FCE7 /* Products */,
+				118E0AA51DBF33F80079569B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -579,6 +594,8 @@
 				1100BF631D7FE5570058F230 /* PollingDemoViewController.m */,
 				11FBF6081D868A0A00208715 /* LineLayoutDemoViewController.h */,
 				11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */,
+				118E0AAA1DBF356B0079569B /* JSPatchDemoViewController.h */,
+				118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -586,6 +603,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				118E0AA21DBF33B50079569B /* JSPatch */,
 				1100BFC21D80FEA70058F230 /* TYLaunchAnimation */,
 				1100BFA81D7FEB3B0058F230 /* YYImage */,
 				1100BF6E1D7FE6E30058F230 /* Network */,
@@ -808,6 +826,8 @@
 		0758E9871D6FF37A00E7FCE7 /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				118E0AAD1DBF374F0079569B /* TooltipView.h */,
+				118E0AAE1DBF374F0079569B /* TooltipView.m */,
 				1100BF681D7FE64F0058F230 /* AdView.h */,
 				1100BF691D7FE64F0058F230 /* AdView.m */,
 				1100BF6A1D7FE64F0058F230 /* HeadlineView.h */,
@@ -977,6 +997,23 @@
 			path = FPSLabel;
 			sourceTree = "<group>";
 		};
+		118E0AA21DBF33B50079569B /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				118E0AA81DBF34B00079569B /* JWDemo.js */,
+				118E0AA31DBF33D20079569B /* JSPatchPlatform.framework */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
+		118E0AA51DBF33F80079569B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				118E0AA61DBF33F80079569B /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		11D36A771D751AFC00247B10 /* PinYin */ = {
 			isa = PBXGroup;
 			children = (
@@ -1135,6 +1172,7 @@
 			files = (
 				0758E9B01D6FF37A00E7FCE7 /* JPSImagePickerController.bundle in Resources */,
 				0758E99D1D6FF37A00E7FCE7 /* index.html in Resources */,
+				118E0AA91DBF34B00079569B /* JWDemo.js in Resources */,
 				0758E99A1D6FF37A00E7FCE7 /* Info.plist in Resources */,
 				0758E9E61D6FF50B00E7FCE7 /* Main.storyboard in Resources */,
 				11D36A8F1D751AFC00247B10 /* unicode_to_hanyu_pinyin.txt in Resources */,
@@ -1167,6 +1205,7 @@
 			files = (
 				0758E9941D6FF37A00E7FCE7 /* AppDelegate.m in Sources */,
 				11D36A8C1D751AFC00247B10 /* PinyinFormatter.m in Sources */,
+				118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */,
 				1100BFA11D7FE6E30058F230 /* UIImageView+AFNetworking.m in Sources */,
 				0758E9A01D6FF37A00E7FCE7 /* BaseViewController.m in Sources */,
 				114352171D7FB772009EE8F8 /* GradientAnimationView.m in Sources */,
@@ -1223,6 +1262,7 @@
 				0758E99E1D6FF37A00E7FCE7 /* CustomLabelDemoViewController.m in Sources */,
 				1100BF9F1D7FE6E30058F230 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				1100BF9D1D7FE6E30058F230 /* AFImageDownloader.m in Sources */,
+				118E0AAC1DBF356B0079569B /* JSPatchDemoViewController.m in Sources */,
 				0758E9BB1D6FF37A00E7FCE7 /* MJProperty.m in Sources */,
 				1100BF6D1D7FE64F0058F230 /* HeadlineView.m in Sources */,
 				11D36A961D7524CB00247B10 /* CustomProgressDemoViewController.m in Sources */,
@@ -1417,6 +1457,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P9265R3DPP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomView_IOS/第三方控件/JSPatch",
+				);
 				INFOPLIST_FILE = CustomView_IOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1432,6 +1476,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P9265R3DPP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomView_IOS/第三方控件/JSPatch",
+				);
 				INFOPLIST_FILE = CustomView_IOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

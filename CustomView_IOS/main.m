@@ -8,9 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import <JSPatchPlatform/JSPatch.h>
+
 
 int main(int argc, char * argv[]) {
+    
+    
     @autoreleasepool {
+        
+        [JPEngine startEngine];
+        NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"JWDemo" ofType:@"js"];
+        NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
+        [JPEngine evaluateScript:script];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        
     }
 }

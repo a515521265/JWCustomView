@@ -55,7 +55,8 @@
                       [DemoModel itemWithDcit:@{@"title":@"GradientAnimationDemoViewController",@"demoDescribe":@"渐变色动画label",@"className":@"GradientAnimationDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"DynamicLoopDemoViewController",@"demoDescribe":@"水波纹动画",@"className":@"DynamicLoopDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"PollingDemoViewController",@"demoDescribe":@"广告轮播封装",@"className":@"PollingDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"LineLayoutDemoViewController",@"demoDescribe":@"纵向线性布局的实现",@"className":@"LineLayoutDemoViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"LineLayoutDemoViewController",@"demoDescribe":@"纵向线性布局的实现",@"className":@"LineLayoutDemoViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"JSPatchDemoViewController",@"demoDescribe":@"JSPatchDemo用js动态添加控件",@"className":@"JSPatchDemoViewController"}]
                       ];
     
     
