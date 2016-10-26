@@ -130,6 +130,8 @@
 		118E0AA91DBF34B00079569B /* JWDemo.js in Resources */ = {isa = PBXBuildFile; fileRef = 118E0AA81DBF34B00079569B /* JWDemo.js */; };
 		118E0AAC1DBF356B0079569B /* JSPatchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */; };
 		118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAE1DBF374F0079569B /* TooltipView.m */; };
+		11CB8BB91DC054B90051FB62 /* accIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BB81DC054B90051FB62 /* accIndex.html */; };
+		11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */; };
 		11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */; };
 		11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A751D751ABE00247B10 /* DWBankModel.m */; };
 		11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A791D751AFC00247B10 /* ChineseInclude.m */; };
@@ -419,6 +421,9 @@
 		118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchDemoViewController.m; sourceTree = "<group>"; };
 		118E0AAD1DBF374F0079569B /* TooltipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TooltipView.h; sourceTree = "<group>"; };
 		118E0AAE1DBF374F0079569B /* TooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipView.m; sourceTree = "<group>"; };
+		11CB8BB81DC054B90051FB62 /* accIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = accIndex.html; sourceTree = "<group>"; };
+		11CB8BBA1DC055C40051FB62 /* HTMLDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLDemoViewController.h; sourceTree = "<group>"; };
+		11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLDemoViewController.m; sourceTree = "<group>"; };
 		11D36A711D751A5000247B10 /* SearchBankDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBankDemoViewController.h; sourceTree = "<group>"; };
 		11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBankDemoViewController.m; sourceTree = "<group>"; };
 		11D36A741D751ABE00247B10 /* DWBankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBankModel.h; sourceTree = "<group>"; };
@@ -543,6 +548,7 @@
 		0758E8F91D6FF37A00E7FCE7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				11CB8BB71DC050D30051FB62 /* HTMLFile */,
 				0758E8FA1D6FF37A00E7FCE7 /* index.html */,
 			);
 			path = Other;
@@ -596,6 +602,8 @@
 				11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */,
 				118E0AAA1DBF356B0079569B /* JSPatchDemoViewController.h */,
 				118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */,
+				11CB8BBA1DC055C40051FB62 /* HTMLDemoViewController.h */,
+				11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1014,6 +1022,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		11CB8BB71DC050D30051FB62 /* HTMLFile */ = {
+			isa = PBXGroup;
+			children = (
+				11CB8BB81DC054B90051FB62 /* accIndex.html */,
+			);
+			path = HTMLFile;
+			sourceTree = "<group>";
+		};
 		11D36A771D751AFC00247B10 /* PinYin */ = {
 			isa = PBXGroup;
 			children = (
@@ -1175,6 +1191,7 @@
 				118E0AA91DBF34B00079569B /* JWDemo.js in Resources */,
 				0758E99A1D6FF37A00E7FCE7 /* Info.plist in Resources */,
 				0758E9E61D6FF50B00E7FCE7 /* Main.storyboard in Resources */,
+				11CB8BB91DC054B90051FB62 /* accIndex.html in Resources */,
 				11D36A8F1D751AFC00247B10 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				0758E9E81D6FF53E00E7FCE7 /* LaunchScreen.storyboard in Resources */,
 				0758E9AB1D6FF37A00E7FCE7 /* Info.plist in Resources */,
@@ -1240,6 +1257,7 @@
 				0758E9A41D6FF37A00E7FCE7 /* XYPieChartDemoViewController.m in Sources */,
 				0758E9C61D6FF37A00E7FCE7 /* PDTSimpleCalendarViewHeader.m in Sources */,
 				1100BFB61D7FEB3B0058F230 /* YYImageCoder.m in Sources */,
+				11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */,
 				1100BF961D7FE6E30058F230 /* AFNetworkReachabilityManager.m in Sources */,
 				0758E9C21D6FF37A00E7FCE7 /* NSString+MJExtension.m in Sources */,
 				0758E9CC1D6FF37A00E7FCE7 /* SDWebImageDecoder.m in Sources */,

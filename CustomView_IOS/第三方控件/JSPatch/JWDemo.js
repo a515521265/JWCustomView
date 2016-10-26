@@ -82,9 +82,9 @@ defineClass('JSPatchDemoViewController',['scrollView','nametextf','passwordtextf
             require('TooltipView').showWithText("请输入用户名和密码");
             }
             
-            
-            
             },
+            
+        
             
             login : function (username,password){
             
