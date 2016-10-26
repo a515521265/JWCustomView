@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+            <title></title>
+            <!--<link rel="stylesheet" href="css/index.css"/>-->
+            
+            <style type="text/css">
+                /*#background1 { overflow:hidden; width:400px; height:250px; position:relative; float:left;}*/
+                #background1>img:not(:first-child){ display:none; }
+                a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+                    padding: 0px;
+                    margin: 0px;
+                }
+            
+            body{
+                background-color: #f1f2f4;
+            }
+            
+            /*
+             禁止html内容被选中
+             */
+            *{
+                moz-user-select: -moz-none;
+                -moz-user-select: none;
+                -o-user-select:none;
+                -khtml-user-select:none;
+                -webkit-user-select:none;
+                -ms-user-select:none;
+                user-select:none;
+            }
+            
+            
+            div{
+                background-color: white;
+                margin: 5px 0px 0px 0px;
+            }
+            
+            
+            #background1{
+                height: 140px;
+            }
+            
+            #background3{
+                height: 220px;
+            }
+            
+            #background4{
+                height: 200px;
+            }
+            </style>
+            
+    </head>
+    <body>
+        
+        
+        <div id="background1">
+            <!--11111-->
+            <img class="scroll" src="https://assets-cdn.github.com/images/modules/about/about-header.jpg" style="width: 100%;height: 140px"/>
+            <img class="scroll" src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png" style="width: 100%;height: 140px"/>
+            <img class="scroll" src="http://b1.photo.store.qq.com/psb?/V14fUnYP0SXDXU/mJaJpLfAgA6UuMmWiQ4uLTeLdspAOjVQbXoZZYnd8.c!/b/dAEAAAAAAAAA&bo=IAMgA0AGQAYFCCs!&rf=viewer_4" style="width: 100%;height: 140px"/>
+        </div>
+        
+        <div id="background2">
+            <img src="img/我是供应商.png" style="width: 20;height: 20px;display: inline-block">
+                <p style="display: inline-block;height: 20px">用户绑卡支持公告</p>
+        </div>
+        
+        <div id="background3">
+            <br>
+            <p style='text-align: center;'>累计为您赚取收益(元)</p>
+            <p style='color:#e34b19; text-align: center; margin: 20px 0px; font-size: 40px'>92.76</p>
+            <hr style="height:1px;border:none;border-top:1px solid #f1f2f4; margin: 0px 10px" />
+            
+            <br>
+            <p style="display: inline-block; text-align: center; width: 49%;" >当前投资金额(元)</p>
+            <p style="display: inline-block; text-align: center; width: 49%;">可用余额(元)</p>
+            <br><br>
+            <p style="display: inline-block; text-align: center; width: 49%;color:#e34b19;" >0.00</p>
+            <p style="display: inline-block; text-align: center; width: 49%;color:#e34b19;">0.00</p>
+        </div>
+        
+        <div id="background4">
+            <br>
+            <img src="img/我是供应商.png" style="width: 20;height: 20px;display: inline-block">
+                <p style="display: inline-block;">大赚</p>
+                <br>
+                <br>
+                <hr style="height:1px;border:none;border-top:1px solid #f1f2f4; margin: 0px 10px" />
+                <br>
+                <p style="display: inline-block; text-align: center; width: 32%;" >年化收益</p>
+                <p style="display: inline-block; text-align: center; width: 32%;">期限</p>
+                <p style="display: inline-block; text-align: center; width: 32%;" >可购份额</p>
+                <br><br>
+                <p style="display: inline-block; text-align: center; width: 32%;color:#e34b19;" >12.5%</p>
+                <p style="display: inline-block; text-align: center; width: 32%;">12个月</p>
+                <p style="display: inline-block; text-align: center; width: 32%;color:#e34b19;" >200,000,000</p>
+                
+                <button class="btn" style='color:white;margin: 10px auto;display: block;font-size: 15px;background-color: #e34b19;width: 150px;'>立即抢购</button>
+                
+        </div>
+        
+        
+        <script type="text/javascript">
+            window.onload = function(){
+                
+                var images = document.getElementsByClassName('scroll');
+                var pos = 0;
+                var len = images.length;
+                
+                setInterval(function(){
+                            
+                            images[pos].style.display = 'none';
+                            pos = ++pos == len ? 0 : pos;
+                            images[pos].style.display = 'inline';
+                            
+                            },2000);
+                            
+                var btn = document.getElementsByClassName('btn')[0];
+                btn.onclick = function (){
+                    alert("立即抢购");
+                };
+                            
+            };
+        </script>
+        
+        
+    </body>
+</html>

@@ -132,6 +132,7 @@
 		118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAE1DBF374F0079569B /* TooltipView.m */; };
 		11CB8BB91DC054B90051FB62 /* accIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BB81DC054B90051FB62 /* accIndex.html */; };
 		11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */; };
+		11CB8BBE1DC082470051FB62 /* HomeIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BBD1DC082470051FB62 /* HomeIndex.html */; };
 		11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */; };
 		11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A751D751ABE00247B10 /* DWBankModel.m */; };
 		11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A791D751AFC00247B10 /* ChineseInclude.m */; };
@@ -424,6 +425,7 @@
 		11CB8BB81DC054B90051FB62 /* accIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = accIndex.html; sourceTree = "<group>"; };
 		11CB8BBA1DC055C40051FB62 /* HTMLDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLDemoViewController.h; sourceTree = "<group>"; };
 		11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLDemoViewController.m; sourceTree = "<group>"; };
+		11CB8BBD1DC082470051FB62 /* HomeIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HomeIndex.html; sourceTree = "<group>"; };
 		11D36A711D751A5000247B10 /* SearchBankDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBankDemoViewController.h; sourceTree = "<group>"; };
 		11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBankDemoViewController.m; sourceTree = "<group>"; };
 		11D36A741D751ABE00247B10 /* DWBankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBankModel.h; sourceTree = "<group>"; };
@@ -548,6 +550,7 @@
 		0758E8F91D6FF37A00E7FCE7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				11CB8BBF1DC0865B0051FB62 /* images */,
 				11CB8BB71DC050D30051FB62 /* HTMLFile */,
 				0758E8FA1D6FF37A00E7FCE7 /* index.html */,
 			);
@@ -1025,9 +1028,17 @@
 		11CB8BB71DC050D30051FB62 /* HTMLFile */ = {
 			isa = PBXGroup;
 			children = (
+				11CB8BBD1DC082470051FB62 /* HomeIndex.html */,
 				11CB8BB81DC054B90051FB62 /* accIndex.html */,
 			);
 			path = HTMLFile;
+			sourceTree = "<group>";
+		};
+		11CB8BBF1DC0865B0051FB62 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		11D36A771D751AFC00247B10 /* PinYin */ = {
@@ -1186,6 +1197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CB8BBE1DC082470051FB62 /* HomeIndex.html in Resources */,
 				0758E9B01D6FF37A00E7FCE7 /* JPSImagePickerController.bundle in Resources */,
 				0758E99D1D6FF37A00E7FCE7 /* index.html in Resources */,
 				118E0AA91DBF34B00079569B /* JWDemo.js in Resources */,

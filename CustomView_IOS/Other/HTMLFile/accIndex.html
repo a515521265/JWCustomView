@@ -11,6 +11,21 @@
             padding: 0px;
             margin: 0px;
         }
+    
+    /*
+     禁止html内容被选中
+     */
+        *{
+            moz-user-select: -moz-none;
+            -moz-user-select: none;
+            -o-user-select:none;
+            -khtml-user-select:none;
+            -webkit-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+    
+    
 
         body{
             background-color: #f1f2f4;
