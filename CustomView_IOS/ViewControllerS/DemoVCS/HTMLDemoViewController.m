@@ -18,9 +18,8 @@
 
 -(UIWebView *)webView{
     if (!_webView) {
-        _webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 64, kScreenWidth, kScreenHeight)];
+        _webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 64, kScreenWidth, kScreenHeight-64)];
         _webView.delegate=self;
-        _webView.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
         [self.view addSubview:_webView];
     }
     return _webView;
@@ -63,6 +62,11 @@
 -(void)closekeyboard{
     NSLog(@"%s",__func__);
 }
+
+-(void)jsBack{
+    [self.navigationController popViewControllerAnimated:true];
+}
+
 
 -(void)statistical:(NSString *)statisticalStr{
     
