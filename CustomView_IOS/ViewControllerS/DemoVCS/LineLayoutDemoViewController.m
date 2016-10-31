@@ -30,6 +30,12 @@
 }
 
 
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.scrollView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

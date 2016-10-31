@@ -6,6 +6,10 @@
 //
 //
 
+#define kScreenFrame    [UIScreen mainScreen].bounds
+#define kScreenWidth    [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight   [UIScreen mainScreen].bounds.size.height
+
 #import "JWScrollView.h"
 
 #import "UIView+Extension.h"
@@ -30,6 +34,7 @@
     if (!views.count)return;
     UIView * firstView = [views firstObject];
     firstView.tag = 1992;
+    firstView.x = (kScreenWidth - firstView.width)/2;
     if (self.isGestureEnabled) {
         UITapGestureRecognizer *firstTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapAction:)];
         firstTap.numberOfTapsRequired = 1;
@@ -41,6 +46,7 @@
     for (int i =1; i<views.count; i++) {
         UIView * view = views[i];
         view.tag = 1992+i;
+        view.x = (kScreenWidth - view.width)/2;
         if (self.isGestureEnabled) {
             UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapAction:)];
             tap.numberOfTapsRequired = 1;
@@ -61,6 +67,12 @@
     !_tapSelectRow ? : _tapSelectRow(tap.view.tag-1992);
     
 }
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    [self reloadSubViews:self.allSubviwes];
+}
+
 
 -(void)removeViewWithTag:(NSInteger)ViewTag{
     
