@@ -18,6 +18,8 @@
 
 #import "GradientAnimationView.h"
 
+#import "customHUD.h"
+
 @interface BaseViewController : UIViewController
 
 @property (nonatomic,strong) DemoModel * baseDemoModel;

@@ -120,6 +120,20 @@
 		1117A7151D7FB45000B56974 /* FPSLabelRootWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70D1D7FB45000B56974 /* FPSLabelRootWindow.m */; };
 		1117A7161D7FB45000B56974 /* FPSShowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70F1D7FB45000B56974 /* FPSShowLabel.m */; };
 		1117A7171D7FB45000B56974 /* FPSWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7111D7FB45000B56974 /* FPSWeakProxy.m */; };
+		112296A01DC7153C002D27E4 /* WKWebViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122969F1DC7153C002D27E4 /* WKWebViewDemoViewController.m */; };
+		112296A21DC716C0002D27E4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112296A11DC716C0002D27E4 /* WebKit.framework */; };
+		112296B31DC71A27002D27E4 /* customHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 112296A51DC71A27002D27E4 /* customHUD.m */; };
+		112296B41DC71A27002D27E4 /* common-hud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296A71DC71A27002D27E4 /* common-hud1.png */; };
+		112296B51DC71A27002D27E4 /* common-hud10.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296A81DC71A27002D27E4 /* common-hud10.png */; };
+		112296B61DC71A27002D27E4 /* common-hud2.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296A91DC71A27002D27E4 /* common-hud2.png */; };
+		112296B71DC71A27002D27E4 /* common-hud3.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296AA1DC71A27002D27E4 /* common-hud3.png */; };
+		112296B81DC71A27002D27E4 /* common-hud4.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296AB1DC71A27002D27E4 /* common-hud4.png */; };
+		112296B91DC71A27002D27E4 /* common-hud5.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296AC1DC71A27002D27E4 /* common-hud5.png */; };
+		112296BA1DC71A27002D27E4 /* common-hud6.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296AD1DC71A27002D27E4 /* common-hud6.png */; };
+		112296BB1DC71A27002D27E4 /* common-hud7.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296AE1DC71A27002D27E4 /* common-hud7.png */; };
+		112296BC1DC71A27002D27E4 /* common-hud8.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296AF1DC71A27002D27E4 /* common-hud8.png */; };
+		112296BD1DC71A27002D27E4 /* common-hud9.png in Resources */ = {isa = PBXBuildFile; fileRef = 112296B01DC71A27002D27E4 /* common-hud9.png */; };
+		112296BE1DC71A27002D27E4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 112296B21DC71A27002D27E4 /* MBProgressHUD.m */; };
 		114352171D7FB772009EE8F8 /* GradientAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114352161D7FB772009EE8F8 /* GradientAnimationView.m */; };
 		1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114352191D7FB956009EE8F8 /* GradientAnimationDemoViewController.m */; };
 		1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143521C1D7FBAA5009EE8F8 /* DynamicLoop.m */; };
@@ -405,6 +419,23 @@
 		1117A70F1D7FB45000B56974 /* FPSShowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSShowLabel.m; sourceTree = "<group>"; };
 		1117A7101D7FB45000B56974 /* FPSWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSWeakProxy.h; sourceTree = "<group>"; };
 		1117A7111D7FB45000B56974 /* FPSWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSWeakProxy.m; sourceTree = "<group>"; };
+		1122969E1DC7153C002D27E4 /* WKWebViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewDemoViewController.h; sourceTree = "<group>"; };
+		1122969F1DC7153C002D27E4 /* WKWebViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewDemoViewController.m; sourceTree = "<group>"; };
+		112296A11DC716C0002D27E4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		112296A41DC71A27002D27E4 /* customHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customHUD.h; sourceTree = "<group>"; };
+		112296A51DC71A27002D27E4 /* customHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customHUD.m; sourceTree = "<group>"; };
+		112296A71DC71A27002D27E4 /* common-hud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud1.png"; sourceTree = "<group>"; };
+		112296A81DC71A27002D27E4 /* common-hud10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud10.png"; sourceTree = "<group>"; };
+		112296A91DC71A27002D27E4 /* common-hud2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud2.png"; sourceTree = "<group>"; };
+		112296AA1DC71A27002D27E4 /* common-hud3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud3.png"; sourceTree = "<group>"; };
+		112296AB1DC71A27002D27E4 /* common-hud4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud4.png"; sourceTree = "<group>"; };
+		112296AC1DC71A27002D27E4 /* common-hud5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud5.png"; sourceTree = "<group>"; };
+		112296AD1DC71A27002D27E4 /* common-hud6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud6.png"; sourceTree = "<group>"; };
+		112296AE1DC71A27002D27E4 /* common-hud7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud7.png"; sourceTree = "<group>"; };
+		112296AF1DC71A27002D27E4 /* common-hud8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud8.png"; sourceTree = "<group>"; };
+		112296B01DC71A27002D27E4 /* common-hud9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "common-hud9.png"; sourceTree = "<group>"; };
+		112296B11DC71A27002D27E4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		112296B21DC71A27002D27E4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		114352151D7FB772009EE8F8 /* GradientAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientAnimationView.h; sourceTree = "<group>"; };
 		114352161D7FB772009EE8F8 /* GradientAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientAnimationView.m; sourceTree = "<group>"; };
 		114352181D7FB956009EE8F8 /* GradientAnimationDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientAnimationDemoViewController.h; sourceTree = "<group>"; };
@@ -477,6 +508,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112296A21DC716C0002D27E4 /* WebKit.framework in Frameworks */,
 				118E0AA71DBF33F80079569B /* JavaScriptCore.framework in Frameworks */,
 				118E0AA41DBF33D20079569B /* JSPatchPlatform.framework in Frameworks */,
 				0758E9E31D6FF3AE00E7FCE7 /* libz.tbd in Frameworks */,
@@ -607,6 +639,8 @@
 				118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */,
 				11CB8BBA1DC055C40051FB62 /* HTMLDemoViewController.h */,
 				11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */,
+				1122969E1DC7153C002D27E4 /* WKWebViewDemoViewController.h */,
+				1122969F1DC7153C002D27E4 /* WKWebViewDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -614,6 +648,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				112296A31DC71A27002D27E4 /* MBProgressHUD */,
 				118E0AA21DBF33B50079569B /* JSPatch */,
 				1100BFC21D80FEA70058F230 /* TYLaunchAnimation */,
 				1100BFA81D7FEB3B0058F230 /* YYImage */,
@@ -1008,6 +1043,35 @@
 			path = FPSLabel;
 			sourceTree = "<group>";
 		};
+		112296A31DC71A27002D27E4 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				112296A41DC71A27002D27E4 /* customHUD.h */,
+				112296A51DC71A27002D27E4 /* customHUD.m */,
+				112296A61DC71A27002D27E4 /* HUDImage */,
+				112296B11DC71A27002D27E4 /* MBProgressHUD.h */,
+				112296B21DC71A27002D27E4 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		112296A61DC71A27002D27E4 /* HUDImage */ = {
+			isa = PBXGroup;
+			children = (
+				112296A71DC71A27002D27E4 /* common-hud1.png */,
+				112296A81DC71A27002D27E4 /* common-hud10.png */,
+				112296A91DC71A27002D27E4 /* common-hud2.png */,
+				112296AA1DC71A27002D27E4 /* common-hud3.png */,
+				112296AB1DC71A27002D27E4 /* common-hud4.png */,
+				112296AC1DC71A27002D27E4 /* common-hud5.png */,
+				112296AD1DC71A27002D27E4 /* common-hud6.png */,
+				112296AE1DC71A27002D27E4 /* common-hud7.png */,
+				112296AF1DC71A27002D27E4 /* common-hud8.png */,
+				112296B01DC71A27002D27E4 /* common-hud9.png */,
+			);
+			path = HUDImage;
+			sourceTree = "<group>";
+		};
 		118E0AA21DBF33B50079569B /* JSPatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1020,6 +1084,7 @@
 		118E0AA51DBF33F80079569B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				112296A11DC716C0002D27E4 /* WebKit.framework */,
 				118E0AA61DBF33F80079569B /* JavaScriptCore.framework */,
 			);
 			name = Frameworks;
@@ -1200,14 +1265,24 @@
 				11CB8BBE1DC082470051FB62 /* HomeIndex.html in Resources */,
 				0758E9B01D6FF37A00E7FCE7 /* JPSImagePickerController.bundle in Resources */,
 				0758E99D1D6FF37A00E7FCE7 /* index.html in Resources */,
+				112296B71DC71A27002D27E4 /* common-hud3.png in Resources */,
 				118E0AA91DBF34B00079569B /* JWDemo.js in Resources */,
 				0758E99A1D6FF37A00E7FCE7 /* Info.plist in Resources */,
+				112296BD1DC71A27002D27E4 /* common-hud9.png in Resources */,
+				112296B91DC71A27002D27E4 /* common-hud5.png in Resources */,
 				0758E9E61D6FF50B00E7FCE7 /* Main.storyboard in Resources */,
+				112296B41DC71A27002D27E4 /* common-hud1.png in Resources */,
+				112296BA1DC71A27002D27E4 /* common-hud6.png in Resources */,
 				11CB8BB91DC054B90051FB62 /* accIndex.html in Resources */,
 				11D36A8F1D751AFC00247B10 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				0758E9E81D6FF53E00E7FCE7 /* LaunchScreen.storyboard in Resources */,
+				112296BC1DC71A27002D27E4 /* common-hud8.png in Resources */,
 				0758E9AB1D6FF37A00E7FCE7 /* Info.plist in Resources */,
+				112296B51DC71A27002D27E4 /* common-hud10.png in Resources */,
+				112296B81DC71A27002D27E4 /* common-hud4.png in Resources */,
 				0758E9951D6FF37A00E7FCE7 /* Assets.xcassets in Resources */,
+				112296BB1DC71A27002D27E4 /* common-hud7.png in Resources */,
+				112296B61DC71A27002D27E4 /* common-hud2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1239,6 +1314,7 @@
 				0758E9A01D6FF37A00E7FCE7 /* BaseViewController.m in Sources */,
 				114352171D7FB772009EE8F8 /* GradientAnimationView.m in Sources */,
 				1100BF9E1D7FE6E30058F230 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				112296BE1DC71A27002D27E4 /* MBProgressHUD.m in Sources */,
 				0758E9D61D6FF37A00E7FCE7 /* UIImageView+WebCache.m in Sources */,
 				1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */,
 				0758E9CE1D6FF37A00E7FCE7 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1277,6 +1353,7 @@
 				0758E9D51D6FF37A00E7FCE7 /* UIImageView+HighlightedWebCache.m in Sources */,
 				0758E9C71D6FF37A00E7FCE7 /* PDTSimpleCalendarViewWeekdayHeader.m in Sources */,
 				1100BFA71D7FE72B0058F230 /* bannerData.m in Sources */,
+				112296A01DC7153C002D27E4 /* WKWebViewDemoViewController.m in Sources */,
 				0758E9B51D6FF37A00E7FCE7 /* MDRadialProgressTheme.m in Sources */,
 				11D36A8E1D751AFC00247B10 /* PinyinHelper.m in Sources */,
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
@@ -1359,6 +1436,7 @@
 				1117A7161D7FB45000B56974 /* FPSShowLabel.m in Sources */,
 				0758E9CD1D6FF37A00E7FCE7 /* SDWebImageDownloader.m in Sources */,
 				1100BF9B1D7FE6E30058F230 /* NetworkState.m in Sources */,
+				112296B31DC71A27002D27E4 /* customHUD.m in Sources */,
 				1117A7151D7FB45000B56974 /* FPSLabelRootWindow.m in Sources */,
 				0758E9A51D6FF37A00E7FCE7 /* UIViewController+KeyboardCorver.m in Sources */,
 				1100BFA41D7FE6E30058F230 /* UIWebView+AFNetworking.m in Sources */,
