@@ -114,6 +114,8 @@
 		1100BFCE1D80FEA70058F230 /* UIImage+TYLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFC91D80FEA70058F230 /* UIImage+TYLaunchImage.m */; };
 		1100BFCF1D80FEA70058F230 /* UIView+TYLaunchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFCB1D80FEA70058F230 /* UIView+TYLaunchAnimation.m */; };
 		1100BFD21D80FF030058F230 /* TAdLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFD11D80FF030058F230 /* TAdLaunchImageView.m */; };
+		110AEE081DD0617800F70013 /* JWTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE071DD0617800F70013 /* JWTextView.m */; };
+		110AEE0B1DD0636B00F70013 /* JWTextViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE0A1DD0636B00F70013 /* JWTextViewDemoViewController.m */; };
 		1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */; };
 		1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7091D7FB45000B56974 /* FPSLabelManager.m */; };
 		1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70B1D7FB45000B56974 /* FPSLabelRootVC.m */; };
@@ -407,6 +409,10 @@
 		1100BFCB1D80FEA70058F230 /* UIView+TYLaunchAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYLaunchAnimation.m"; sourceTree = "<group>"; };
 		1100BFD01D80FF030058F230 /* TAdLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAdLaunchImageView.h; sourceTree = "<group>"; };
 		1100BFD11D80FF030058F230 /* TAdLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAdLaunchImageView.m; sourceTree = "<group>"; };
+		110AEE061DD0617800F70013 /* JWTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTextView.h; sourceTree = "<group>"; };
+		110AEE071DD0617800F70013 /* JWTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTextView.m; sourceTree = "<group>"; };
+		110AEE091DD0636B00F70013 /* JWTextViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTextViewDemoViewController.h; sourceTree = "<group>"; };
+		110AEE0A1DD0636B00F70013 /* JWTextViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTextViewDemoViewController.m; sourceTree = "<group>"; };
 		1117A7061D7FB45000B56974 /* FPSLabelContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelContainerVC.h; sourceTree = "<group>"; };
 		1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabelContainerVC.m; sourceTree = "<group>"; };
 		1117A7081D7FB45000B56974 /* FPSLabelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelManager.h; sourceTree = "<group>"; };
@@ -641,6 +647,8 @@
 				11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */,
 				1122969E1DC7153C002D27E4 /* WKWebViewDemoViewController.h */,
 				1122969F1DC7153C002D27E4 /* WKWebViewDemoViewController.m */,
+				110AEE091DD0636B00F70013 /* JWTextViewDemoViewController.h */,
+				110AEE0A1DD0636B00F70013 /* JWTextViewDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -902,6 +910,8 @@
 				11FBF6061D86896500208715 /* JWScrollView.m */,
 				5E54280F1D8C10E600DBE252 /* JWScrollviewCell.h */,
 				5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */,
+				110AEE061DD0617800F70013 /* JWTextView.h */,
+				110AEE071DD0617800F70013 /* JWTextView.m */,
 			);
 			path = "自定义控件";
 			sourceTree = "<group>";
@@ -1307,6 +1317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110AEE0B1DD0636B00F70013 /* JWTextViewDemoViewController.m in Sources */,
 				0758E9941D6FF37A00E7FCE7 /* AppDelegate.m in Sources */,
 				11D36A8C1D751AFC00247B10 /* PinyinFormatter.m in Sources */,
 				118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */,
@@ -1360,6 +1371,7 @@
 				0758E9C31D6FF37A00E7FCE7 /* PDTSimpleCalendarViewCell.m in Sources */,
 				0758E9BE1D6FF37A00E7FCE7 /* NSObject+MJClass.m in Sources */,
 				1100BFD21D80FF030058F230 /* TAdLaunchImageView.m in Sources */,
+				110AEE081DD0617800F70013 /* JWTextView.m in Sources */,
 				11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */,
 				0758E9AC1D6FF37A00E7FCE7 /* MVVMStore.m in Sources */,
 				114352201D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m in Sources */,

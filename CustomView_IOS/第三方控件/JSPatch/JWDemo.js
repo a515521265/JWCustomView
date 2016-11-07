@@ -177,9 +177,9 @@ defineClass('JWTestViewController : UIViewController', ['scrollView'], {
             
             }
             
-            require('JWTextView');
+            require('JWTestView');
             
-            var textView = JWTextView.alloc().initWithFrame({x:0, y:maxBtnHeight, width:screenWidth, height:300});
+            var textView = JWTestView.alloc().initWithFrame({x:0, y:maxBtnHeight, width:screenWidth, height:300});
             
             lscrollView.addSubview(textView);
             
@@ -214,7 +214,7 @@ defineClass('JWTestViewController : UIViewController', ['scrollView'], {
  创建一个view
  */
 
-defineClass('JWTextView : UIView', {
+defineClass('JWTestView : UIView', {
             
             
             //            require('UIImageView,UIColor,UIScreen');

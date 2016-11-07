@@ -58,8 +58,11 @@
                       [DemoModel itemWithDcit:@{@"title":@"LineLayoutDemoViewController",@"demoDescribe":@"纵向线性布局的实现",@"className":@"LineLayoutDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"JSPatchDemoViewController",@"demoDescribe":@"JSPatchDemo用js动态添加控件",@"className":@"JSPatchDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"HTMLDemoViewController",@"demoDescribe":@"测试html文件",@"className":@"HTMLDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"WKWebViewDemoViewController",@"demoDescribe":@"wkwebviewDemo",@"className":@"WKWebViewDemoViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"WKWebViewDemoViewController",@"demoDescribe":@"wkwebviewDemo",@"className":@"WKWebViewDemoViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"JWTextViewDemoViewController",@"demoDescribe":@"TextViewDemo",@"className":@"JWTextViewDemoViewController"}]
                       ];
+    
+    
     
     
 }
