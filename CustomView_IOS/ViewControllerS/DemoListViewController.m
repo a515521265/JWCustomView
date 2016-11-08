@@ -59,7 +59,8 @@
                       [DemoModel itemWithDcit:@{@"title":@"JSPatchDemoViewController",@"demoDescribe":@"JSPatchDemo用js动态添加控件",@"className":@"JSPatchDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"HTMLDemoViewController",@"demoDescribe":@"测试html文件",@"className":@"HTMLDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"WKWebViewDemoViewController",@"demoDescribe":@"wkwebviewDemo",@"className":@"WKWebViewDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"JWTextViewDemoViewController",@"demoDescribe":@"TextViewDemo",@"className":@"JWTextViewDemoViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"JWTextViewDemoViewController",@"demoDescribe":@"TextViewDemo",@"className":@"JWTextViewDemoViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"ShoppingCartDemoViewController",@"demoDescribe":@"购物车动画",@"className":@"ShoppingCartDemoViewController"}]
                       ];
     
     

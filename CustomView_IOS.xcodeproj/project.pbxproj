@@ -116,6 +116,10 @@
 		1100BFD21D80FF030058F230 /* TAdLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100BFD11D80FF030058F230 /* TAdLaunchImageView.m */; };
 		110AEE081DD0617800F70013 /* JWTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE071DD0617800F70013 /* JWTextView.m */; };
 		110AEE0B1DD0636B00F70013 /* JWTextViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE0A1DD0636B00F70013 /* JWTextViewDemoViewController.m */; };
+		110AEE0E1DD1728200F70013 /* ShoppingCartDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE0D1DD1728200F70013 /* ShoppingCartDemoViewController.m */; };
+		110AEE111DD1B0DB00F70013 /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE101DD1B0DB00F70013 /* GoodsModel.m */; };
+		110AEE141DD1C38F00F70013 /* CompanyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE131DD1C38F00F70013 /* CompanyModel.m */; };
+		110AEE171DD1C43F00F70013 /* SpecsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE161DD1C43F00F70013 /* SpecsModel.m */; };
 		1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */; };
 		1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7091D7FB45000B56974 /* FPSLabelManager.m */; };
 		1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70B1D7FB45000B56974 /* FPSLabelRootVC.m */; };
@@ -413,6 +417,14 @@
 		110AEE071DD0617800F70013 /* JWTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTextView.m; sourceTree = "<group>"; };
 		110AEE091DD0636B00F70013 /* JWTextViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWTextViewDemoViewController.h; sourceTree = "<group>"; };
 		110AEE0A1DD0636B00F70013 /* JWTextViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWTextViewDemoViewController.m; sourceTree = "<group>"; };
+		110AEE0C1DD1728200F70013 /* ShoppingCartDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartDemoViewController.h; sourceTree = "<group>"; };
+		110AEE0D1DD1728200F70013 /* ShoppingCartDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartDemoViewController.m; sourceTree = "<group>"; };
+		110AEE0F1DD1B0DB00F70013 /* GoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
+		110AEE101DD1B0DB00F70013 /* GoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
+		110AEE121DD1C38F00F70013 /* CompanyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyModel.h; sourceTree = "<group>"; };
+		110AEE131DD1C38F00F70013 /* CompanyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyModel.m; sourceTree = "<group>"; };
+		110AEE151DD1C43F00F70013 /* SpecsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecsModel.h; sourceTree = "<group>"; };
+		110AEE161DD1C43F00F70013 /* SpecsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecsModel.m; sourceTree = "<group>"; };
 		1117A7061D7FB45000B56974 /* FPSLabelContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelContainerVC.h; sourceTree = "<group>"; };
 		1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabelContainerVC.m; sourceTree = "<group>"; };
 		1117A7081D7FB45000B56974 /* FPSLabelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelManager.h; sourceTree = "<group>"; };
@@ -580,6 +592,12 @@
 				11D36A751D751ABE00247B10 /* DWBankModel.m */,
 				1100BFA51D7FE72B0058F230 /* bannerData.h */,
 				1100BFA61D7FE72B0058F230 /* bannerData.m */,
+				110AEE0F1DD1B0DB00F70013 /* GoodsModel.h */,
+				110AEE101DD1B0DB00F70013 /* GoodsModel.m */,
+				110AEE121DD1C38F00F70013 /* CompanyModel.h */,
+				110AEE131DD1C38F00F70013 /* CompanyModel.m */,
+				110AEE151DD1C43F00F70013 /* SpecsModel.h */,
+				110AEE161DD1C43F00F70013 /* SpecsModel.m */,
 			);
 			name = Models;
 			path = ModelS;
@@ -649,6 +667,8 @@
 				1122969F1DC7153C002D27E4 /* WKWebViewDemoViewController.m */,
 				110AEE091DD0636B00F70013 /* JWTextViewDemoViewController.h */,
 				110AEE0A1DD0636B00F70013 /* JWTextViewDemoViewController.m */,
+				110AEE0C1DD1728200F70013 /* ShoppingCartDemoViewController.h */,
+				110AEE0D1DD1728200F70013 /* ShoppingCartDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1381,6 +1401,7 @@
 				0758E99E1D6FF37A00E7FCE7 /* CustomLabelDemoViewController.m in Sources */,
 				1100BF9F1D7FE6E30058F230 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				1100BF9D1D7FE6E30058F230 /* AFImageDownloader.m in Sources */,
+				110AEE111DD1B0DB00F70013 /* GoodsModel.m in Sources */,
 				118E0AAC1DBF356B0079569B /* JSPatchDemoViewController.m in Sources */,
 				0758E9BB1D6FF37A00E7FCE7 /* MJProperty.m in Sources */,
 				1100BF6D1D7FE64F0058F230 /* HeadlineView.m in Sources */,
@@ -1397,6 +1418,7 @@
 				0758E9D91D6FF37A00E7FCE7 /* YYClassInfo.m in Sources */,
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
 				5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */,
+				110AEE141DD1C38F00F70013 /* CompanyModel.m in Sources */,
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
 				1100BF6C1D7FE64F0058F230 /* AdView.m in Sources */,
 				11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */,
@@ -1431,10 +1453,12 @@
 				1100BF671D7FE6130058F230 /* HomePublicView.m in Sources */,
 				1100BF951D7FE6E30058F230 /* AFHTTPSessionManager.m in Sources */,
 				1100BFA31D7FE6E30058F230 /* UIRefreshControl+AFNetworking.m in Sources */,
+				110AEE171DD1C43F00F70013 /* SpecsModel.m in Sources */,
 				0758E9B41D6FF37A00E7FCE7 /* MDRadialProgressLabel.m in Sources */,
 				0758E9A11D6FF37A00E7FCE7 /* CameraDemoViewController.m in Sources */,
 				0758E9A31D6FF37A00E7FCE7 /* WebViewDemoViewController.m in Sources */,
 				0758E9BC1D6FF37A00E7FCE7 /* MJPropertyKey.m in Sources */,
+				110AEE0E1DD1728200F70013 /* ShoppingCartDemoViewController.m in Sources */,
 				0758E9B21D6FF37A00E7FCE7 /* JPSVolumeButtonHandler.m in Sources */,
 				0758E9BA1D6FF37A00E7FCE7 /* MJFoundation.m in Sources */,
 				1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */,

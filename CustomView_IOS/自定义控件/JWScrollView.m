@@ -60,6 +60,7 @@
             self.contentSize = CGSizeMake(0, self.subviews.lastObject.y + self.subviews.lastObject.height);
         }
     }
+
 }
 
 -(void)viewTapAction:(UITapGestureRecognizer *)tap{

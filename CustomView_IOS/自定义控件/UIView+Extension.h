@@ -53,5 +53,4 @@
  */
 - (void)updateSnapPoint;
 
-
 @end
