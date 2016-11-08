@@ -167,8 +167,34 @@
 - (UIImage *)imageWithScreenshot
 {
     NSData *imageData = [self dataWithScreenshotInPNGFormat];
+    
     return [UIImage imageWithData:imageData];
+    
 }
+
+
+//强制使用系统键盘
+- (BOOL)application:(UIApplication *)application shouldAllowExtensionPointIdentifier:(NSString *)extensionPointIdentifier {
+    
+    if ([extensionPointIdentifier isEqualToString:@"返回默认键盘"]) {
+        return true;
+    }else{
+        return false;
+    }
+}
+
+//不活跃
+- (void)applicationWillResignActive:(UIApplication *)application{
+
+     [self application:[UIApplication sharedApplication] shouldAllowExtensionPointIdentifier:@"返回默认键盘"];
+    
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application{
+    [self application:[UIApplication sharedApplication] shouldAllowExtensionPointIdentifier:@"返回默认键盘"];
+}
+
+
 
 
 @end

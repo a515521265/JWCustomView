@@ -126,6 +126,7 @@
     CGSize calculatedSize =  [string boundingRectWithSize:InSize options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:dic context:nil].size;
     
     CGSize adjustedSize = CGSizeMake(ceilf(calculatedSize.width),calculatedSize.height + broadHeight);//ceilf(calculatedSize.height)
+    !self.backHeight ? : self.backHeight (adjustedSize.height);
     return adjustedSize;
 }
 
@@ -134,6 +135,7 @@
     CGSize size = [textView sizeThatFits:CGSizeMake(CGRectGetWidth(textView.frame), MAXFLOAT)];
     CGRect frame = textView.frame;
     frame.size.height = size.height;
+    !self.backHeight ? : self.backHeight (size.height);
     textView.frame = frame;
 }
 

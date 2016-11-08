@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger, TextViewImportStyle) {
 
 @property (nonatomic,copy) void(^importBackString)(NSString * backStr);
 
+@property (nonatomic,copy) void(^backHeight)(CGFloat);
+
 @property (nonatomic,assign) CGFloat maxlength;
 
 @property (nonatomic,assign) BOOL zoomText; //是否缩放文字
