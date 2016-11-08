@@ -194,8 +194,28 @@
     CompanyModel * companymodel = self.modelArr.firstObject;
     
     //公司view
-//    supersuperView.contentView;
     
+    for (int i = 0; i<companymodel.goodsArr.count ; i++) {
+        
+        for (int j =0; j <companymodel.goodsArr[i].specsArr.count ; j++) {
+          
+            SpecsModel * specs = companymodel.goodsArr[i].specsArr[j];
+            
+            NSLog(@"------%@",specs.specsName);
+            
+            if (specs.specsid == btn.tag -1000) {
+                
+                NSLog(@"删除的----%@",specs.specsName);
+                
+                continue;
+            }
+            
+        
+        }
+//        companymodel.goodsArr =
+    }
+    
+//    companymodel.goodsArr = @[goods1,goods2];
     
     
     
