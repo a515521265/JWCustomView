@@ -11,7 +11,7 @@
 #import "JWScrollView.h"
 #import "JWScrollviewCell.h"
 
-@interface JWTextViewDemoViewController ()
+@interface JWTextViewDemoViewController () <CAAnimationDelegate>
 @property (nonatomic,strong) JWScrollView * scrollView;
 @end
 
@@ -60,8 +60,15 @@
     [cell2.rightTextField setPlaceholderFont:cell1.leftLabel.font];
     [cell2 setUPSpacing:0 andDownSpacing:5];
     
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    btn.frame = CGRectMake(0, 0, kScreenHeight, 30);
+    [btn setTitle:@"tapbuy" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(shoppingCartButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.scrollView setScrollviewSubViewsArr:@[view,cell1,cell2].mutableCopy];
+    
+
+    
+    [self.scrollView setScrollviewSubViewsArr:@[view,cell1,cell2,btn].mutableCopy];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 
@@ -69,10 +76,72 @@
         
     });
 
+
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    CGRect oldframe = [view convertRect:view.bounds toView:window];
+    
+    NSLog(@"相对于window的CGRect--------%@",NSStringFromCGRect(oldframe));
+    
+    NSLog(@"相对于view的CGRect--------%@",NSStringFromCGRect(view.frame));
     
     
     
 }
 
+#pragma mark -购物车动画
+-(void)shoppingCartButtonAction:(UIButton*)sender
+{
+    UIImageView *imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"common-hud1"]];
+    imageView.contentMode=UIViewContentModeCenter;
+    imageView.frame = sender.bounds;
+    imageView.hidden=YES;
+    CGPoint point= sender.frame.origin;
+    imageView.center=point;
+    CALayer *layer=[[CALayer alloc]init];
+    layer.contents=imageView.layer.contents;
+    layer.frame=imageView.frame;
+    layer.opacity=1;
+    [self.view.layer addSublayer:layer];
+    //动画 终点 都以sel.view为参考系
+    CGPoint endpoint= CGPointMake(20, kScreenHeight - 22);
+    UIBezierPath *path=[UIBezierPath bezierPath];
+    //动画起点
+    CGRect rect=[sender convertRect: sender.bounds toView:self.view];
+    CGPoint startPoint=CGPointMake(rect.origin.x +rect.size.width/2, rect.origin.y +rect.size.height/2);
+    [path moveToPoint:startPoint];
+    //贝塞尔曲线中间点
+    float sx=startPoint.x;
+    float sy=startPoint.y;
+    float ex=endpoint.x;
+    float ey=endpoint.y;
+    float x=sx+(ex-sx)/3;
+    float y=sy+(ey-sy)*0.5-400;
+    CGPoint centerPoint=CGPointMake(x,y);
+    [path addQuadCurveToPoint:endpoint controlPoint:centerPoint];
+    
+    CAKeyframeAnimation *animation=[CAKeyframeAnimation animationWithKeyPath:@"position"];
+    animation.path = path.CGPath;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    animation.duration=0.8;
+    animation.delegate=self;
+    animation.autoreverses= NO;
+    animation.timingFunction=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    [layer addAnimation:animation forKey:@"buy"];
+
+}
+
+//star
+- (void)animationDidStart:(CAAnimation *)anim{
+
+    //可以做一些拦截 避免连续点击
+    NSLog(@"star");
+    
+}
+//stop
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    //释放拦截
+    NSLog(@"stop");
+}
 
 @end
