@@ -8,10 +8,11 @@
 
 #import "ShoppingCartDemoViewController.h"
 #import "JWScrollView.h"
-#import "JWScrollviewCell.h"
+//#import "JWScrollviewCell.h"
 #import "GoodsModel.h"
 #import "CompanyModel.h"
 #import "SpecsModel.h"
+#import "ShoppingCartCell.h"
 
 @interface ShoppingCartDemoViewController () <CAAnimationDelegate>
 @property (nonatomic,strong) JWScrollView * scrollView;
@@ -36,55 +37,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSMutableArray * viewsArr = [NSMutableArray arrayWithCapacity:10];
-    
-    
     self.modelArr = [NSMutableArray arrayWithCapacity:10];
-    
-    
     CompanyModel * companymodel = [CompanyModel new]; //公司
     companymodel.companyName = @"恒善信诚";
-    
-
     GoodsModel * goods1 = [GoodsModel new]; //产品
     goods1.goodsName = @"大虾";
-    
     GoodsModel * goods2 = [GoodsModel new]; //产品
     goods2.goodsName = @"小虾米";
-    
-    
     SpecsModel * specs1 =  [SpecsModel new]; //规格
     specs1.specsName = @"蓝色大虾";
     specs1.specsid = 1;
-    
     SpecsModel * specs2 =  [SpecsModel new]; //规格
     specs2.specsName = @"黑色大虾";
     specs1.specsid = 2;
-    
     SpecsModel * specs3 =  [SpecsModel new]; //规格
     specs3.specsName = @"蓝色小虾米";
     specs3.specsid = 3;
-    
     SpecsModel * specs4 =  [SpecsModel new]; //规格
     specs4.specsName = @"黑色小虾米";
     specs4.specsid = 4;
-    
-    companymodel.goodsArr = @[goods1,goods2];
-    
-    goods1.specsArr = @[specs1,specs2];
-    
-    goods2.specsArr = @[specs3,specs4];
-    
+    companymodel.goodsArr = @[goods1,goods2].mutableCopy;
+    goods1.specsArr = @[specs1,specs2].mutableCopy;
+    goods2.specsArr = @[specs3,specs4].mutableCopy;
     [self.modelArr addObjectsFromArray:@[companymodel]];
     
-    for (int i = 0 ; i< self.modelArr.count; i++) {
-        JWScrollviewCell * cell = [self CreateJWCell:self.modelArr[i]];
-        [viewsArr addObject:cell];
-    }
-    [self.scrollView setScrollviewSubViewsArr:viewsArr];
-
+    [self reloadscrollviewsubviews:self.modelArr];
+    
     //底部按钮
-    JWScrollviewCell * cell = [[JWScrollviewCell alloc]initWithFrame:CGRectMake(0, kScreenHeight - 50, kScreenWidth, 50)];
+    ShoppingCartCell * cell = [[ShoppingCartCell alloc]initWithFrame:CGRectMake(0, kScreenHeight - 50, kScreenWidth, 50)];
     [cell setUPSpacing:1 andDownSpacing:1];
     self.clearingbtn = [UIButton buttonWithType:UIButtonTypeSystem];
     self.clearingbtn.frame = CGRectMake(kScreenWidth-150, 0, 150, 50);
@@ -94,24 +74,34 @@
     [cell.contentView addSubview:self.clearingbtn];
     
     [self.view addSubview:cell];
+}
+
+-(void)reloadscrollviewsubviews:(NSMutableArray<CompanyModel *> *)models{
     
+    NSMutableArray * viewsArr = [NSMutableArray arrayWithCapacity:10];
+    
+    for (int i = 0 ; i< self.modelArr.count; i++) {
+        ShoppingCartCell * cell = [self CreateJWCell:self.modelArr[i]];
+        [viewsArr addObject:cell];
+    }
+    
+    [self.scrollView setScrollviewSubViewsArr:viewsArr];
     
 }
 
--(JWScrollviewCell *)CreateJWCell:(CompanyModel *)model {
 
-    JWScrollviewCell * cell = [[JWScrollviewCell alloc]initWithFrame:CGRectMake(0, 64, kScreenWidth, 50)];
-    [cell setUPSpacing:5 andDownSpacing:5];
+-(ShoppingCartCell *)CreateJWCell:(CompanyModel *)model {
     
+    ShoppingCartCell * cell = [[ShoppingCartCell alloc]initWithFrame:CGRectMake(0, 64, kScreenWidth, 50)];
+    [cell setUPSpacing:5 andDownSpacing:5];
+    cell.companyModel = model;
     UIView * companyView = [self companyView:model.companyName];
     [cell.contentView addSubview:companyView];
-    
     for (int i = 0; i<model.goodsArr.count; i++) {
         UIView * goodsView = [self goodsView:model.goodsArr[i]];
         goodsView.y = CGRectGetMaxY(cell.contentView.subviews.lastObject.frame);
         [cell.contentView addSubview:goodsView];
     }
-    
     dispatch_async(dispatch_get_main_queue(), ^{
         cell.contentView.height = CGRectGetMaxY(cell.contentView.subviews.lastObject.frame);
     });
@@ -119,7 +109,7 @@
 }
 
 -(UIView *)companyView:(NSString *)name{
-
+    
     UIView * companyView = [[UIView alloc]init];
     companyView.frame = CGRectMake(0, 0, kScreenWidth, 30);
     companyView.backgroundColor = [UIColor grayColor];
@@ -133,6 +123,7 @@
 -(UIView *)goodsView:(GoodsModel *)goodsmodel{
     
     UIView * goods = [[UIView alloc]init];
+    goods.clipsToBounds = true;
     goods.frame = CGRectMake(0, 0, kScreenWidth, 50);
     goods.backgroundColor = [UIColor blueColor];
     JWLabel * lab = [[JWLabel alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 50)];
@@ -152,9 +143,10 @@
         specificationsView.y = CGRectGetMaxY(goods.subviews.lastObject.frame);
         [goods addSubview:specificationsView];
     }
-    
     goods.height = CGRectGetMaxY(goods.subviews.lastObject.frame);
-    
+    if (!goodsmodel.specsArr.count) {
+        goods.height = 0;
+    }
     return goods;
     
 }
@@ -177,7 +169,7 @@
     
     
     [specificationsView addSubview:btn];
-
+    
     return specificationsView;
     
 }
@@ -186,37 +178,30 @@
     
     UIView * btnSuperview = btn.superview;
     
-    JWScrollviewCell * supersuperView = (JWScrollviewCell *)btnSuperview.superview.superview.superview;
+    ShoppingCartCell * supersuperView = (ShoppingCartCell *)btnSuperview.superview.superview.superview;
     
+    CompanyModel * companymodel = supersuperView.companyModel;
     
     [btnSuperview removeFromSuperview];
     
-    CompanyModel * companymodel = self.modelArr.firstObject;
-    
     //公司view
-    
     for (int i = 0; i<companymodel.goodsArr.count ; i++) {
         
         for (int j =0; j <companymodel.goodsArr[i].specsArr.count ; j++) {
-          
-            SpecsModel * specs = companymodel.goodsArr[i].specsArr[j];
             
-            NSLog(@"------%@",specs.specsName);
+            SpecsModel * specs = companymodel.goodsArr[i].specsArr[j];
             
             if (specs.specsid == btn.tag -1000) {
                 
-                NSLog(@"删除的----%@",specs.specsName);
+                [companymodel.goodsArr[i].specsArr removeObjectAtIndex:j];
                 
-                continue;
+                break;
             }
-            
-        
         }
-//        companymodel.goodsArr =
     }
+    [self.scrollView removeAllSubViews];
     
-//    companymodel.goodsArr = @[goods1,goods2];
-    
+    [self reloadscrollviewsubviews:self.modelArr];
     
     
     //先拿到这个公司，在拿到这个产品 在拿到产品规格

@@ -12,6 +12,6 @@
 
 @property (nonatomic,strong) NSString * goodsName;
 
-@property (nonatomic,strong) NSArray <SpecsModel *>* specsArr;
+@property (nonatomic,strong) NSMutableArray <SpecsModel *>* specsArr;
 
 @end

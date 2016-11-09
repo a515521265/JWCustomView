@@ -13,6 +13,6 @@
 
 @property (nonatomic,strong) NSString * companyName; //公司名称
 
-@property (nonatomic,strong) NSArray <GoodsModel *> * goodsArr; //商品数组
+@property (nonatomic,strong) NSMutableArray <GoodsModel *> * goodsArr; //商品数组
 
 @end

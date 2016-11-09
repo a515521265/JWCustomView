@@ -120,6 +120,7 @@
 		110AEE111DD1B0DB00F70013 /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE101DD1B0DB00F70013 /* GoodsModel.m */; };
 		110AEE141DD1C38F00F70013 /* CompanyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE131DD1C38F00F70013 /* CompanyModel.m */; };
 		110AEE171DD1C43F00F70013 /* SpecsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE161DD1C43F00F70013 /* SpecsModel.m */; };
+		110AEE1B1DD2B0B300F70013 /* ShoppingCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 110AEE1A1DD2B0B300F70013 /* ShoppingCartCell.m */; };
 		1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */; };
 		1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7091D7FB45000B56974 /* FPSLabelManager.m */; };
 		1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70B1D7FB45000B56974 /* FPSLabelRootVC.m */; };
@@ -425,6 +426,8 @@
 		110AEE131DD1C38F00F70013 /* CompanyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyModel.m; sourceTree = "<group>"; };
 		110AEE151DD1C43F00F70013 /* SpecsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecsModel.h; sourceTree = "<group>"; };
 		110AEE161DD1C43F00F70013 /* SpecsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecsModel.m; sourceTree = "<group>"; };
+		110AEE191DD2B0B300F70013 /* ShoppingCartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartCell.h; sourceTree = "<group>"; };
+		110AEE1A1DD2B0B300F70013 /* ShoppingCartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartCell.m; sourceTree = "<group>"; };
 		1117A7061D7FB45000B56974 /* FPSLabelContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelContainerVC.h; sourceTree = "<group>"; };
 		1117A7071D7FB45000B56974 /* FPSLabelContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabelContainerVC.m; sourceTree = "<group>"; };
 		1117A7081D7FB45000B56974 /* FPSLabelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabelManager.h; sourceTree = "<group>"; };
@@ -574,6 +577,7 @@
 		0758E8EA1D6FF37A00E7FCE7 /* CustomView_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				110AEE181DD2B0A300F70013 /* View */,
 				0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */,
 				0758E9871D6FF37A00E7FCE7 /* 自定义控件 */,
 				0758E8F61D6FF37A00E7FCE7 /* Models */,
@@ -1054,6 +1058,15 @@
 			path = TYLaunchAnimation;
 			sourceTree = "<group>";
 		};
+		110AEE181DD2B0A300F70013 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				110AEE191DD2B0B300F70013 /* ShoppingCartCell.h */,
+				110AEE1A1DD2B0B300F70013 /* ShoppingCartCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1117A7051D7FB44400B56974 /* FPSLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1357,6 +1370,7 @@
 				0758E9B31D6FF37A00E7FCE7 /* UIImage+DrawBlock.m in Sources */,
 				1100BFCD1D80FEA70058F230 /* TYLaunchFadeScaleAnimation.m in Sources */,
 				0758E9D41D6FF37A00E7FCE7 /* UIImage+WebP.m in Sources */,
+				110AEE1B1DD2B0B300F70013 /* ShoppingCartCell.m in Sources */,
 				0758E9C11D6FF37A00E7FCE7 /* NSObject+MJProperty.m in Sources */,
 				1100BFCC1D80FEA70058F230 /* TYLaunchBaseAnimation.m in Sources */,
 				11D36A8D1D751AFC00247B10 /* PinYinForObjc.m in Sources */,
