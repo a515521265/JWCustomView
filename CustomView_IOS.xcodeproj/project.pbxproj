@@ -151,6 +151,8 @@
 		118E0AA91DBF34B00079569B /* JWDemo.js in Resources */ = {isa = PBXBuildFile; fileRef = 118E0AA81DBF34B00079569B /* JWDemo.js */; };
 		118E0AAC1DBF356B0079569B /* JSPatchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */; };
 		118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAE1DBF374F0079569B /* TooltipView.m */; };
+		11C713C61DD4496100877E26 /* XLNotificationTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C713C41DD4496100877E26 /* XLNotificationTransfer.m */; };
+		11C713C91DD4498900877E26 /* XLNotificationTransferDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C713C81DD4498900877E26 /* XLNotificationTransferDemoViewController.m */; };
 		11CB8BB91DC054B90051FB62 /* accIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BB81DC054B90051FB62 /* accIndex.html */; };
 		11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */; };
 		11CB8BBE1DC082470051FB62 /* HomeIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BBD1DC082470051FB62 /* HomeIndex.html */; };
@@ -474,6 +476,11 @@
 		118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchDemoViewController.m; sourceTree = "<group>"; };
 		118E0AAD1DBF374F0079569B /* TooltipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TooltipView.h; sourceTree = "<group>"; };
 		118E0AAE1DBF374F0079569B /* TooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipView.m; sourceTree = "<group>"; };
+		11C713C31DD4496100877E26 /* XLNotificationTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNotificationTransfer.h; sourceTree = "<group>"; };
+		11C713C41DD4496100877E26 /* XLNotificationTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNotificationTransfer.m; sourceTree = "<group>"; };
+		11C713C51DD4496100877E26 /* XLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRuntime.h; sourceTree = "<group>"; };
+		11C713C71DD4498900877E26 /* XLNotificationTransferDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNotificationTransferDemoViewController.h; sourceTree = "<group>"; };
+		11C713C81DD4498900877E26 /* XLNotificationTransferDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNotificationTransferDemoViewController.m; sourceTree = "<group>"; };
 		11CB8BB81DC054B90051FB62 /* accIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = accIndex.html; sourceTree = "<group>"; };
 		11CB8BBA1DC055C40051FB62 /* HTMLDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLDemoViewController.h; sourceTree = "<group>"; };
 		11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLDemoViewController.m; sourceTree = "<group>"; };
@@ -673,6 +680,8 @@
 				110AEE0A1DD0636B00F70013 /* JWTextViewDemoViewController.m */,
 				110AEE0C1DD1728200F70013 /* ShoppingCartDemoViewController.h */,
 				110AEE0D1DD1728200F70013 /* ShoppingCartDemoViewController.m */,
+				11C713C71DD4498900877E26 /* XLNotificationTransferDemoViewController.h */,
+				11C713C81DD4498900877E26 /* XLNotificationTransferDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -680,6 +689,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				11C713C21DD4495300877E26 /* XLNotificationTransfer */,
 				112296A31DC71A27002D27E4 /* MBProgressHUD */,
 				118E0AA21DBF33B50079569B /* JSPatch */,
 				1100BFC21D80FEA70058F230 /* TYLaunchAnimation */,
@@ -1133,6 +1143,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		11C713C21DD4495300877E26 /* XLNotificationTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				11C713C31DD4496100877E26 /* XLNotificationTransfer.h */,
+				11C713C41DD4496100877E26 /* XLNotificationTransfer.m */,
+				11C713C51DD4496100877E26 /* XLRuntime.h */,
+			);
+			path = XLNotificationTransfer;
+			sourceTree = "<group>";
+		};
 		11CB8BB71DC050D30051FB62 /* HTMLFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -1465,6 +1485,7 @@
 				1100BFA01D7FE6E30058F230 /* UIButton+AFNetworking.m in Sources */,
 				0758E9AE1D6FF37A00E7FCE7 /* YTKKeyValueStore.m in Sources */,
 				1100BF671D7FE6130058F230 /* HomePublicView.m in Sources */,
+				11C713C61DD4496100877E26 /* XLNotificationTransfer.m in Sources */,
 				1100BF951D7FE6E30058F230 /* AFHTTPSessionManager.m in Sources */,
 				1100BFA31D7FE6E30058F230 /* UIRefreshControl+AFNetworking.m in Sources */,
 				110AEE171DD1C43F00F70013 /* SpecsModel.m in Sources */,
@@ -1483,6 +1504,7 @@
 				0758E9A81D6FF37A00E7FCE7 /* FMDatabasePool.m in Sources */,
 				0758E9A91D6FF37A00E7FCE7 /* FMDatabaseQueue.m in Sources */,
 				11D36A8A1D751AFC00247B10 /* HanyuPinyinOutputFormat.m in Sources */,
+				11C713C91DD4498900877E26 /* XLNotificationTransferDemoViewController.m in Sources */,
 				1117A7161D7FB45000B56974 /* FPSShowLabel.m in Sources */,
 				0758E9CD1D6FF37A00E7FCE7 /* SDWebImageDownloader.m in Sources */,
 				1100BF9B1D7FE6E30058F230 /* NetworkState.m in Sources */,

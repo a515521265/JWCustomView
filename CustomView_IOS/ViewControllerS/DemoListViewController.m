@@ -60,7 +60,7 @@
                       [DemoModel itemWithDcit:@{@"title":@"HTMLDemoViewController",@"demoDescribe":@"测试html文件",@"className":@"HTMLDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"WKWebViewDemoViewController",@"demoDescribe":@"wkwebviewDemo",@"className":@"WKWebViewDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"JWTextViewDemoViewController",@"demoDescribe":@"TextViewDemo",@"className":@"JWTextViewDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"ShoppingCartDemoViewController",@"demoDescribe":@"购物车动画",@"className":@"ShoppingCartDemoViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"XLNotificationTransferDemoViewController",@"demoDescribe":@"通知封装",@"className":@"XLNotificationTransferDemoViewController"}]
                       ];
     
     
