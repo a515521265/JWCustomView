@@ -151,6 +151,7 @@
 		118E0AA91DBF34B00079569B /* JWDemo.js in Resources */ = {isa = PBXBuildFile; fileRef = 118E0AA81DBF34B00079569B /* JWDemo.js */; };
 		118E0AAC1DBF356B0079569B /* JSPatchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */; };
 		118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAE1DBF374F0079569B /* TooltipView.m */; };
+		1194B1471DD55725008473CF /* UIImage+ColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1194B1461DD55725008473CF /* UIImage+ColorImage.m */; };
 		11C713C61DD4496100877E26 /* XLNotificationTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C713C41DD4496100877E26 /* XLNotificationTransfer.m */; };
 		11C713C91DD4498900877E26 /* XLNotificationTransferDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C713C81DD4498900877E26 /* XLNotificationTransferDemoViewController.m */; };
 		11CB8BB91DC054B90051FB62 /* accIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BB81DC054B90051FB62 /* accIndex.html */; };
@@ -476,6 +477,8 @@
 		118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchDemoViewController.m; sourceTree = "<group>"; };
 		118E0AAD1DBF374F0079569B /* TooltipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TooltipView.h; sourceTree = "<group>"; };
 		118E0AAE1DBF374F0079569B /* TooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipView.m; sourceTree = "<group>"; };
+		1194B1451DD55725008473CF /* UIImage+ColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorImage.h"; sourceTree = "<group>"; };
+		1194B1461DD55725008473CF /* UIImage+ColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorImage.m"; sourceTree = "<group>"; };
 		11C713C31DD4496100877E26 /* XLNotificationTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNotificationTransfer.h; sourceTree = "<group>"; };
 		11C713C41DD4496100877E26 /* XLNotificationTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNotificationTransfer.m; sourceTree = "<group>"; };
 		11C713C51DD4496100877E26 /* XLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRuntime.h; sourceTree = "<group>"; };
@@ -914,6 +917,8 @@
 		0758E9871D6FF37A00E7FCE7 /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				1194B1451DD55725008473CF /* UIImage+ColorImage.h */,
+				1194B1461DD55725008473CF /* UIImage+ColorImage.m */,
 				118E0AAD1DBF374F0079569B /* TooltipView.h */,
 				118E0AAE1DBF374F0079569B /* TooltipView.m */,
 				1100BF681D7FE64F0058F230 /* AdView.h */,
@@ -1481,6 +1486,7 @@
 				0758E9C01D6FF37A00E7FCE7 /* NSObject+MJKeyValue.m in Sources */,
 				1100BFB51D7FEB3B0058F230 /* YYImage.m in Sources */,
 				0758E99F1D6FF37A00E7FCE7 /* DemoListViewController.m in Sources */,
+				1194B1471DD55725008473CF /* UIImage+ColorImage.m in Sources */,
 				0758E9BF1D6FF37A00E7FCE7 /* NSObject+MJCoding.m in Sources */,
 				1100BFA01D7FE6E30058F230 /* UIButton+AFNetworking.m in Sources */,
 				0758E9AE1D6FF37A00E7FCE7 /* YTKKeyValueStore.m in Sources */,

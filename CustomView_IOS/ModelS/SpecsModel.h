@@ -17,3 +17,16 @@
 @property (nonatomic,assign) NSInteger specsid; //规格id
 
 @end
+
+
+@interface LayoutModel : NSObject
+
+@property (nonatomic,strong) NSString * image;
+
+@property (nonatomic,strong) NSString * title;
+
+@property (nonatomic,assign) NSInteger pid;
+
+@property (nonatomic,strong) NSString * clasStr;
+
+@end
