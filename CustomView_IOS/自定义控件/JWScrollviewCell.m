@@ -73,15 +73,13 @@
     
     self.downLine.height = downSpacing;
     
-    [self layoutSubviews];
+    [self refreshSubviews];
 }
 
--(void)layoutSubviews{
-    
+-(void)refreshSubviews{
     self.contentView.y = CGRectGetMaxY(self.upLine.frame);
     self.downLine.y = CGRectGetMaxY(self.contentView.frame);
-    self.height = CGRectGetMaxY( self.downLine.frame);
-    
+    self.height = CGRectGetMaxY(self.downLine.frame);
 }
 
 -(void)setLineColor:(UIColor *)lineColor{
