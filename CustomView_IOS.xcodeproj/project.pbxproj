@@ -152,6 +152,8 @@
 		118E0AAC1DBF356B0079569B /* JSPatchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAB1DBF356B0079569B /* JSPatchDemoViewController.m */; };
 		118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAE1DBF374F0079569B /* TooltipView.m */; };
 		1194B1471DD55725008473CF /* UIImage+ColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1194B1461DD55725008473CF /* UIImage+ColorImage.m */; };
+		11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310C1DF02B000077FF9D /* HelperUtil.m */; };
+		11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */; };
 		11C713C61DD4496100877E26 /* XLNotificationTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C713C41DD4496100877E26 /* XLNotificationTransfer.m */; };
 		11C713C91DD4498900877E26 /* XLNotificationTransferDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C713C81DD4498900877E26 /* XLNotificationTransferDemoViewController.m */; };
 		11CB8BB91DC054B90051FB62 /* accIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BB81DC054B90051FB62 /* accIndex.html */; };
@@ -479,6 +481,10 @@
 		118E0AAE1DBF374F0079569B /* TooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TooltipView.m; sourceTree = "<group>"; };
 		1194B1451DD55725008473CF /* UIImage+ColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorImage.h"; sourceTree = "<group>"; };
 		1194B1461DD55725008473CF /* UIImage+ColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorImage.m"; sourceTree = "<group>"; };
+		11BC310B1DF02B000077FF9D /* HelperUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperUtil.h; sourceTree = "<group>"; };
+		11BC310C1DF02B000077FF9D /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
+		11BC310E1DF02B170077FF9D /* NSDate+LXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LXExtension.h"; sourceTree = "<group>"; };
+		11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LXExtension.m"; sourceTree = "<group>"; };
 		11C713C31DD4496100877E26 /* XLNotificationTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNotificationTransfer.h; sourceTree = "<group>"; };
 		11C713C41DD4496100877E26 /* XLNotificationTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNotificationTransfer.m; sourceTree = "<group>"; };
 		11C713C51DD4496100877E26 /* XLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRuntime.h; sourceTree = "<group>"; };
@@ -587,6 +593,7 @@
 		0758E8EA1D6FF37A00E7FCE7 /* CustomView_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				11BC310A1DF02AFB0077FF9D /* Tools */,
 				110AEE181DD2B0A300F70013 /* View */,
 				0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */,
 				0758E9871D6FF37A00E7FCE7 /* 自定义控件 */,
@@ -1148,6 +1155,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		11BC310A1DF02AFB0077FF9D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				11BC310E1DF02B170077FF9D /* NSDate+LXExtension.h */,
+				11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */,
+				11BC310B1DF02B000077FF9D /* HelperUtil.h */,
+				11BC310C1DF02B000077FF9D /* HelperUtil.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		11C713C21DD4495300877E26 /* XLNotificationTransfer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1428,6 +1446,7 @@
 				11D36A8E1D751AFC00247B10 /* PinyinHelper.m in Sources */,
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
 				0758E9C31D6FF37A00E7FCE7 /* PDTSimpleCalendarViewCell.m in Sources */,
+				11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */,
 				0758E9BE1D6FF37A00E7FCE7 /* NSObject+MJClass.m in Sources */,
 				1100BFD21D80FF030058F230 /* TAdLaunchImageView.m in Sources */,
 				110AEE081DD0617800F70013 /* JWTextView.m in Sources */,
@@ -1472,6 +1491,7 @@
 				1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */,
 				0758E9DC1D6FF37A00E7FCE7 /* JWLabel.m in Sources */,
 				11FBF6071D86896500208715 /* JWScrollView.m in Sources */,
+				11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */,
 				1100BFA21D7FE6E30058F230 /* UIProgressView+AFNetworking.m in Sources */,
 				11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */,
 				0758E99C1D6FF37A00E7FCE7 /* DemoModel.m in Sources */,
