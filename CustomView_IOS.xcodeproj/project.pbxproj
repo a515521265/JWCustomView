@@ -154,6 +154,7 @@
 		1194B1471DD55725008473CF /* UIImage+ColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1194B1461DD55725008473CF /* UIImage+ColorImage.m */; };
 		11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310C1DF02B000077FF9D /* HelperUtil.m */; };
 		11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */; };
+		11BC31131DF02BF30077FF9D /* NSDictionary+PropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */; };
 		11C713C61DD4496100877E26 /* XLNotificationTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C713C41DD4496100877E26 /* XLNotificationTransfer.m */; };
 		11C713C91DD4498900877E26 /* XLNotificationTransferDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C713C81DD4498900877E26 /* XLNotificationTransferDemoViewController.m */; };
 		11CB8BB91DC054B90051FB62 /* accIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BB81DC054B90051FB62 /* accIndex.html */; };
@@ -485,6 +486,8 @@
 		11BC310C1DF02B000077FF9D /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
 		11BC310E1DF02B170077FF9D /* NSDate+LXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LXExtension.h"; sourceTree = "<group>"; };
 		11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LXExtension.m"; sourceTree = "<group>"; };
+		11BC31111DF02BF30077FF9D /* NSDictionary+PropertyCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PropertyCode.h"; sourceTree = "<group>"; };
+		11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PropertyCode.m"; sourceTree = "<group>"; };
 		11C713C31DD4496100877E26 /* XLNotificationTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNotificationTransfer.h; sourceTree = "<group>"; };
 		11C713C41DD4496100877E26 /* XLNotificationTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNotificationTransfer.m; sourceTree = "<group>"; };
 		11C713C51DD4496100877E26 /* XLRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRuntime.h; sourceTree = "<group>"; };
@@ -1162,6 +1165,8 @@
 				11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */,
 				11BC310B1DF02B000077FF9D /* HelperUtil.h */,
 				11BC310C1DF02B000077FF9D /* HelperUtil.m */,
+				11BC31111DF02BF30077FF9D /* NSDictionary+PropertyCode.h */,
+				11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1480,6 +1485,7 @@
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
 				1100BF6C1D7FE64F0058F230 /* AdView.m in Sources */,
 				11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */,
+				11BC31131DF02BF30077FF9D /* NSDictionary+PropertyCode.m in Sources */,
 				0758E9A21D6FF37A00E7FCE7 /* KeyboardDemoViewController.m in Sources */,
 				11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */,
 				11D36AA71D75350000247B10 /* ZJSwitch.m in Sources */,
