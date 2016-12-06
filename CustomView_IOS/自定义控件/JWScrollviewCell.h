@@ -24,4 +24,6 @@
 
 -(void)setUPSpacing:(CGFloat)upSpacing andDownSpacing:(CGFloat)downSpacing;
 
+-(void)refreshSubviews;
+
 @end
