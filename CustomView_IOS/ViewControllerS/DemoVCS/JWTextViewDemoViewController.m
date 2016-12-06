@@ -42,12 +42,13 @@
     textView.backgroundColor = [UIColor redColor];
     textView.importStyle = TextViewImportStyleChina;
     textView.maxlength = 100;
-    textView.font = [UIFont systemFontOfSize:20];
+    textView.font = [UIFont systemFontOfSize:25];
     textView.importBackString = ^(NSString * backStr){
 //        NSLog(@"回调----%@",backStr);
     };
     textView.backHeight = ^(CGFloat height){
         cell1.contentView.height = height;
+        [cell1 refreshSubviews];
     };
     [cell1.contentView addSubview:textView];
     [cell1 setUPSpacing:5 andDownSpacing:5];
