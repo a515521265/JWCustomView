@@ -158,6 +158,25 @@
 		11AF4FF11E1B52A10096B831 /* ZLYWaterWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FF01E1B52A10096B831 /* ZLYWaterWave.m */; };
 		11AF4FF61E1B57AD0096B831 /* NSArray+WFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FF31E1B57AD0096B831 /* NSArray+WFExtension.m */; };
 		11AF4FF71E1B57AD0096B831 /* NSMutableArray+WFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FF51E1B57AD0096B831 /* NSMutableArray+WFExtension.m */; };
+		11AF501F1E1B76830096B831 /* JxbBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FFA1E1B76830096B831 /* JxbBaseVC.m */; };
+		11AF50201E1B76830096B831 /* JxbContentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FFC1E1B76830096B831 /* JxbContentVC.m */; };
+		11AF50211E1B76830096B831 /* JxbCrashHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FFE1E1B76830096B831 /* JxbCrashHelper.m */; };
+		11AF50221E1B76830096B831 /* JxbCrashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50001E1B76830096B831 /* JxbCrashVC.m */; };
+		11AF50231E1B76830096B831 /* JxbDebugTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50021E1B76830096B831 /* JxbDebugTool.m */; };
+		11AF50241E1B76830096B831 /* JxbDebugVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50041E1B76830096B831 /* JxbDebugVC.m */; };
+		11AF50251E1B76830096B831 /* JxbHttpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50061E1B76830096B831 /* JxbHttpCell.m */; };
+		11AF50261E1B76830096B831 /* JxbHttpDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50081E1B76830096B831 /* JxbHttpDatasource.m */; };
+		11AF50271E1B76830096B831 /* JxbHttpDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF500A1E1B76830096B831 /* JxbHttpDetailVC.m */; };
+		11AF50281E1B76830096B831 /* JxbHttpProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF500C1E1B76830096B831 /* JxbHttpProtocol.m */; };
+		11AF50291E1B76830096B831 /* JxbHttpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF500E1E1B76830096B831 /* JxbHttpVC.m */; };
+		11AF502A1E1B76830096B831 /* JxbLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50101E1B76830096B831 /* JxbLogVC.m */; };
+		11AF502B1E1B76830096B831 /* JxbMemoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50121E1B76830096B831 /* JxbMemoryHelper.m */; };
+		11AF502C1E1B76830096B831 /* JxbResponseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50141E1B76830096B831 /* JxbResponseVC.m */; };
+		11AF502D1E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50161E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.m */; };
+		11AF502E1E1B76830096B831 /* NSURLRequest+Identify.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50181E1B76830096B831 /* NSURLRequest+Identify.m */; };
+		11AF502F1E1B76830096B831 /* NSURLResponse+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF501A1E1B76830096B831 /* NSURLResponse+Data.m */; };
+		11AF50301E1B76830096B831 /* NSURLSessionTask+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF501C1E1B76830096B831 /* NSURLSessionTask+Data.m */; };
+		11AF50311E1B76830096B831 /* NSURLSessionTask+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF501E1E1B76830096B831 /* NSURLSessionTask+Swizzling.m */; };
 		11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310C1DF02B000077FF9D /* HelperUtil.m */; };
 		11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */; };
 		11BC31131DF02BF30077FF9D /* NSDictionary+PropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */; };
@@ -500,6 +519,44 @@
 		11AF4FF31E1B57AD0096B831 /* NSArray+WFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WFExtension.m"; sourceTree = "<group>"; };
 		11AF4FF41E1B57AD0096B831 /* NSMutableArray+WFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WFExtension.h"; sourceTree = "<group>"; };
 		11AF4FF51E1B57AD0096B831 /* NSMutableArray+WFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WFExtension.m"; sourceTree = "<group>"; };
+		11AF4FF91E1B76830096B831 /* JxbBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbBaseVC.h; sourceTree = "<group>"; };
+		11AF4FFA1E1B76830096B831 /* JxbBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbBaseVC.m; sourceTree = "<group>"; };
+		11AF4FFB1E1B76830096B831 /* JxbContentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbContentVC.h; sourceTree = "<group>"; };
+		11AF4FFC1E1B76830096B831 /* JxbContentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbContentVC.m; sourceTree = "<group>"; };
+		11AF4FFD1E1B76830096B831 /* JxbCrashHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbCrashHelper.h; sourceTree = "<group>"; };
+		11AF4FFE1E1B76830096B831 /* JxbCrashHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbCrashHelper.m; sourceTree = "<group>"; };
+		11AF4FFF1E1B76830096B831 /* JxbCrashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbCrashVC.h; sourceTree = "<group>"; };
+		11AF50001E1B76830096B831 /* JxbCrashVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbCrashVC.m; sourceTree = "<group>"; };
+		11AF50011E1B76830096B831 /* JxbDebugTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbDebugTool.h; sourceTree = "<group>"; };
+		11AF50021E1B76830096B831 /* JxbDebugTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbDebugTool.m; sourceTree = "<group>"; };
+		11AF50031E1B76830096B831 /* JxbDebugVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbDebugVC.h; sourceTree = "<group>"; };
+		11AF50041E1B76830096B831 /* JxbDebugVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbDebugVC.m; sourceTree = "<group>"; };
+		11AF50051E1B76830096B831 /* JxbHttpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbHttpCell.h; sourceTree = "<group>"; };
+		11AF50061E1B76830096B831 /* JxbHttpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbHttpCell.m; sourceTree = "<group>"; };
+		11AF50071E1B76830096B831 /* JxbHttpDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbHttpDatasource.h; sourceTree = "<group>"; };
+		11AF50081E1B76830096B831 /* JxbHttpDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbHttpDatasource.m; sourceTree = "<group>"; };
+		11AF50091E1B76830096B831 /* JxbHttpDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbHttpDetailVC.h; sourceTree = "<group>"; };
+		11AF500A1E1B76830096B831 /* JxbHttpDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbHttpDetailVC.m; sourceTree = "<group>"; };
+		11AF500B1E1B76830096B831 /* JxbHttpProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbHttpProtocol.h; sourceTree = "<group>"; };
+		11AF500C1E1B76830096B831 /* JxbHttpProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbHttpProtocol.m; sourceTree = "<group>"; };
+		11AF500D1E1B76830096B831 /* JxbHttpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbHttpVC.h; sourceTree = "<group>"; };
+		11AF500E1E1B76830096B831 /* JxbHttpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbHttpVC.m; sourceTree = "<group>"; };
+		11AF500F1E1B76830096B831 /* JxbLogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbLogVC.h; sourceTree = "<group>"; };
+		11AF50101E1B76830096B831 /* JxbLogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbLogVC.m; sourceTree = "<group>"; };
+		11AF50111E1B76830096B831 /* JxbMemoryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbMemoryHelper.h; sourceTree = "<group>"; };
+		11AF50121E1B76830096B831 /* JxbMemoryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbMemoryHelper.m; sourceTree = "<group>"; };
+		11AF50131E1B76830096B831 /* JxbResponseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbResponseVC.h; sourceTree = "<group>"; };
+		11AF50141E1B76830096B831 /* JxbResponseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbResponseVC.m; sourceTree = "<group>"; };
+		11AF50151E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.h; sourceTree = "<group>"; };
+		11AF50161E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.m; sourceTree = "<group>"; };
+		11AF50171E1B76830096B831 /* NSURLRequest+Identify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+Identify.h"; sourceTree = "<group>"; };
+		11AF50181E1B76830096B831 /* NSURLRequest+Identify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Identify.m"; sourceTree = "<group>"; };
+		11AF50191E1B76830096B831 /* NSURLResponse+Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLResponse+Data.h"; sourceTree = "<group>"; };
+		11AF501A1E1B76830096B831 /* NSURLResponse+Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLResponse+Data.m"; sourceTree = "<group>"; };
+		11AF501B1E1B76830096B831 /* NSURLSessionTask+Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionTask+Data.h"; sourceTree = "<group>"; };
+		11AF501C1E1B76830096B831 /* NSURLSessionTask+Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionTask+Data.m"; sourceTree = "<group>"; };
+		11AF501D1E1B76830096B831 /* NSURLSessionTask+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionTask+Swizzling.h"; sourceTree = "<group>"; };
+		11AF501E1E1B76830096B831 /* NSURLSessionTask+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionTask+Swizzling.m"; sourceTree = "<group>"; };
 		11BC310B1DF02B000077FF9D /* HelperUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperUtil.h; sourceTree = "<group>"; };
 		11BC310C1DF02B000077FF9D /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
 		11BC310E1DF02B170077FF9D /* NSDate+LXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LXExtension.h"; sourceTree = "<group>"; };
@@ -722,6 +779,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				11AF4FF81E1B76830096B831 /* JxbDebugTool */,
 				11C713C21DD4495300877E26 /* XLNotificationTransfer */,
 				112296A31DC71A27002D27E4 /* MBProgressHUD */,
 				118E0AA21DBF33B50079569B /* JSPatch */,
@@ -1178,6 +1236,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		11AF4FF81E1B76830096B831 /* JxbDebugTool */ = {
+			isa = PBXGroup;
+			children = (
+				11AF4FF91E1B76830096B831 /* JxbBaseVC.h */,
+				11AF4FFA1E1B76830096B831 /* JxbBaseVC.m */,
+				11AF4FFB1E1B76830096B831 /* JxbContentVC.h */,
+				11AF4FFC1E1B76830096B831 /* JxbContentVC.m */,
+				11AF4FFD1E1B76830096B831 /* JxbCrashHelper.h */,
+				11AF4FFE1E1B76830096B831 /* JxbCrashHelper.m */,
+				11AF4FFF1E1B76830096B831 /* JxbCrashVC.h */,
+				11AF50001E1B76830096B831 /* JxbCrashVC.m */,
+				11AF50011E1B76830096B831 /* JxbDebugTool.h */,
+				11AF50021E1B76830096B831 /* JxbDebugTool.m */,
+				11AF50031E1B76830096B831 /* JxbDebugVC.h */,
+				11AF50041E1B76830096B831 /* JxbDebugVC.m */,
+				11AF50051E1B76830096B831 /* JxbHttpCell.h */,
+				11AF50061E1B76830096B831 /* JxbHttpCell.m */,
+				11AF50071E1B76830096B831 /* JxbHttpDatasource.h */,
+				11AF50081E1B76830096B831 /* JxbHttpDatasource.m */,
+				11AF50091E1B76830096B831 /* JxbHttpDetailVC.h */,
+				11AF500A1E1B76830096B831 /* JxbHttpDetailVC.m */,
+				11AF500B1E1B76830096B831 /* JxbHttpProtocol.h */,
+				11AF500C1E1B76830096B831 /* JxbHttpProtocol.m */,
+				11AF500D1E1B76830096B831 /* JxbHttpVC.h */,
+				11AF500E1E1B76830096B831 /* JxbHttpVC.m */,
+				11AF500F1E1B76830096B831 /* JxbLogVC.h */,
+				11AF50101E1B76830096B831 /* JxbLogVC.m */,
+				11AF50111E1B76830096B831 /* JxbMemoryHelper.h */,
+				11AF50121E1B76830096B831 /* JxbMemoryHelper.m */,
+				11AF50131E1B76830096B831 /* JxbResponseVC.h */,
+				11AF50141E1B76830096B831 /* JxbResponseVC.m */,
+				11AF50151E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.h */,
+				11AF50161E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.m */,
+				11AF50171E1B76830096B831 /* NSURLRequest+Identify.h */,
+				11AF50181E1B76830096B831 /* NSURLRequest+Identify.m */,
+				11AF50191E1B76830096B831 /* NSURLResponse+Data.h */,
+				11AF501A1E1B76830096B831 /* NSURLResponse+Data.m */,
+				11AF501B1E1B76830096B831 /* NSURLSessionTask+Data.h */,
+				11AF501C1E1B76830096B831 /* NSURLSessionTask+Data.m */,
+				11AF501D1E1B76830096B831 /* NSURLSessionTask+Swizzling.h */,
+				11AF501E1E1B76830096B831 /* NSURLSessionTask+Swizzling.m */,
+			);
+			path = JxbDebugTool;
+			sourceTree = "<group>";
+		};
 		11BC310A1DF02AFB0077FF9D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -1434,9 +1537,11 @@
 				118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */,
 				1100BFA11D7FE6E30058F230 /* UIImageView+AFNetworking.m in Sources */,
 				0758E9A01D6FF37A00E7FCE7 /* BaseViewController.m in Sources */,
+				11AF50311E1B76830096B831 /* NSURLSessionTask+Swizzling.m in Sources */,
 				114352171D7FB772009EE8F8 /* GradientAnimationView.m in Sources */,
 				1100BF9E1D7FE6E30058F230 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				112296BE1DC71A27002D27E4 /* MBProgressHUD.m in Sources */,
+				11AF50291E1B76830096B831 /* JxbHttpVC.m in Sources */,
 				0758E9D61D6FF37A00E7FCE7 /* UIImageView+WebCache.m in Sources */,
 				1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */,
 				0758E9CE1D6FF37A00E7FCE7 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1459,8 +1564,10 @@
 				0758E9CB1D6FF37A00E7FCE7 /* SDWebImageCompat.m in Sources */,
 				0758E9DE1D6FF37A00E7FCE7 /* NSObject+Extension.m in Sources */,
 				1100BF991D7FE6E30058F230 /* AFURLResponseSerialization.m in Sources */,
+				11AF50301E1B76830096B831 /* NSURLSessionTask+Data.m in Sources */,
 				114352231D7FBEB1009EE8F8 /* UITabBar+Badge.m in Sources */,
 				0758E9AF1D6FF37A00E7FCE7 /* JPSCameraButton.m in Sources */,
+				11AF50281E1B76830096B831 /* JxbHttpProtocol.m in Sources */,
 				1100BFCF1D80FEA70058F230 /* UIView+TYLaunchAnimation.m in Sources */,
 				0758E9BD1D6FF37A00E7FCE7 /* MJPropertyType.m in Sources */,
 				0758E9DB1D6FF37A00E7FCE7 /* JWAlertView.m in Sources */,
@@ -1468,6 +1575,7 @@
 				0758E9CA1D6FF37A00E7FCE7 /* SDImageCache.m in Sources */,
 				11D36A891D751AFC00247B10 /* ChineseToPinyinResource.m in Sources */,
 				0758E9A41D6FF37A00E7FCE7 /* XYPieChartDemoViewController.m in Sources */,
+				11AF50271E1B76830096B831 /* JxbHttpDetailVC.m in Sources */,
 				0758E9C61D6FF37A00E7FCE7 /* PDTSimpleCalendarViewHeader.m in Sources */,
 				1100BFB61D7FEB3B0058F230 /* YYImageCoder.m in Sources */,
 				11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */,
@@ -1475,6 +1583,7 @@
 				0758E9C21D6FF37A00E7FCE7 /* NSString+MJExtension.m in Sources */,
 				0758E9CC1D6FF37A00E7FCE7 /* SDWebImageDecoder.m in Sources */,
 				0758E9A61D6FF37A00E7FCE7 /* FMDatabase.m in Sources */,
+				11AF50241E1B76830096B831 /* JxbDebugVC.m in Sources */,
 				0758E9D51D6FF37A00E7FCE7 /* UIImageView+HighlightedWebCache.m in Sources */,
 				0758E9C71D6FF37A00E7FCE7 /* PDTSimpleCalendarViewWeekdayHeader.m in Sources */,
 				1100BFA71D7FE72B0058F230 /* bannerData.m in Sources */,
@@ -1510,6 +1619,7 @@
 				0758E9D81D6FF37A00E7FCE7 /* NSObject+YYModel.m in Sources */,
 				0758E9B61D6FF37A00E7FCE7 /* MDRadialProgressView.m in Sources */,
 				0758E9AA1D6FF37A00E7FCE7 /* FMResultSet.m in Sources */,
+				11AF50231E1B76830096B831 /* JxbDebugTool.m in Sources */,
 				11AF4FF61E1B57AD0096B831 /* NSArray+WFExtension.m in Sources */,
 				1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */,
 				0758E9D91D6FF37A00E7FCE7 /* YYClassInfo.m in Sources */,
@@ -1522,9 +1632,11 @@
 				11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */,
 				11BC31131DF02BF30077FF9D /* NSDictionary+PropertyCode.m in Sources */,
 				0758E9A21D6FF37A00E7FCE7 /* KeyboardDemoViewController.m in Sources */,
+				11AF50251E1B76830096B831 /* JxbHttpCell.m in Sources */,
 				11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */,
 				11D36AA71D75350000247B10 /* ZJSwitch.m in Sources */,
 				1100BFB31D7FEB3B0058F230 /* YYAnimatedImageView.m in Sources */,
+				11AF50221E1B76830096B831 /* JxbCrashVC.m in Sources */,
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
 				0758E9DF1D6FF37A00E7FCE7 /* UIView+Extension.m in Sources */,
 				0758E99B1D6FF37A00E7FCE7 /* main.m in Sources */,
@@ -1535,20 +1647,26 @@
 				11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */,
 				1100BFA21D7FE6E30058F230 /* UIProgressView+AFNetworking.m in Sources */,
 				11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */,
+				11AF50261E1B76830096B831 /* JxbHttpDatasource.m in Sources */,
 				0758E99C1D6FF37A00E7FCE7 /* DemoModel.m in Sources */,
 				1100BF981D7FE6E30058F230 /* AFURLRequestSerialization.m in Sources */,
 				0758E9C51D6FF37A00E7FCE7 /* PDTSimpleCalendarViewFlowLayout.m in Sources */,
 				11D36A991D752B5700247B10 /* LocalCheckBankDemoViewController.m in Sources */,
+				11AF502E1E1B76830096B831 /* NSURLRequest+Identify.m in Sources */,
 				1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */,
+				11AF502C1E1B76830096B831 /* JxbResponseVC.m in Sources */,
 				0758E9AD1D6FF37A00E7FCE7 /* Foundation+Log.m in Sources */,
 				1100BFB71D7FEB3B0058F230 /* YYSpriteSheetImage.m in Sources */,
 				1100BFCE1D80FEA70058F230 /* UIImage+TYLaunchImage.m in Sources */,
+				11AF502D1E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.m in Sources */,
 				11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */,
 				0758E9C01D6FF37A00E7FCE7 /* NSObject+MJKeyValue.m in Sources */,
 				1100BFB51D7FEB3B0058F230 /* YYImage.m in Sources */,
 				0758E99F1D6FF37A00E7FCE7 /* DemoListViewController.m in Sources */,
 				1194B1471DD55725008473CF /* UIImage+ColorImage.m in Sources */,
+				11AF502F1E1B76830096B831 /* NSURLResponse+Data.m in Sources */,
 				0758E9BF1D6FF37A00E7FCE7 /* NSObject+MJCoding.m in Sources */,
+				11AF502B1E1B76830096B831 /* JxbMemoryHelper.m in Sources */,
 				1100BFA01D7FE6E30058F230 /* UIButton+AFNetworking.m in Sources */,
 				0758E9AE1D6FF37A00E7FCE7 /* YTKKeyValueStore.m in Sources */,
 				1100BF671D7FE6130058F230 /* HomePublicView.m in Sources */,
@@ -1560,13 +1678,16 @@
 				0758E9A11D6FF37A00E7FCE7 /* CameraDemoViewController.m in Sources */,
 				0758E9A31D6FF37A00E7FCE7 /* WebViewDemoViewController.m in Sources */,
 				0758E9BC1D6FF37A00E7FCE7 /* MJPropertyKey.m in Sources */,
+				11AF502A1E1B76830096B831 /* JxbLogVC.m in Sources */,
 				110AEE0E1DD1728200F70013 /* ShoppingCartDemoViewController.m in Sources */,
 				0758E9B21D6FF37A00E7FCE7 /* JPSVolumeButtonHandler.m in Sources */,
+				11AF501F1E1B76830096B831 /* JxbBaseVC.m in Sources */,
 				0758E9BA1D6FF37A00E7FCE7 /* MJFoundation.m in Sources */,
 				1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */,
 				0758E9C91D6FF37A00E7FCE7 /* NSData+ImageContentType.m in Sources */,
 				0758E9B81D6FF37A00E7FCE7 /* MJDictionaryCache.m in Sources */,
 				11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */,
+				11AF50211E1B76830096B831 /* JxbCrashHelper.m in Sources */,
 				0758E9D11D6FF37A00E7FCE7 /* UIButton+WebCache.m in Sources */,
 				0758E9A81D6FF37A00E7FCE7 /* FMDatabasePool.m in Sources */,
 				0758E9A91D6FF37A00E7FCE7 /* FMDatabaseQueue.m in Sources */,
@@ -1574,6 +1695,7 @@
 				11C713C91DD4498900877E26 /* XLNotificationTransferDemoViewController.m in Sources */,
 				1117A7161D7FB45000B56974 /* FPSShowLabel.m in Sources */,
 				0758E9CD1D6FF37A00E7FCE7 /* SDWebImageDownloader.m in Sources */,
+				11AF50201E1B76830096B831 /* JxbContentVC.m in Sources */,
 				1100BF9B1D7FE6E30058F230 /* NetworkState.m in Sources */,
 				112296B31DC71A27002D27E4 /* customHUD.m in Sources */,
 				11AF4FE81E1B45080096B831 /* MMPlaceHolder.m in Sources */,
