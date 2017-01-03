@@ -61,12 +61,13 @@
                       [DemoModel itemWithDcit:@{@"title":@"WKWebViewDemoViewController",@"demoDescribe":@"wkwebviewDemo",@"className":@"WKWebViewDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"JWTextViewDemoViewController",@"demoDescribe":@"TextViewDemo",@"className":@"JWTextViewDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"XLNotificationTransferDemoViewController",@"demoDescribe":@"通知封装",@"className":@"XLNotificationTransferDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"ZLYViewController",@"demoDescribe":@"水波纹效果封装",@"className":@"ZLYViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"ZLYViewController",@"demoDescribe":@"水波纹效果封装",@"className":@"ZLYViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"LoadingDemoViewController",@"demoDescribe":@"加载提示",@"className":@"LoadingDemoViewController"}]
                       ];
     
     
     
-    
+    [self setStatusBarBackgroundColor:[UIColor blueColor]];
 }
 
 #pragma mark - 设置cell的样式
@@ -88,7 +89,36 @@
     }
     [self.navigationController pushViewController:viewController  animated:true];
     
+    
+    //modal透明界面
+//    UIViewController *vc = [[UIViewController alloc] init];
+//    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:vc];
+//    
+//    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+//    {
+//        na.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+//    }
+//    else
+//    {
+//        self.modalPresentationStyle=UIModalPresentationCurrentContext;
+//    }
+//    
+//    [self presentViewController:na animated:YES completion:nil];
+    
+    
 }
+
+
+- (void)setStatusBarBackgroundColor:(UIColor *)color
+{
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    
+    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)])
+    {
+        statusBar.backgroundColor = color;
+    }
+}
+
 
 #pragma mark - 设置section的个数
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

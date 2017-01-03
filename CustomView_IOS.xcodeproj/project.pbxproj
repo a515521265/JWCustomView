@@ -177,6 +177,8 @@
 		11AF502F1E1B76830096B831 /* NSURLResponse+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF501A1E1B76830096B831 /* NSURLResponse+Data.m */; };
 		11AF50301E1B76830096B831 /* NSURLSessionTask+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF501C1E1B76830096B831 /* NSURLSessionTask+Data.m */; };
 		11AF50311E1B76830096B831 /* NSURLSessionTask+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF501E1E1B76830096B831 /* NSURLSessionTask+Swizzling.m */; };
+		11AF506E1E1B95DD0096B831 /* XCMStatePrompt.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF506D1E1B95DD0096B831 /* XCMStatePrompt.m */; };
+		11AF50731E1B96BF0096B831 /* LoadingDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF50721E1B96BF0096B831 /* LoadingDemoViewController.m */; };
 		11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310C1DF02B000077FF9D /* HelperUtil.m */; };
 		11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */; };
 		11BC31131DF02BF30077FF9D /* NSDictionary+PropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */; };
@@ -557,6 +559,10 @@
 		11AF501C1E1B76830096B831 /* NSURLSessionTask+Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionTask+Data.m"; sourceTree = "<group>"; };
 		11AF501D1E1B76830096B831 /* NSURLSessionTask+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionTask+Swizzling.h"; sourceTree = "<group>"; };
 		11AF501E1E1B76830096B831 /* NSURLSessionTask+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionTask+Swizzling.m"; sourceTree = "<group>"; };
+		11AF506C1E1B95DD0096B831 /* XCMStatePrompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCMStatePrompt.h; sourceTree = "<group>"; };
+		11AF506D1E1B95DD0096B831 /* XCMStatePrompt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCMStatePrompt.m; sourceTree = "<group>"; };
+		11AF506F1E1B96100096B831 /* LoadingDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingDemoViewController.h; sourceTree = "<group>"; };
+		11AF50721E1B96BF0096B831 /* LoadingDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingDemoViewController.m; sourceTree = "<group>"; };
 		11BC310B1DF02B000077FF9D /* HelperUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperUtil.h; sourceTree = "<group>"; };
 		11BC310C1DF02B000077FF9D /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
 		11BC310E1DF02B170077FF9D /* NSDate+LXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LXExtension.h"; sourceTree = "<group>"; };
@@ -772,6 +778,8 @@
 				11C713C81DD4498900877E26 /* XLNotificationTransferDemoViewController.m */,
 				11AF4FEC1E1B52830096B831 /* ZLYViewController.h */,
 				11AF4FED1E1B52830096B831 /* ZLYViewController.m */,
+				11AF506F1E1B96100096B831 /* LoadingDemoViewController.h */,
+				11AF50721E1B96BF0096B831 /* LoadingDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1005,6 +1013,8 @@
 		0758E9871D6FF37A00E7FCE7 /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				11AF506C1E1B95DD0096B831 /* XCMStatePrompt.h */,
+				11AF506D1E1B95DD0096B831 /* XCMStatePrompt.m */,
 				1194B1451DD55725008473CF /* UIImage+ColorImage.h */,
 				1194B1461DD55725008473CF /* UIImage+ColorImage.m */,
 				118E0AAD1DBF374F0079569B /* TooltipView.h */,
@@ -1569,6 +1579,7 @@
 				0758E9AF1D6FF37A00E7FCE7 /* JPSCameraButton.m in Sources */,
 				11AF50281E1B76830096B831 /* JxbHttpProtocol.m in Sources */,
 				1100BFCF1D80FEA70058F230 /* UIView+TYLaunchAnimation.m in Sources */,
+				11AF506E1E1B95DD0096B831 /* XCMStatePrompt.m in Sources */,
 				0758E9BD1D6FF37A00E7FCE7 /* MJPropertyType.m in Sources */,
 				0758E9DB1D6FF37A00E7FCE7 /* JWAlertView.m in Sources */,
 				0758E9D01D6FF37A00E7FCE7 /* SDWebImagePrefetcher.m in Sources */,
@@ -1598,6 +1609,7 @@
 				110AEE081DD0617800F70013 /* JWTextView.m in Sources */,
 				11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */,
 				0758E9AC1D6FF37A00E7FCE7 /* MVVMStore.m in Sources */,
+				11AF50731E1B96BF0096B831 /* LoadingDemoViewController.m in Sources */,
 				114352201D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m in Sources */,
 				0758E9D31D6FF37A00E7FCE7 /* UIImage+MultiFormat.m in Sources */,
 				0758E9C81D6FF37A00E7FCE7 /* MKAnnotationView+WebCache.m in Sources */,
