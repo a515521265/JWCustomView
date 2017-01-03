@@ -15,6 +15,8 @@
 #import "TYLaunchFadeScaleAnimation.h"
 #import "UIImage+TYLaunchImage.h"
 #import "TAdLaunchImageView.h"
+//uidebug
+#import "MMPlaceHolder.h"
 
 @interface AppDelegate ()
 @property (nonatomic,strong) FPSLabelManager * showFPSLabel;
@@ -25,6 +27,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    
+    //using it for size debug
+    [MMPlaceHolderConfig defaultConfig].lineColor = [UIColor blackColor];
+    [MMPlaceHolderConfig defaultConfig].lineWidth = 0.5;
+    [MMPlaceHolderConfig defaultConfig].arrowSize = 5;
+    [MMPlaceHolderConfig defaultConfig].backColor = [UIColor clearColor];
+    [MMPlaceHolderConfig defaultConfig].frameWidth = 0;
+    [MMPlaceHolderConfig defaultConfig].visibleKindOfClasses = @[UIImageView.class,UILabel.class];
+    
+    //using it for frame debug
+    [MMPlaceHolderConfig defaultConfig].autoDisplay = YES;
+    [MMPlaceHolderConfig defaultConfig].autoDisplaySystemView = YES;
+    [MMPlaceHolderConfig defaultConfig].showArrow = YES;
+    [MMPlaceHolderConfig defaultConfig].showText = YES;
+    
+    //using it to control global visible
+    [MMPlaceHolderConfig defaultConfig].visible = NO;
+    
+    
     
 
     [[NSNotificationCenter defaultCenter] addObserver:self
