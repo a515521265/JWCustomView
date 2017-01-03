@@ -154,6 +154,8 @@
 		1194B1471DD55725008473CF /* UIImage+ColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1194B1461DD55725008473CF /* UIImage+ColorImage.m */; };
 		11AF4FE81E1B45080096B831 /* MMPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FE71E1B45080096B831 /* MMPlaceHolder.m */; };
 		11AF4FEB1E1B4A890096B831 /* UIColor+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FEA1E1B4A890096B831 /* UIColor+SDKit.m */; };
+		11AF4FEE1E1B52830096B831 /* ZLYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FED1E1B52830096B831 /* ZLYViewController.m */; };
+		11AF4FF11E1B52A10096B831 /* ZLYWaterWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FF01E1B52A10096B831 /* ZLYWaterWave.m */; };
 		11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310C1DF02B000077FF9D /* HelperUtil.m */; };
 		11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */; };
 		11BC31131DF02BF30077FF9D /* NSDictionary+PropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */; };
@@ -488,6 +490,10 @@
 		11AF4FE71E1B45080096B831 /* MMPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPlaceHolder.m; sourceTree = "<group>"; };
 		11AF4FE91E1B4A890096B831 /* UIColor+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SDKit.h"; sourceTree = "<group>"; };
 		11AF4FEA1E1B4A890096B831 /* UIColor+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SDKit.m"; sourceTree = "<group>"; };
+		11AF4FEC1E1B52830096B831 /* ZLYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLYViewController.h; sourceTree = "<group>"; };
+		11AF4FED1E1B52830096B831 /* ZLYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLYViewController.m; sourceTree = "<group>"; };
+		11AF4FEF1E1B52A10096B831 /* ZLYWaterWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLYWaterWave.h; sourceTree = "<group>"; };
+		11AF4FF01E1B52A10096B831 /* ZLYWaterWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLYWaterWave.m; sourceTree = "<group>"; };
 		11BC310B1DF02B000077FF9D /* HelperUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperUtil.h; sourceTree = "<group>"; };
 		11BC310C1DF02B000077FF9D /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
 		11BC310E1DF02B170077FF9D /* NSDate+LXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LXExtension.h"; sourceTree = "<group>"; };
@@ -701,6 +707,8 @@
 				110AEE0D1DD1728200F70013 /* ShoppingCartDemoViewController.m */,
 				11C713C71DD4498900877E26 /* XLNotificationTransferDemoViewController.h */,
 				11C713C81DD4498900877E26 /* XLNotificationTransferDemoViewController.m */,
+				11AF4FEC1E1B52830096B831 /* ZLYViewController.h */,
+				11AF4FED1E1B52830096B831 /* ZLYViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1177,6 +1185,8 @@
 				11BC310C1DF02B000077FF9D /* HelperUtil.m */,
 				11BC31111DF02BF30077FF9D /* NSDictionary+PropertyCode.h */,
 				11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */,
+				11AF4FEF1E1B52A10096B831 /* ZLYWaterWave.h */,
+				11AF4FF01E1B52A10096B831 /* ZLYWaterWave.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1432,6 +1442,7 @@
 				110AEE1B1DD2B0B300F70013 /* ShoppingCartCell.m in Sources */,
 				0758E9C11D6FF37A00E7FCE7 /* NSObject+MJProperty.m in Sources */,
 				1100BFCC1D80FEA70058F230 /* TYLaunchBaseAnimation.m in Sources */,
+				11AF4FF11E1B52A10096B831 /* ZLYWaterWave.m in Sources */,
 				11D36A8D1D751AFC00247B10 /* PinYinForObjc.m in Sources */,
 				1100BFB41D7FEB3B0058F230 /* YYFrameImage.m in Sources */,
 				11D36A931D75248D00247B10 /* ZFProgressView.m in Sources */,
@@ -1492,6 +1503,7 @@
 				0758E9D91D6FF37A00E7FCE7 /* YYClassInfo.m in Sources */,
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
 				5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */,
+				11AF4FEE1E1B52830096B831 /* ZLYViewController.m in Sources */,
 				110AEE141DD1C38F00F70013 /* CompanyModel.m in Sources */,
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
 				1100BF6C1D7FE64F0058F230 /* AdView.m in Sources */,

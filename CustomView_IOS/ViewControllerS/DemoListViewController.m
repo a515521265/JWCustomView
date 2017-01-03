@@ -60,7 +60,8 @@
                       [DemoModel itemWithDcit:@{@"title":@"HTMLDemoViewController",@"demoDescribe":@"测试html文件",@"className":@"HTMLDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"WKWebViewDemoViewController",@"demoDescribe":@"wkwebviewDemo",@"className":@"WKWebViewDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"JWTextViewDemoViewController",@"demoDescribe":@"TextViewDemo",@"className":@"JWTextViewDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"XLNotificationTransferDemoViewController",@"demoDescribe":@"通知封装",@"className":@"XLNotificationTransferDemoViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"XLNotificationTransferDemoViewController",@"demoDescribe":@"通知封装",@"className":@"XLNotificationTransferDemoViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"ZLYViewController",@"demoDescribe":@"水波纹效果封装",@"className":@"ZLYViewController"}]
                       ];
     
     
