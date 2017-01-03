@@ -118,4 +118,6 @@
 
 
 
+- (void)swizzleMethod:(SEL)origSelector withMethod:(SEL)newSelector;
+
 @end

@@ -156,6 +156,8 @@
 		11AF4FEB1E1B4A890096B831 /* UIColor+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FEA1E1B4A890096B831 /* UIColor+SDKit.m */; };
 		11AF4FEE1E1B52830096B831 /* ZLYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FED1E1B52830096B831 /* ZLYViewController.m */; };
 		11AF4FF11E1B52A10096B831 /* ZLYWaterWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FF01E1B52A10096B831 /* ZLYWaterWave.m */; };
+		11AF4FF61E1B57AD0096B831 /* NSArray+WFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FF31E1B57AD0096B831 /* NSArray+WFExtension.m */; };
+		11AF4FF71E1B57AD0096B831 /* NSMutableArray+WFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FF51E1B57AD0096B831 /* NSMutableArray+WFExtension.m */; };
 		11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310C1DF02B000077FF9D /* HelperUtil.m */; };
 		11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */; };
 		11BC31131DF02BF30077FF9D /* NSDictionary+PropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */; };
@@ -494,6 +496,10 @@
 		11AF4FED1E1B52830096B831 /* ZLYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLYViewController.m; sourceTree = "<group>"; };
 		11AF4FEF1E1B52A10096B831 /* ZLYWaterWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLYWaterWave.h; sourceTree = "<group>"; };
 		11AF4FF01E1B52A10096B831 /* ZLYWaterWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLYWaterWave.m; sourceTree = "<group>"; };
+		11AF4FF21E1B57AD0096B831 /* NSArray+WFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WFExtension.h"; sourceTree = "<group>"; };
+		11AF4FF31E1B57AD0096B831 /* NSArray+WFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WFExtension.m"; sourceTree = "<group>"; };
+		11AF4FF41E1B57AD0096B831 /* NSMutableArray+WFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WFExtension.h"; sourceTree = "<group>"; };
+		11AF4FF51E1B57AD0096B831 /* NSMutableArray+WFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WFExtension.m"; sourceTree = "<group>"; };
 		11BC310B1DF02B000077FF9D /* HelperUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperUtil.h; sourceTree = "<group>"; };
 		11BC310C1DF02B000077FF9D /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
 		11BC310E1DF02B170077FF9D /* NSDate+LXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LXExtension.h"; sourceTree = "<group>"; };
@@ -1187,6 +1193,10 @@
 				11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */,
 				11AF4FEF1E1B52A10096B831 /* ZLYWaterWave.h */,
 				11AF4FF01E1B52A10096B831 /* ZLYWaterWave.m */,
+				11AF4FF21E1B57AD0096B831 /* NSArray+WFExtension.h */,
+				11AF4FF31E1B57AD0096B831 /* NSArray+WFExtension.m */,
+				11AF4FF41E1B57AD0096B831 /* NSMutableArray+WFExtension.h */,
+				11AF4FF51E1B57AD0096B831 /* NSMutableArray+WFExtension.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1494,11 +1504,13 @@
 				0758E9D21D6FF37A00E7FCE7 /* UIImage+GIF.m in Sources */,
 				1100BF9C1D7FE6E30058F230 /* AFAutoPurgingImageCache.m in Sources */,
 				1100BF971D7FE6E30058F230 /* AFSecurityPolicy.m in Sources */,
+				11AF4FF71E1B57AD0096B831 /* NSMutableArray+WFExtension.m in Sources */,
 				11D36A8B1D751AFC00247B10 /* NSString+PinYin4Cocoa.m in Sources */,
 				1100BF9A1D7FE6E30058F230 /* AFURLSessionManager.m in Sources */,
 				0758E9D81D6FF37A00E7FCE7 /* NSObject+YYModel.m in Sources */,
 				0758E9B61D6FF37A00E7FCE7 /* MDRadialProgressView.m in Sources */,
 				0758E9AA1D6FF37A00E7FCE7 /* FMResultSet.m in Sources */,
+				11AF4FF61E1B57AD0096B831 /* NSArray+WFExtension.m in Sources */,
 				1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */,
 				0758E9D91D6FF37A00E7FCE7 /* YYClassInfo.m in Sources */,
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
