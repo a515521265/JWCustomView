@@ -153,6 +153,7 @@
 		118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 118E0AAE1DBF374F0079569B /* TooltipView.m */; };
 		1194B1471DD55725008473CF /* UIImage+ColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1194B1461DD55725008473CF /* UIImage+ColorImage.m */; };
 		11AF4FE81E1B45080096B831 /* MMPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FE71E1B45080096B831 /* MMPlaceHolder.m */; };
+		11AF4FEB1E1B4A890096B831 /* UIColor+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AF4FEA1E1B4A890096B831 /* UIColor+SDKit.m */; };
 		11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310C1DF02B000077FF9D /* HelperUtil.m */; };
 		11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC310F1DF02B170077FF9D /* NSDate+LXExtension.m */; };
 		11BC31131DF02BF30077FF9D /* NSDictionary+PropertyCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BC31121DF02BF30077FF9D /* NSDictionary+PropertyCode.m */; };
@@ -485,6 +486,8 @@
 		1194B1461DD55725008473CF /* UIImage+ColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorImage.m"; sourceTree = "<group>"; };
 		11AF4FE61E1B45080096B831 /* MMPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPlaceHolder.h; sourceTree = "<group>"; };
 		11AF4FE71E1B45080096B831 /* MMPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPlaceHolder.m; sourceTree = "<group>"; };
+		11AF4FE91E1B4A890096B831 /* UIColor+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SDKit.h"; sourceTree = "<group>"; };
+		11AF4FEA1E1B4A890096B831 /* UIColor+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SDKit.m"; sourceTree = "<group>"; };
 		11BC310B1DF02B000077FF9D /* HelperUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperUtil.h; sourceTree = "<group>"; };
 		11BC310C1DF02B000077FF9D /* HelperUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperUtil.m; sourceTree = "<group>"; };
 		11BC310E1DF02B170077FF9D /* NSDate+LXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LXExtension.h"; sourceTree = "<group>"; };
@@ -1164,6 +1167,8 @@
 		11BC310A1DF02AFB0077FF9D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				11AF4FE91E1B4A890096B831 /* UIColor+SDKit.h */,
+				11AF4FEA1E1B4A890096B831 /* UIColor+SDKit.m */,
 				11AF4FE61E1B45080096B831 /* MMPlaceHolder.h */,
 				11AF4FE71E1B45080096B831 /* MMPlaceHolder.m */,
 				11BC310E1DF02B170077FF9D /* NSDate+LXExtension.h */,
@@ -1419,6 +1424,7 @@
 				0758E9DA1D6FF37A00E7FCE7 /* YYWeakProxy.m in Sources */,
 				0758E9B11D6FF37A00E7FCE7 /* JPSImagePickerController.m in Sources */,
 				11D36A9F1D75325B00247B10 /* KeychainHelper.m in Sources */,
+				11AF4FEB1E1B4A890096B831 /* UIColor+SDKit.m in Sources */,
 				0758E9DD1D6FF37A00E7FCE7 /* JWTextField.m in Sources */,
 				0758E9B31D6FF37A00E7FCE7 /* UIImage+DrawBlock.m in Sources */,
 				1100BFCD1D80FEA70058F230 /* TYLaunchFadeScaleAnimation.m in Sources */,
