@@ -6,6 +6,8 @@
 //  Copyright © 2016年 梁家文. All rights reserved.
 //
 
+#define TextRule @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
 #import "JWTextField.h"
 
 @interface JWTextField()<UITextFieldDelegate>
@@ -29,6 +31,7 @@
         self.autocapitalizationType = UITextAutocapitalizationTypeNone;
         self.max = @"999999999.99";
         self.maxLength = 7;
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFiledEditChanged:) name:UITextFieldTextDidChangeNotification object:self];
     }
     return self;
     
@@ -68,6 +71,44 @@
     !self.importBackString ? : self.importBackString (toBeString);
     return true;
 }
+
+#pragma mark - 限制输入长度 与 数字 字母
+- (void)textFiledEditChanged:(NSNotification *)obj{
+    
+    if (self.importStyle==TextFieldImportStyleNumberandLetter) {
+        UITextField *textField = (UITextField *)obj.object;
+        NSString *toBeString = textField.text;
+        UITextRange *selectedRange = [textField markedTextRange];
+        UITextPosition *position = [textField positionFromPosition:selectedRange.start offset:0];
+        NSCharacterSet *charSet = [[NSCharacterSet characterSetWithCharactersInString:TextRule] invertedSet];
+        NSString *tempText = [[textField.text componentsSeparatedByCharactersInSet:charSet] componentsJoinedByString:@""];
+        BOOL canEdit = [textField.text isEqualToString:tempText];
+        if (!position){
+            if (canEdit) {
+                if (toBeString.length > self.maxLength){
+                    NSRange rangeIndex = [toBeString rangeOfComposedCharacterSequenceAtIndex:self.maxLength];
+                    if (rangeIndex.length == 1){
+                        textField.text = [toBeString substringToIndex:self.maxLength];
+                    }
+                    else{
+                        NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, self.maxLength)];
+                        textField.text = [toBeString substringWithRange:rangeRange];
+                    }
+                }
+            }else{
+                if (toBeString.length == 1) {
+                    textField.text = @"";
+                }else{
+                    NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, toBeString.length - 1)];
+                    textField.text = [toBeString substringWithRange:rangeRange];
+                }
+            }
+        }
+        !self.importBackString ? : self.importBackString (toBeString);
+    }
+}
+
+
 /**TextFieldImportStyleNumberTwo
  *  整数限制，首位不可以为0
  */
@@ -326,6 +367,10 @@
 
 -(void)setPlaceholderFont:(UIFont *)placeholderFont{
     [self setValue:placeholderFont forKeyPath:@"_placeholderLabel.font"];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

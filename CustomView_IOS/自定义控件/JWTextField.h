@@ -16,7 +16,8 @@ typedef NS_ENUM(NSInteger, TextFieldImportStyle) {
     TextFieldImportStyleMinMoney = 4,       //限制金钱输入格式 (输入格式：最低输入0.01)
     TextFieldImportStyleRightfulMoney = 5,       //限制合法的小数金额限制 (合法的小数输入规则)
     TextFieldImportStyleNumberTwo = 6,     //限制数字输入格式 (首位可以为0)
-    TextFieldImportStyleProhibitImport = 7     //禁止输入
+    TextFieldImportStyleProhibitImport = 7,     //禁止输入
+    TextFieldImportStyleNumberandLetter = 8     //限制只能输入数字和字母
 };
 
 
