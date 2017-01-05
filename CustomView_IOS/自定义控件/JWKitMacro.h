@@ -15,4 +15,15 @@
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 
+#define HXWeak_(arg) \
+__weak typeof(arg) weak_##arg = arg;
+#define HXStrong_(arg) \
+__strong typeof(weak_##arg) arg = weak_##arg;
+
+#define HXWeak_self \
+HXWeak_(self)
+#define HXStrong_self \
+HXStrong_(self)
+
+
 #endif /* JWKitMacro_h */

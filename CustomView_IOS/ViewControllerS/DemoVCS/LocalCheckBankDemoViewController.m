@@ -33,7 +33,10 @@
     text1.importStyle = TextFieldImportStyleNumber; //设置输入限制的类型
     text1.maxLength = 22; //最大输入位数限制
     text1.keyboardType = UIKeyboardTypeNumberPad;
+    
+    HXWeak_self
     text1.importBackString = ^(NSString * money){
+        HXStrong_self
         if (money.length < 5) {
             self.bankNameLab.text = @"";
         }
