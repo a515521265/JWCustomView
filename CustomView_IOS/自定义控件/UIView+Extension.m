@@ -126,6 +126,51 @@
     return self.frame.origin;
 }
 
+-(UIView *(^)(CGFloat))left{
+    
+    return ^ UIView*(CGFloat left) {
+        CGRect superframe = self.superview.frame;
+        CGRect frame = self.frame;
+        frame.origin.x = superframe.origin.x + left;
+        self.frame = frame;
+        return self;
+    };
+    
+}
+
+-(UIView *(^)(CGFloat))right{
+
+    return ^ UIView*(CGFloat right) {
+        CGRect superframe = self.superview.frame;
+        CGRect frame = self.frame;
+        frame.origin.x = superframe.size.width - right - self.width;
+        self.frame = frame;
+        return self;
+    };
+}
+
+-(UIView *(^)(CGFloat))top{
+
+    return ^ UIView*(CGFloat top) {
+        CGRect superframe = self.superview.frame;
+        CGRect frame = self.frame;
+        frame.origin.y = superframe.origin.y + top;
+        self.frame = frame;
+        return self;
+    };
+}
+
+-(UIView *(^)(CGFloat))bottom{
+    
+    return ^ UIView*(CGFloat bottom) {
+        CGRect superframe = self.superview.frame;
+        CGRect frame = self.frame;
+        frame.origin.y = superframe.size.height - bottom - self.height;
+        self.frame = frame;
+        return self;
+    };
+}
+
 -(void)removeAllSubviews{
     NSArray * array = [self subviews];
     for (UIView * sub in array) {

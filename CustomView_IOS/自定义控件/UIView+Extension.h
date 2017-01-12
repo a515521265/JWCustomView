@@ -19,6 +19,14 @@
 @property (nonatomic, assign) CGSize           size;
 @property (nonatomic, assign) CGPoint          origin;
 
+-(UIView *(^)(CGFloat))left;
+
+-(UIView *(^)(CGFloat))right;
+
+-(UIView *(^)(CGFloat))top;
+
+-(UIView *(^)(CGFloat))bottom;
+
 - (void)addSingleTapEvent:(void(^)())event;
 
 -(void)removeAllSubviews;

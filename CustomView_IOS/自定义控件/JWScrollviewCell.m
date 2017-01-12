@@ -16,9 +16,20 @@
 
 @property (nonatomic,strong) JWLabel * downLine;
 
+@property (nonatomic,strong) UIImageView * rightImage;
+
 @end
 
 @implementation JWScrollviewCell
+
+-(UIImageView *)rightImage{
+    if (!_rightImage) {
+        _rightImage = [[UIImageView alloc]initWithFrame:CGRectMake(self.width-(15+8), (self.height - 13)/2, 8, 13)];
+        _rightImage.image = [UIImage imageNamed:@"arrow_forward"];
+        [self addSubview:_rightImage];
+    }
+    return _rightImage;
+}
 
 -(UIView *)contentView{
     
@@ -88,5 +99,16 @@
     
 }
 
+-(void)setAccessoryType:(CellAccessoryType)accessoryType{
+
+    if (accessoryType==JWCellAccessoryDisclosureIndicator) {
+        self.rightImage.hidden =false;
+        _rightTextField.x = _rightTextField.x - self.rightImage.width;
+    }else{
+        self.rightImage.hidden = true;
+        _rightTextField.x = 20;
+    }
+    
+}
 
 @end
