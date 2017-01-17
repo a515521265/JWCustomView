@@ -18,14 +18,16 @@
 @property (nonatomic, assign) CGFloat          height;
 @property (nonatomic, assign) CGSize           size;
 @property (nonatomic, assign) CGPoint          origin;
-
+//距左边间距
 -(UIView *(^)(CGFloat))left;
-
+//距右边间距
 -(UIView *(^)(CGFloat))right;
-
+//距顶部距离
 -(UIView *(^)(CGFloat))top;
-
+//距底部距离
 -(UIView *(^)(CGFloat))bottom;
+//居中显示
+-(UIView *(^)())setCenter;
 
 - (void)addSingleTapEvent:(void(^)())event;
 

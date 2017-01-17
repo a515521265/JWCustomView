@@ -171,6 +171,20 @@
     };
 }
 
+-(UIView *(^)())setCenter{
+
+    return ^ UIView*() {
+        CGRect superframe = self.superview.frame;
+        CGRect frame = self.frame;
+        frame.origin.y = (superframe.size.height - self.height)/2;
+        frame.origin.x = (superframe.size.width - self.width)/2;
+        self.frame = frame;
+        return self;
+    };
+    
+}
+
+
 -(void)removeAllSubviews{
     NSArray * array = [self subviews];
     for (UIView * sub in array) {

@@ -67,7 +67,7 @@
     
     
     
-    [self setStatusBarBackgroundColor:[UIColor blueColor]];
+//    [self setStatusBarBackgroundColor:[UIColor blueColor]];
 }
 
 #pragma mark - 设置cell的样式
