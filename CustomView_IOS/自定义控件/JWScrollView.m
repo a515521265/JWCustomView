@@ -57,7 +57,7 @@
         [self addSubview:view];
         
         if (i == views.count-1) {
-            self.contentSize = CGSizeMake(0, self.subviews.lastObject.y + self.subviews.lastObject.height);
+            self.contentSize = CGSizeMake(0, self.subviews.lastObject.y + self.subviews.lastObject.height+self.paddingHeight);
         }
     }
 

@@ -11,8 +11,9 @@
 #import "JWScrollView.h"
 #import "JWScrollviewCell.h"
 
-@interface JWTextViewDemoViewController ()
+@interface JWTextViewDemoViewController ()<UIScrollViewDelegate>
 @property (nonatomic,strong) JWScrollView * scrollView;
+@property (nonatomic,strong) UIView * firstView;
 @end
 
 @implementation JWTextViewDemoViewController
@@ -23,6 +24,8 @@
         _scrollView = [[JWScrollView alloc]init];
         _scrollView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
         _scrollView.alwaysBounceVertical = true;
+        _scrollView.paddingHeight = 500;
+        _scrollView.delegate = self;
         [self.view addSubview:_scrollView];
     }
     return _scrollView;
@@ -34,9 +37,9 @@
     
     [self addNotification];
     
-    UIView * view =[self.view.subviews firstObject];
+    self.firstView =[self.view.subviews firstObject];
     
-    JWScrollviewCell * cell1 = [[JWScrollviewCell alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(view.frame), kScreenWidth, 50)];
+    JWScrollviewCell * cell1 = [[JWScrollviewCell alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.firstView.frame), kScreenWidth, 50)];
     
     JWTextView * textView = [[JWTextView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, 50)];
     textView.backgroundColor = [UIColor redColor];
@@ -60,7 +63,7 @@
     [cell2.rightTextField setPlaceholderFont:cell1.leftLabel.font];
     [cell2 setUPSpacing:0 andDownSpacing:5];
     
-    [self.scrollView setScrollviewSubViewsArr:@[view,cell1,cell2].mutableCopy];
+    [self.scrollView setScrollviewSubViewsArr:@[self.firstView,cell1,cell2].mutableCopy];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 
@@ -68,13 +71,23 @@
         [cell2 refreshSubviews];
         
     });
+    
+    
 
+
+    
+}
+
+
+-(void)scrollViewDidScroll:(UIScrollView*)scrollView{
+
+    
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    CGRect oldframe = [view convertRect:view.bounds toView:window];
+    CGRect oldframe = [self.firstView convertRect:self.firstView.bounds toView:window];
     
     NSLog(@"相对于window的CGRect--------%@",NSStringFromCGRect(oldframe));
     
-    NSLog(@"相对于view的CGRect--------%@",NSStringFromCGRect(view.frame));
+    NSLog(@"相对于view的CGRect--------%@",NSStringFromCGRect(self.firstView.frame));
     
 }
 

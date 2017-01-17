@@ -16,6 +16,8 @@
 
 @property (nonatomic,assign) BOOL isGestureEnabled;
 
+@property (nonatomic,assign) CGFloat paddingHeight;
+
 -(void)setScrollviewSubViewsArr:(NSMutableArray *)views;
 
 -(void)removeViewWithTag:(NSInteger)ViewTag;
