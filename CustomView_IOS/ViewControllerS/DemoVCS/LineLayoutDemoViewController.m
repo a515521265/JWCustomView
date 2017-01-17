@@ -71,12 +71,31 @@
 //    self.view.backgroundColor = [UIColor redColor];
     
     JWScrollviewCell * cell1 = [[JWScrollviewCell alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(view.frame), kScreenWidth, 50)];
-    cell1.leftLabel.text = @"用户名";
+//    cell1.leftLabel.text = @"用户名";
+    cell1.accessoryType = JWCellAccessoryDisclosureIndicator;
     cell1.rightTextField.placeholder = @"请输入用户名啊";
+    cell1.isGestureEnabled = true;
+    cell1.click=^(){
+        NSLog(@"------");
+    };
     cell1.accessoryType = JWCellAccessoryDisclosureIndicator;
     [cell1.rightTextField setPlaceholderColor:cell1.leftLabel.textColor];
     [cell1.rightTextField setPlaceholderFont:cell1.leftLabel.font];
     [cell1 setUPSpacing:1 andDownSpacing:1];
+    //测试添加一个lab
+    JWLabel * lab  = [[JWLabel alloc]initWithFrame:CGRectMake(0, 0, 100, cell1.contentView.height)];
+    lab.text = @"13011151020";
+    lab.tag = 1999;
+    [cell1.contentView addSubview:lab];
+    
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(20 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"改变状态");
+//        cell1.isGestureEnabled = false;
+        ((JWLabel *)cell1.getElementByTag(1999)).text = @"哈哈哈哈哈";
+    });
+
     
     
     NSMutableArray * arr = [NSMutableArray arrayWithCapacity:10];

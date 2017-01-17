@@ -25,7 +25,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
             endingLineNumber = "92"
-            landmarkName = "-dealloc"
+            landmarkName = "-initWithHomeTowBtnViewFrame:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

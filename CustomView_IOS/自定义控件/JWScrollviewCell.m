@@ -18,6 +18,8 @@
 
 @property (nonatomic,strong) UIImageView * rightImage;
 
+@property (nonatomic,strong) UIButton * clickButton;
+
 @end
 
 @implementation JWScrollviewCell
@@ -108,7 +110,34 @@
         self.rightImage.hidden = true;
         _rightTextField.x = 20;
     }
-    
 }
+
+-(void)setIsGestureEnabled:(BOOL)isGestureEnabled{
+    _isGestureEnabled = isGestureEnabled;
+    __weak typeof(self) weakSelf = self;
+    if (_isGestureEnabled) {
+        self.clickButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        self.clickButton.frame = CGRectMake(0, 0, self.contentView.width, self.contentView.height);
+        [self.clickButton addSingleTapEvent:^{
+            !weakSelf.click ? : weakSelf.click();
+        }];
+        [self.contentView addSubview:self.clickButton];
+    }else{
+        [self.clickButton removeFromSuperview];
+    }
+}
+
+-(UIView *(^)(NSInteger))getElementByTag{
+    return ^ UIView*(NSInteger viewTag) {
+        for (int i =0; i< self.contentView.subviews.count; i++) {
+            UIView * subV = self.contentView.subviews[i];
+            if (subV.tag == viewTag) {
+                return subV;
+            }
+        }
+        return nil;
+    };
+}
+
 
 @end
