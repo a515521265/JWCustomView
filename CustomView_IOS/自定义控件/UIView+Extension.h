@@ -28,6 +28,9 @@
 -(UIView *(^)(CGFloat))bottom;
 //居中显示
 -(UIView *(^)())setCenter;
+//设置view大小
+-(UIView *(^)(CGSize))setSize;
+
 
 - (void)addSingleTapEvent:(void(^)())event;
 

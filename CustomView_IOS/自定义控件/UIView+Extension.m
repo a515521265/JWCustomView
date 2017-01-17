@@ -184,6 +184,16 @@
     
 }
 
+-(UIView *(^)(CGSize))setSize{
+
+    return ^ UIView*(CGSize size) {
+        CGRect frame = self.frame;
+        frame.size = size;
+        self.frame = frame;
+        return self;
+    };
+    
+}
 
 -(void)removeAllSubviews{
     NSArray * array = [self subviews];

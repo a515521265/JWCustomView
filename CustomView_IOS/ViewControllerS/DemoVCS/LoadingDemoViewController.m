@@ -38,7 +38,9 @@
     // 显示普通状态无配图
     UIButton *normalNoPicBtn = [self addButtonWithFrame:CGRectMake(100, 60, 150, 30) title:@"显示普通状态无配图" action:@selector(showNormalNoPic)];
     [self.view addSubview:normalNoPicBtn];
+    normalNoPicBtn.setSize(CGSizeMake(100, 100));
     normalNoPicBtn.top(5).right(5);
+    
     
     // 显示普通状态有配图
     UIButton *normalWithPicBtn = [self addButtonWithFrame:CGRectMake(100, 120, 150, 30) title:@"显示普通状态有配图" action:@selector(showNormalWithPic)];
