@@ -25,5 +25,10 @@ HXWeak_(self)
 #define HXStrong_self \
 HXStrong_(self)
 
+// 字体相关创建器，包括动态字体的支持
+#define UIFontMake(size) [UIFont systemFontOfSize:size]
+#define UIFontBoldMake(size) [UIFont boldSystemFontOfSize:size]
+#define UIFontBoldWithFont(_font) [UIFont boldSystemFontOfSize:_font.pointSize]
+
 
 #endif /* JWKitMacro_h */

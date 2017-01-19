@@ -37,6 +37,29 @@
     self.label2 = label2;
     [self.view addSubview:label2];
     
+    
+    
+    JWLabel * lab1 = [[JWLabel alloc] init];
+    lab1.text = @"可长按复制/n可长按复制\n可长按复制\n可长按复制/n可长按复制";
+    lab1.frame = CGRectMake(0, CGRectGetMaxY(label2.frame)+20, 100, 40);
+    lab1.font = UIFontMake(15);
+    lab1.textColor = UIColorFromRGB(0x666666);
+    lab1.canPerformCopyAction = YES;
+    lab1.numberOfLines = 0;
+    [lab1 sizeToFit];
+    [self.view addSubview:lab1];
+    
+    JWLabel * lab2 = [[JWLabel alloc] init];
+    lab2.text = @"可设置 contentInsets";
+    lab2.frame = CGRectMake(0, CGRectGetMaxY(lab1.frame)+20, 50, 40);
+    lab2.font = UIFontMake(15);
+    lab2.textColor = UIColorFromRGB(0x666666);
+    lab2.backgroundColor = [UIColor redColor];
+    lab2.contentEdgeInsets = UIEdgeInsetsMake(8, 16, 8, 16);
+    [lab2 sizeToFit];
+    [self.view addSubview:lab2];
+    
+    
     //*使用YYWeakProxy避免内存泄漏！*
     /*
      时钟类都是由主运行循环进行强引用的，而时钟会强引用target，所以造成了内存泄漏
