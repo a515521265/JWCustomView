@@ -28,6 +28,7 @@
     label1.textColor =[UIColor blackColor];
     label1.labelAnotherColor = [UIColor redColor];//设置富文本文字颜色
     label1.text = [NSString stringWithFormat:@"公司名称:[%@][<%@>]",@"百度",@"科技有限公司"];
+    label1.canPerformCopyAction = true;
     [self.view addSubview:label1];
     //数字动画效果lab
     JWLabel * label2 = [[JWLabel alloc]initWithFrame:CGRectMake(0, kScreenHeight/2+50, kScreenWidth, 50)];
