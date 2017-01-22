@@ -63,8 +63,11 @@
                       [DemoModel itemWithDcit:@{@"title":@"XLNotificationTransferDemoViewController",@"demoDescribe":@"通知封装",@"className":@"XLNotificationTransferDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"ZLYViewController",@"demoDescribe":@"水波纹效果封装",@"className":@"ZLYViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"LoadingDemoViewController",@"demoDescribe":@"加载提示",@"className":@"LoadingDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"LoadingDemoViewController",@"demoDescribe":@"沙画效果",@"className":@"SandDrawDemoViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"LoadingDemoViewController",@"demoDescribe":@"沙画效果",@"className":@"SandDrawDemoViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"SpinnerDemoViewController",@"demoDescribe":@"下拉菜单封装",@"className":@"SpinnerDemoViewController"}]
                       ];
+    
+    
     
     
     

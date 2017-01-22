@@ -149,6 +149,8 @@
 		1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143521C1D7FBAA5009EE8F8 /* DynamicLoop.m */; };
 		114352201D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */; };
 		114352231D7FBEB1009EE8F8 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 114352221D7FBEB1009EE8F8 /* UITabBar+Badge.m */; };
+		11619A2D1E3484FB00D26F0D /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11619A2C1E3484FB00D26F0D /* SpinnerView.m */; };
+		11619A2F1E348D0600D26F0D /* SpinnerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11619A2E1E348D0600D26F0D /* SpinnerDemoViewController.m */; };
 		118E0AA41DBF33D20079569B /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118E0AA31DBF33D20079569B /* JSPatchPlatform.framework */; };
 		118E0AA71DBF33F80079569B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118E0AA61DBF33F80079569B /* JavaScriptCore.framework */; };
 		118E0AA91DBF34B00079569B /* JWDemo.js in Resources */ = {isa = PBXBuildFile; fileRef = 118E0AA81DBF34B00079569B /* JWDemo.js */; };
@@ -509,6 +511,10 @@
 		1143521F1D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLoopDemoViewController.m; sourceTree = "<group>"; };
 		114352211D7FBEB1009EE8F8 /* UITabBar+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+Badge.h"; sourceTree = "<group>"; };
 		114352221D7FBEB1009EE8F8 /* UITabBar+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+Badge.m"; sourceTree = "<group>"; };
+		11619A281E3484D100D26F0D /* SpinnerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerDemoViewController.h; sourceTree = "<group>"; };
+		11619A2B1E3484FB00D26F0D /* SpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerView.h; sourceTree = "<group>"; };
+		11619A2C1E3484FB00D26F0D /* SpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerView.m; sourceTree = "<group>"; };
+		11619A2E1E348D0600D26F0D /* SpinnerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerDemoViewController.m; sourceTree = "<group>"; };
 		118E0AA31DBF33D20079569B /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
 		118E0AA61DBF33F80079569B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		118E0AA81DBF34B00079569B /* JWDemo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JWDemo.js; sourceTree = "<group>"; };
@@ -791,6 +797,8 @@
 				11AF50721E1B96BF0096B831 /* LoadingDemoViewController.m */,
 				111D4AE21E34508A004686FC /* SandDrawDemoViewController.h */,
 				111D4AE51E3450F0004686FC /* SandDrawDemoViewController.m */,
+				11619A281E3484D100D26F0D /* SpinnerDemoViewController.h */,
+				11619A2E1E348D0600D26F0D /* SpinnerDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1061,6 +1069,8 @@
 				5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */,
 				110AEE061DD0617800F70013 /* JWTextView.h */,
 				110AEE071DD0617800F70013 /* JWTextView.m */,
+				11619A2B1E3484FB00D26F0D /* SpinnerView.h */,
+				11619A2C1E3484FB00D26F0D /* SpinnerView.m */,
 			);
 			path = "自定义控件";
 			sourceTree = "<group>";
@@ -1653,6 +1663,7 @@
 				11AF4FF71E1B57AD0096B831 /* NSMutableArray+WFExtension.m in Sources */,
 				11D36A8B1D751AFC00247B10 /* NSString+PinYin4Cocoa.m in Sources */,
 				1100BF9A1D7FE6E30058F230 /* AFURLSessionManager.m in Sources */,
+				11619A2F1E348D0600D26F0D /* SpinnerDemoViewController.m in Sources */,
 				0758E9D81D6FF37A00E7FCE7 /* NSObject+YYModel.m in Sources */,
 				0758E9B61D6FF37A00E7FCE7 /* MDRadialProgressView.m in Sources */,
 				0758E9AA1D6FF37A00E7FCE7 /* FMResultSet.m in Sources */,
@@ -1726,6 +1737,7 @@
 				11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */,
 				11AF50211E1B76830096B831 /* JxbCrashHelper.m in Sources */,
 				111D4AE01E34501D004686FC /* AZEmitterLayer.m in Sources */,
+				11619A2D1E3484FB00D26F0D /* SpinnerView.m in Sources */,
 				0758E9D11D6FF37A00E7FCE7 /* UIButton+WebCache.m in Sources */,
 				0758E9A81D6FF37A00E7FCE7 /* FMDatabasePool.m in Sources */,
 				0758E9A91D6FF37A00E7FCE7 /* FMDatabaseQueue.m in Sources */,

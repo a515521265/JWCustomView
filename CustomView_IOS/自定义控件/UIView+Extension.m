@@ -195,6 +195,18 @@
     
 }
 
+-(CGRect (^)(UIView *))getRelativewindowFrame{
+    
+    return ^CGRect (UIView * subView) {
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        CGRect relativeframe = [subView convertRect:subView.bounds toView:window];
+        return relativeframe;
+    };
+    
+}
+
+
+
 -(void)removeAllSubviews{
     NSArray * array = [self subviews];
     for (UIView * sub in array) {

@@ -8,8 +8,9 @@
 
 #import "SandDrawDemoViewController.h"
 #import "AZEmitterLayer.h"
+#import <StoreKit/StoreKit.h>
 
-@interface SandDrawDemoViewController ()<AZEmitterLayerDelegate>
+@interface SandDrawDemoViewController ()<AZEmitterLayerDelegate,SKStoreProductViewControllerDelegate>
 {
     UIButton *_button;
 }
@@ -22,6 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showQQ];
+    
 }
 
 //- (void)showTiger {
@@ -86,6 +88,8 @@
     azEmitterLayer.position = self.view.center;
     azEmitterLayer.beginPoint = CGPointMake(0, 64);
     azEmitterLayer.ignoredWhite = YES;
+    azEmitterLayer.maxParticleCount = 100;
+    azEmitterLayer.randomPointRange = 3;
     azEmitterLayer.image = image;
     azEmitterLayer.azDelegate = self;
     [self.view.layer addSublayer:azEmitterLayer];

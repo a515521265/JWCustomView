@@ -31,6 +31,7 @@
 //设置view大小
 -(UIView *(^)(CGSize))setSize;
 
+-(CGRect (^)(UIView *))getRelativewindowFrame;
 
 - (void)addSingleTapEvent:(void(^)())event;
 
