@@ -28,6 +28,19 @@
     
     [self.view addSubview:button];
     
+    
+    
+//    JWAlertView * jwalert1 = [[JWAlertView alloc]initJWAlertViewWithTitle:@"哈哈" message:@"呵呵" delegate:self cancelButtonTitle:@"嘿嘿1" otherButtonTitles:nil];
+//    [jwalert1 alertShow];
+//    
+//    JWAlertView * jwalert2 = [[JWAlertView alloc]initJWAlertViewWithTitle:@"哈哈" message:@"呵呵" delegate:self cancelButtonTitle:@"嘿嘿2" otherButtonTitles:nil];
+//    [jwalert2 alertShow];
+//
+//    JWAlertView * jwalert3 = [[JWAlertView alloc]initJWAlertViewWithTitle:@"哈哈" message:@"呵呵" delegate:self cancelButtonTitle:@"嘿嘿3" otherButtonTitles:nil];
+//    [jwalert3 alertShow];
+//
+//    JWAlertView * jwalert4 = [[JWAlertView alloc]initJWAlertViewWithTitle:@"哈哈" message:@"呵呵" delegate:self cancelButtonTitle:@"嘿嘿4" otherButtonTitles:nil];
+//    [jwalert4 alertShow];
 
     HXWeak_(button)
     HXWeak_self

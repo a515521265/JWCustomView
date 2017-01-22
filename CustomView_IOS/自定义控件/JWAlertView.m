@@ -21,6 +21,62 @@
 #import "JWKitMacro.h"
 
 
+@interface JWAlertViewQueue : NSObject
+@property(nonatomic, strong) NSMutableArray *allAlerts;
+@property(nonatomic, assign) BOOL noShow;
+
++ (instancetype)sharedQueue;
+- (BOOL)contains:(JWAlertView *)alertView;
+- (JWAlertView *)dequeue;
+- (void)enqueue:(JWAlertView *)alertView;
+- (void)remove:(JWAlertView *)alertView;
+@end
+
+@implementation JWAlertViewQueue
+
++ (instancetype)sharedQueue{
+    static JWAlertViewQueue *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[JWAlertViewQueue alloc] init];
+    });
+    return instance;
+}
+
+- (instancetype)init{
+    if(self=[super init]){
+        _allAlerts = @[].mutableCopy;
+    }
+    return self;
+}
+
+- (BOOL)contains:(JWAlertView *)alertView{
+    return [_allAlerts containsObject:alertView];
+}
+
+- (JWAlertView *)dequeue{
+    if(_allAlerts.count > 0){
+        self.noShow = NO;
+        return [_allAlerts firstObject];
+    }
+    return nil;
+}
+
+- (void)enqueue:(JWAlertView *)alertView{
+    [_allAlerts addObject:alertView];
+}
+
+- (void)remove:(JWAlertView *)alertView{
+    if(_allAlerts.count>0){
+        if([self contains:alertView]){
+            [_allAlerts removeObject:alertView];
+        }
+    }
+}
+
+@end
+
+
 @interface JWAlertView ()
 
 @property (nonatomic,strong) UIView * whiteView;
@@ -148,6 +204,11 @@
             
         }
     }
+    
+    if(![[JWAlertViewQueue sharedQueue] contains:self]){
+        [[JWAlertViewQueue sharedQueue] enqueue:self];
+    }
+    
     return self;
 }
 
@@ -193,10 +254,37 @@
         [self.delegate JWalertView:self clickedButtonAtIndex:button.tag-9200 clickedButtonAtTitle:button.titleLabel.text];
     }
     !self.dismissAlertTapEvent ? nil:self.dismissAlertTapEvent();
-    [self removeFromSuperview];
+    if (!self.permanentShow) {
+        [self removeFromSuperview];
+    }else{
+        
+        [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            
+            obj.userInteractionEnabled = false;
+            
+        }];
+        
+    }
+    
+    if ([JWAlertViewQueue sharedQueue].allAlerts.count != 0) {
+        [[JWAlertViewQueue sharedQueue] remove:[JWAlertViewQueue sharedQueue].allAlerts.firstObject];
+        JWAlertView *nextAlertView = [[JWAlertViewQueue sharedQueue] dequeue];
+        if(nextAlertView){
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [nextAlertView alertShow];
+            });
+        }else{
+            [JWAlertViewQueue sharedQueue].noShow = NO;
+        }
+    }
+    
 }
 
 -(void)alertShow{
+    
+    if ([JWAlertViewQueue sharedQueue].noShow) {
+        return;
+    }
     
     UIWindow * window = [UIApplication sharedApplication].keyWindow;
     [window addSubview:self];
@@ -208,7 +296,7 @@
     [values addObject:[NSValue valueWithCATransform3D:CATransform3DMakeScale(1.0, 1.0, 1.0)]];
     animation.values = values;
     [self.whiteView.layer addAnimation:animation forKey:nil];
-    
+    [JWAlertViewQueue sharedQueue].noShow = YES;
 }
 
 -(void)layoutSubviews{

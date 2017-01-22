@@ -30,6 +30,8 @@
 
 @property (nonatomic, assign) id<JWAlertViewDelegate> delegate;
 
+@property (nonatomic,assign)BOOL permanentShow; //永久显示
+
 + (instancetype)initAlertViewWithMessage:(NSString * )message singleTapEvent:(void(^)(void))event;
 
 //初始化方法
