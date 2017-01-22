@@ -127,6 +127,9 @@
 		1117A7151D7FB45000B56974 /* FPSLabelRootWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70D1D7FB45000B56974 /* FPSLabelRootWindow.m */; };
 		1117A7161D7FB45000B56974 /* FPSShowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A70F1D7FB45000B56974 /* FPSShowLabel.m */; };
 		1117A7171D7FB45000B56974 /* FPSWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1117A7111D7FB45000B56974 /* FPSWeakProxy.m */; };
+		111D4AE01E34501D004686FC /* AZEmitterLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 111D4ADD1E34501D004686FC /* AZEmitterLayer.m */; };
+		111D4AE11E34501D004686FC /* AZParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 111D4ADF1E34501D004686FC /* AZParticle.m */; };
+		111D4AE61E3450F0004686FC /* SandDrawDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111D4AE51E3450F0004686FC /* SandDrawDemoViewController.m */; };
 		112296A01DC7153C002D27E4 /* WKWebViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122969F1DC7153C002D27E4 /* WKWebViewDemoViewController.m */; };
 		112296A21DC716C0002D27E4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112296A11DC716C0002D27E4 /* WebKit.framework */; };
 		112296B31DC71A27002D27E4 /* customHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 112296A51DC71A27002D27E4 /* customHUD.m */; };
@@ -473,6 +476,12 @@
 		1117A70F1D7FB45000B56974 /* FPSShowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSShowLabel.m; sourceTree = "<group>"; };
 		1117A7101D7FB45000B56974 /* FPSWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSWeakProxy.h; sourceTree = "<group>"; };
 		1117A7111D7FB45000B56974 /* FPSWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSWeakProxy.m; sourceTree = "<group>"; };
+		111D4ADC1E34501D004686FC /* AZEmitterLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZEmitterLayer.h; sourceTree = "<group>"; };
+		111D4ADD1E34501D004686FC /* AZEmitterLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZEmitterLayer.m; sourceTree = "<group>"; };
+		111D4ADE1E34501D004686FC /* AZParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZParticle.h; sourceTree = "<group>"; };
+		111D4ADF1E34501D004686FC /* AZParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZParticle.m; sourceTree = "<group>"; };
+		111D4AE21E34508A004686FC /* SandDrawDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandDrawDemoViewController.h; sourceTree = "<group>"; };
+		111D4AE51E3450F0004686FC /* SandDrawDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SandDrawDemoViewController.m; sourceTree = "<group>"; };
 		1122969E1DC7153C002D27E4 /* WKWebViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewDemoViewController.h; sourceTree = "<group>"; };
 		1122969F1DC7153C002D27E4 /* WKWebViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewDemoViewController.m; sourceTree = "<group>"; };
 		112296A11DC716C0002D27E4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -780,6 +789,8 @@
 				11AF4FED1E1B52830096B831 /* ZLYViewController.m */,
 				11AF506F1E1B96100096B831 /* LoadingDemoViewController.h */,
 				11AF50721E1B96BF0096B831 /* LoadingDemoViewController.m */,
+				111D4AE21E34508A004686FC /* SandDrawDemoViewController.h */,
+				111D4AE51E3450F0004686FC /* SandDrawDemoViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -787,6 +798,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				111D4ADB1E34500A004686FC /* AZEmitter */,
 				11AF4FF81E1B76830096B831 /* JxbDebugTool */,
 				11C713C21DD4495300877E26 /* XLNotificationTransfer */,
 				112296A31DC71A27002D27E4 /* MBProgressHUD */,
@@ -1199,6 +1211,17 @@
 			path = FPSLabel;
 			sourceTree = "<group>";
 		};
+		111D4ADB1E34500A004686FC /* AZEmitter */ = {
+			isa = PBXGroup;
+			children = (
+				111D4ADC1E34501D004686FC /* AZEmitterLayer.h */,
+				111D4ADD1E34501D004686FC /* AZEmitterLayer.m */,
+				111D4ADE1E34501D004686FC /* AZParticle.h */,
+				111D4ADF1E34501D004686FC /* AZParticle.m */,
+			);
+			path = AZEmitter;
+			sourceTree = "<group>";
+		};
 		112296A31DC71A27002D27E4 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
@@ -1553,6 +1576,7 @@
 				112296BE1DC71A27002D27E4 /* MBProgressHUD.m in Sources */,
 				11AF50291E1B76830096B831 /* JxbHttpVC.m in Sources */,
 				0758E9D61D6FF37A00E7FCE7 /* UIImageView+WebCache.m in Sources */,
+				111D4AE11E34501D004686FC /* AZParticle.m in Sources */,
 				1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */,
 				0758E9CE1D6FF37A00E7FCE7 /* SDWebImageDownloaderOperation.m in Sources */,
 				11D36AA31D75329700247B10 /* SavePermanentDemoViewController.m in Sources */,
@@ -1563,6 +1587,7 @@
 				0758E9DD1D6FF37A00E7FCE7 /* JWTextField.m in Sources */,
 				0758E9B31D6FF37A00E7FCE7 /* UIImage+DrawBlock.m in Sources */,
 				1100BFCD1D80FEA70058F230 /* TYLaunchFadeScaleAnimation.m in Sources */,
+				111D4AE61E3450F0004686FC /* SandDrawDemoViewController.m in Sources */,
 				0758E9D41D6FF37A00E7FCE7 /* UIImage+WebP.m in Sources */,
 				110AEE1B1DD2B0B300F70013 /* ShoppingCartCell.m in Sources */,
 				0758E9C11D6FF37A00E7FCE7 /* NSObject+MJProperty.m in Sources */,
@@ -1700,6 +1725,7 @@
 				0758E9B81D6FF37A00E7FCE7 /* MJDictionaryCache.m in Sources */,
 				11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */,
 				11AF50211E1B76830096B831 /* JxbCrashHelper.m in Sources */,
+				111D4AE01E34501D004686FC /* AZEmitterLayer.m in Sources */,
 				0758E9D11D6FF37A00E7FCE7 /* UIButton+WebCache.m in Sources */,
 				0758E9A81D6FF37A00E7FCE7 /* FMDatabasePool.m in Sources */,
 				0758E9A91D6FF37A00E7FCE7 /* FMDatabaseQueue.m in Sources */,
