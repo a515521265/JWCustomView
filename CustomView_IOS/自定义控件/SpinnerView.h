@@ -16,7 +16,9 @@
 
 @property (nonatomic, copy) void(^backModel)(id );
 
-@property (nonatomic,assign) BOOL  isNavHeight;
+@property (nonatomic,assign) BOOL  isNavHeight; //是否有导航栏
+
+@property (nonatomic,assign) BOOL  tapDisappear; //点击其他位置消失
 
 -(void)ShowView;
 

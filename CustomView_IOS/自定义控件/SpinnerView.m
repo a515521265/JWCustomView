@@ -16,10 +16,42 @@
 
 @property (nonatomic,strong) UIView * relevanceView;
 
+@property (nonatomic,strong) UIWindow * window;
+
+@property (nonatomic,strong) UIView * shieldView;
+
 @end
 
 
 @implementation SpinnerView
+
+-(UIWindow *)window{
+
+    if (!_window) {
+        UIWindow * window = [UIApplication sharedApplication].keyWindow;
+        _window = window;
+        _window.clipsToBounds = true;
+        [_window addSubview:self.shieldView];
+    }
+    return _window;
+}
+
+-(UIView *)shieldView{
+
+    if (!_shieldView) {
+        _shieldView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+        _shieldView.backgroundColor = [UIColor clearColor];
+        HXWeak_self
+        [_shieldView addSingleTapEvent:^{
+            HXStrong_self
+            if (self.tapDisappear) {
+                [self hiddenView];
+            }
+        }];
+    }
+    return _shieldView;
+}
+
 
 -(instancetype)initShowSpinnerWithRelevanceView:(UIView *)view{
  
@@ -32,9 +64,6 @@
         self.spinnerTableView.delegate = self;
         self.spinnerTableView.dataSource = self;
         [self addSubview:self.spinnerTableView];
-        
-        [view.superview addSubview:self];
-        
     }
     return self;
 }
@@ -46,7 +75,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     cell.textLabel.text = self.modelArr[indexPath.row];
-//    cell.textLabel.font = kLightFont(14);
     return cell;
 }
 
@@ -82,6 +110,9 @@
 }
 
 -(void)ShowView{
+    
+    [self.window addSubview:self];
+
     CGRect  rect = self.getRelativewindowFrame(self.relevanceView);
     [self settingHeight];
     if (rect.origin.y > (kScreenHeight - self.height - (self.isNavHeight ? 64:0))) {
@@ -118,6 +149,7 @@
         self.transform = originTransform;
     } completion:^(BOOL finished){
         [self removeFromSuperview];
+        [self.shieldView removeFromSuperview];
     }];
 }
 

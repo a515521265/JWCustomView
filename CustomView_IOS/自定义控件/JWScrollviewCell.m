@@ -46,7 +46,7 @@
 -(JWLabel *)leftLabel{
     
     if (!_leftLabel) {
-        _leftLabel = [[JWLabel alloc]initWithFrame:CGRectMake(20, 0, kScreenWidth-40, self.contentView.height)];
+        _leftLabel = [[JWLabel alloc]initWithFrame:CGRectMake(15, 0, kScreenWidth/2-20, self.contentView.height)];
         [self.contentView addSubview:_leftLabel];
     }
     return _leftLabel;
@@ -54,7 +54,7 @@
 
 -(JWTextField *)rightTextField{
     if (!_rightTextField) {
-        _rightTextField = [[JWTextField alloc]initWithFrame:CGRectMake(20, 0, kScreenWidth-40, self.contentView.height)];
+        _rightTextField = [[JWTextField alloc]initWithFrame:CGRectMake(kScreenWidth/2, 0, kScreenWidth/2-20, self.contentView.height)];
         _rightTextField.textAlignment = 2;
         [self.contentView addSubview:_rightTextField];
     }
