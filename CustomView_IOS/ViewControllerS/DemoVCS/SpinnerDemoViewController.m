@@ -43,7 +43,7 @@
     
     [self.scrollView addSubview:button];
     
-    self.scrollView.contentSize = CGSizeMake(0, CGRectGetMaxY(button.frame));
+    self.scrollView.contentSize = CGSizeMake(0, CGRectGetMaxY(button.frame)+300);
     
     
 //    JWAlertView * jwalert1 = [[JWAlertView alloc]initJWAlertViewWithTitle:@"哈哈" message:@"呵呵" delegate:self cancelButtonTitle:@"嘿嘿1" otherButtonTitles:nil];

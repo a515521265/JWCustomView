@@ -115,6 +115,7 @@
     [self.window addSubview:self];
 
     CGRect  rect = self.getRelativewindowFrame(self.relevanceView);
+    self.y = CGRectGetMaxY(rect);
     
     if (rect.origin.y > (kScreenHeight - [self getViewJWHeight] - (self.isNavHeight ? 64:0))) {
         self.y = (rect.origin.y - [self getViewJWHeight]) + [self getViewJWHeight];
