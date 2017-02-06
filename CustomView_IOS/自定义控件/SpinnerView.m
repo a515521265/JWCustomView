@@ -20,6 +20,8 @@
 
 @property (nonatomic,strong) UIView * shieldView;
 
+@property (nonatomic,assign) BOOL up;
+
 @end
 
 
@@ -51,7 +53,6 @@
     }
     return _shieldView;
 }
-
 
 -(instancetype)initShowSpinnerWithRelevanceView:(UIView *)view{
  
@@ -115,22 +116,23 @@
 
     CGRect  rect = self.getRelativewindowFrame(self.relevanceView);
     
-    if (rect.origin.y > (kScreenHeight - self.height - (self.isNavHeight ? 64:0))) {
-        self.y = (rect.origin.y - self.height);
+    if (rect.origin.y > (kScreenHeight - [self getViewJWHeight] - (self.isNavHeight ? 64:0))) {
+        self.y = (rect.origin.y - [self getViewJWHeight]) + [self getViewJWHeight];
+        self.height = 0;
+        [UIView animateWithDuration:0.15 animations:^{
+            self.y = (rect.origin.y - [self getViewJWHeight]);
+            [self settingHeight];
+        } completion:^(BOOL finished) {
+            
+        }];
+        self.up = true;
+    }else{
+        [UIView animateWithDuration:0.15 animations:^{
+            [self settingHeight];
+        } completion:^(BOOL finished) {
+            
+        }];
     }
-//    CGAffineTransform originTransform = self.transform;
-//    CGAffineTransform scaleTransform = CGAffineTransformScale(self.transform, 0.9, 0.9);
-//    self.transform = scaleTransform;
-//    [UIView animateWithDuration:0.15f delay:0.f options:UIViewAnimationOptionAllowUserInteraction &UIViewAnimationOptionCurveEaseOut animations:^{
-//        self.transform = originTransform;
-//    } completion:nil];
-    
-    [UIView animateWithDuration:0.15 animations:^{
-        [self settingHeight];
-    } completion:^(BOOL finished) {
-        
-    }];
-    
 }
 
 -(void)settingHeight{
@@ -146,31 +148,38 @@
     [[self layer] setShadowColor:[UIColor grayColor].CGColor];
 }
 
+-(CGFloat)getViewJWHeight{
+    CGFloat Jheight = 0;
+    if (_modelArr.count>5) {
+        Jheight = self.relevanceView.height * 5;
+    }else{
+        Jheight = _modelArr.count*self.relevanceView.height;
+    }
+    return Jheight;
+}
+
 
 -(void)hiddenView{
+
     
-//    CGAffineTransform originTransform = CGAffineTransformScale(self.transform, 0.9, 0.9);
-//    CGAffineTransform scaleTransform = self.transform;
-//    self.transform = scaleTransform;
-//    [UIView animateWithDuration:0.15f delay:0.f options:UIViewAnimationOptionAllowUserInteraction &UIViewAnimationOptionCurveEaseOut animations:^{
-//        self.transform = originTransform;
-//    } completion:^(BOOL finished){
-//        [self removeFromSuperview];
-//        [self.shieldView removeFromSuperview];
-//    }];
+    if (self.up) {
+        [UIView animateWithDuration:0.15 animations:^{
+            self.y = self.y + [self getViewJWHeight];
+            self.height = self.spinnerTableView.height = 0;
+        } completion:^(BOOL finished) {
+            [self removeFromSuperview];
+            [self.shieldView removeFromSuperview];
+        }];
+    }else{
+        [UIView animateWithDuration:0.15 animations:^{
+            self.height = self.spinnerTableView.height = 0;
+        } completion:^(BOOL finished) {
+            [self removeFromSuperview];
+            [self.shieldView removeFromSuperview];
+        }];
+    }
     
-    
-    [UIView animateWithDuration:0.15 animations:^{
-        self.height = self.spinnerTableView.height = 0;
-    } completion:^(BOOL finished) {
-        
-        [self removeFromSuperview];
-        [self.shieldView removeFromSuperview];
-        
-    }];
-    
-    
-    
+
 }
 
 @end

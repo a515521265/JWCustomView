@@ -9,7 +9,11 @@
 #import "SpinnerDemoViewController.h"
 #import "SpinnerView.h"
 
+#import "JWScrollView.h"
+
 @interface SpinnerDemoViewController ()
+
+@property (nonatomic,strong) JWScrollView * scrollView;
 
 @property (nonatomic,strong) SpinnerView * spinner;
 
@@ -17,17 +21,29 @@
 
 @implementation SpinnerDemoViewController
 
+-(JWScrollView *)scrollView{
+    
+    if (!_scrollView) {
+        _scrollView = [[JWScrollView alloc]init];
+        _scrollView.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+        _scrollView.alwaysBounceVertical = true;
+        [self.view addSubview:_scrollView];
+    }
+    return _scrollView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
-    button.frame = CGRectMake((kScreenWidth-150)/2, kScreenHeight-400, 150, 35);
+    button.frame = CGRectMake((kScreenWidth-150)/2, kScreenHeight+500, 150, 35);
     [button setBackgroundColor:[UIColor blueColor]];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitle:@"显示下拉列表" forState:UIControlStateNormal];
     
-    [self.view addSubview:button];
+    [self.scrollView addSubview:button];
     
+    self.scrollView.contentSize = CGSizeMake(0, CGRectGetMaxY(button.frame));
     
     
 //    JWAlertView * jwalert1 = [[JWAlertView alloc]initJWAlertViewWithTitle:@"哈哈" message:@"呵呵" delegate:self cancelButtonTitle:@"嘿嘿1" otherButtonTitles:nil];
@@ -54,6 +70,7 @@
             [button setTitle:backStr forState:UIControlStateNormal];
         };
     }];
+    
 }
 
 @end
