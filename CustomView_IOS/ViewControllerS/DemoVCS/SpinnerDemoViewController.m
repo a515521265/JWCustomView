@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
-    button.frame = CGRectMake((kScreenWidth-150)/2, kScreenHeight-400, 150, 50);
+    button.frame = CGRectMake((kScreenWidth-150)/2, kScreenHeight-400, 150, 35);
     [button setBackgroundColor:[UIColor blueColor]];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitle:@"显示下拉列表" forState:UIControlStateNormal];
@@ -43,24 +43,16 @@
 //    [jwalert4 alertShow];
 
     HXWeak_(button)
-    HXWeak_self
     [button addSingleTapEvent:^{
-        HXStrong_self
         HXStrong_(button)
-        if (self.spinner) {
-            [self.spinner hiddenView];
-            self.spinner = nil;
-            return;
-        }
         SpinnerView * spinner = [[SpinnerView alloc]initShowSpinnerWithRelevanceView:button];
         spinner.modelArr = @[@"哈哈",@"呵呵",@"嘿嘿",@"嗷嗷",@"啊啊",@"--"].mutableCopy;
         spinner.isNavHeight = true;
+        spinner.tapDisappear= true;
         [spinner ShowView];
         spinner.backModel = ^(NSString *backStr){
             [button setTitle:backStr forState:UIControlStateNormal];
-            self.spinner = nil;
         };
-        self.spinner =spinner;
     }];
 }
 

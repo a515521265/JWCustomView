@@ -114,16 +114,23 @@
     [self.window addSubview:self];
 
     CGRect  rect = self.getRelativewindowFrame(self.relevanceView);
-    [self settingHeight];
+    
     if (rect.origin.y > (kScreenHeight - self.height - (self.isNavHeight ? 64:0))) {
         self.y = (rect.origin.y - self.height);
     }
-    CGAffineTransform originTransform = self.transform;
-    CGAffineTransform scaleTransform = CGAffineTransformScale(self.transform, 0.9, 0.9);
-    self.transform = scaleTransform;
-    [UIView animateWithDuration:0.15f delay:0.f options:UIViewAnimationOptionAllowUserInteraction &UIViewAnimationOptionCurveEaseOut animations:^{
-        self.transform = originTransform;
-    } completion:nil];
+//    CGAffineTransform originTransform = self.transform;
+//    CGAffineTransform scaleTransform = CGAffineTransformScale(self.transform, 0.9, 0.9);
+//    self.transform = scaleTransform;
+//    [UIView animateWithDuration:0.15f delay:0.f options:UIViewAnimationOptionAllowUserInteraction &UIViewAnimationOptionCurveEaseOut animations:^{
+//        self.transform = originTransform;
+//    } completion:nil];
+    
+    [UIView animateWithDuration:0.15 animations:^{
+        [self settingHeight];
+    } completion:^(BOOL finished) {
+        
+    }];
+    
 }
 
 -(void)settingHeight{
@@ -142,15 +149,28 @@
 
 -(void)hiddenView{
     
-    CGAffineTransform originTransform = CGAffineTransformScale(self.transform, 0.9, 0.9);
-    CGAffineTransform scaleTransform = self.transform;
-    self.transform = scaleTransform;
-    [UIView animateWithDuration:0.15f delay:0.f options:UIViewAnimationOptionAllowUserInteraction &UIViewAnimationOptionCurveEaseOut animations:^{
-        self.transform = originTransform;
-    } completion:^(BOOL finished){
+//    CGAffineTransform originTransform = CGAffineTransformScale(self.transform, 0.9, 0.9);
+//    CGAffineTransform scaleTransform = self.transform;
+//    self.transform = scaleTransform;
+//    [UIView animateWithDuration:0.15f delay:0.f options:UIViewAnimationOptionAllowUserInteraction &UIViewAnimationOptionCurveEaseOut animations:^{
+//        self.transform = originTransform;
+//    } completion:^(BOOL finished){
+//        [self removeFromSuperview];
+//        [self.shieldView removeFromSuperview];
+//    }];
+    
+    
+    [UIView animateWithDuration:0.15 animations:^{
+        self.height = self.spinnerTableView.height = 0;
+    } completion:^(BOOL finished) {
+        
         [self removeFromSuperview];
         [self.shieldView removeFromSuperview];
+        
     }];
+    
+    
+    
 }
 
 @end
