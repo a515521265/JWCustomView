@@ -96,7 +96,12 @@
 }
 #pragma mark - 设置cell的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return self.relevanceView.height;
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(spinnerItemHeight)]) {
+        return [self.delegate spinnerItemHeight];
+    }else{
+        return self.relevanceView.height;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -143,6 +148,7 @@
     }else{
         self.height = self.spinnerTableView.height = _modelArr.count*self.relevanceView.height;
     }
+    
     [[self layer] setShadowOffset:CGSizeMake(1, 3)];
     [[self layer] setShadowRadius:5];
     [[self layer] setShadowOpacity:1];

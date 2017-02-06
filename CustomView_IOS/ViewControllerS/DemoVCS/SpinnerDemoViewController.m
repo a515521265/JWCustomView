@@ -11,7 +11,7 @@
 
 #import "JWScrollView.h"
 
-@interface SpinnerDemoViewController ()
+@interface SpinnerDemoViewController ()<SpinnerViewDelegate>
 
 @property (nonatomic,strong) JWScrollView * scrollView;
 
@@ -36,14 +36,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
-    button.frame = CGRectMake((kScreenWidth-150)/2, kScreenHeight+500, 150, 35);
+    button.frame = CGRectMake((kScreenWidth-150)/2, kScreenHeight-500, 150, 35);
     [button setBackgroundColor:[UIColor blueColor]];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitle:@"显示下拉列表" forState:UIControlStateNormal];
     
-    [self.scrollView addSubview:button];
+    [self.view addSubview:button];
     
-    self.scrollView.contentSize = CGSizeMake(0, CGRectGetMaxY(button.frame)+300);
+//    self.scrollView.contentSize = CGSizeMake(0, CGRectGetMaxY(button.frame)+300);
     
     
 //    JWAlertView * jwalert1 = [[JWAlertView alloc]initJWAlertViewWithTitle:@"哈哈" message:@"呵呵" delegate:self cancelButtonTitle:@"嘿嘿1" otherButtonTitles:nil];
@@ -65,6 +65,7 @@
         spinner.modelArr = @[@"哈哈",@"呵呵",@"嘿嘿",@"嗷嗷",@"啊啊",@"--"].mutableCopy;
         spinner.isNavHeight = true;
         spinner.tapDisappear= true;
+//        spinner.delegate =self;
         [spinner ShowView];
         spinner.backModel = ^(NSString *backStr){
             [button setTitle:backStr forState:UIControlStateNormal];
@@ -72,5 +73,9 @@
     }];
     
 }
+
+//-(CGFloat)spinnerItemHeight{
+//    return 80;
+//}
 
 @end

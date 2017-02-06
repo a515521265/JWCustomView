@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SpinnerViewDelegate <NSObject>
+
+- (CGFloat)spinnerItemHeight; // !< SpinnerViewDelegate
+
+@end
+
+
 @interface SpinnerView : UIView
 
 -(instancetype)initShowSpinnerWithRelevanceView:(UIView *)view;
@@ -19,6 +26,8 @@
 @property (nonatomic,assign) BOOL  isNavHeight; //是否有导航栏
 
 @property (nonatomic,assign) BOOL  tapDisappear; //点击其他位置消失
+
+@property (nonatomic,assign) id <SpinnerViewDelegate> delegate;
 
 -(void)ShowView;
 
