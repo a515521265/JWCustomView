@@ -20,6 +20,8 @@
 //接口debug
 #import "JxbDebugTool.h"
 
+#import "KTouchPointerWindow.h"
+
 @interface AppDelegate ()
 @property (nonatomic,strong) FPSLabelManager * showFPSLabel;
 
@@ -97,6 +99,8 @@
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
         NSLog(@"finished");
     }];
+    
+    KTouchPointerWindowInstall();
     
     return YES;
 

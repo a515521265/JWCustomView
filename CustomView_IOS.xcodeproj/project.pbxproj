@@ -192,6 +192,7 @@
 		11CB8BB91DC054B90051FB62 /* accIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BB81DC054B90051FB62 /* accIndex.html */; };
 		11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */; };
 		11CB8BBE1DC082470051FB62 /* HomeIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BBD1DC082470051FB62 /* HomeIndex.html */; };
+		11D22DCE1E824AFB0057AFFB /* KTouchPointerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D22DCD1E824AFB0057AFFB /* KTouchPointerWindow.m */; };
 		11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */; };
 		11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A751D751ABE00247B10 /* DWBankModel.m */; };
 		11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A791D751AFC00247B10 /* ChineseInclude.m */; };
@@ -593,6 +594,8 @@
 		11CB8BBA1DC055C40051FB62 /* HTMLDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLDemoViewController.h; sourceTree = "<group>"; };
 		11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLDemoViewController.m; sourceTree = "<group>"; };
 		11CB8BBD1DC082470051FB62 /* HomeIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HomeIndex.html; sourceTree = "<group>"; };
+		11D22DCC1E824AFB0057AFFB /* KTouchPointerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTouchPointerWindow.h; sourceTree = "<group>"; };
+		11D22DCD1E824AFB0057AFFB /* KTouchPointerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTouchPointerWindow.m; sourceTree = "<group>"; };
 		11D36A711D751A5000247B10 /* SearchBankDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBankDemoViewController.h; sourceTree = "<group>"; };
 		11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBankDemoViewController.m; sourceTree = "<group>"; };
 		11D36A741D751ABE00247B10 /* DWBankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBankModel.h; sourceTree = "<group>"; };
@@ -1198,6 +1201,8 @@
 			children = (
 				110AEE191DD2B0B300F70013 /* ShoppingCartCell.h */,
 				110AEE1A1DD2B0B300F70013 /* ShoppingCartCell.m */,
+				11D22DCC1E824AFB0057AFFB /* KTouchPointerWindow.h */,
+				11D22DCD1E824AFB0057AFFB /* KTouchPointerWindow.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1699,6 +1704,7 @@
 				0758E99C1D6FF37A00E7FCE7 /* DemoModel.m in Sources */,
 				1100BF981D7FE6E30058F230 /* AFURLRequestSerialization.m in Sources */,
 				0758E9C51D6FF37A00E7FCE7 /* PDTSimpleCalendarViewFlowLayout.m in Sources */,
+				11D22DCE1E824AFB0057AFFB /* KTouchPointerWindow.m in Sources */,
 				11D36A991D752B5700247B10 /* LocalCheckBankDemoViewController.m in Sources */,
 				11AF502E1E1B76830096B831 /* NSURLRequest+Identify.m in Sources */,
 				1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */,
