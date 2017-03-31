@@ -193,6 +193,8 @@
 		11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CB8BBB1DC055C40051FB62 /* HTMLDemoViewController.m */; };
 		11CB8BBE1DC082470051FB62 /* HomeIndex.html in Resources */ = {isa = PBXBuildFile; fileRef = 11CB8BBD1DC082470051FB62 /* HomeIndex.html */; };
 		11D22DCE1E824AFB0057AFFB /* KTouchPointerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D22DCD1E824AFB0057AFFB /* KTouchPointerWindow.m */; };
+		11D22DD31E8250BC0057AFFB /* MVMaterialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D22DD01E8250BC0057AFFB /* MVMaterialView.m */; };
+		11D22DD41E8250BC0057AFFB /* MVMaterialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D22DD21E8250BC0057AFFB /* MVMaterialButton.m */; };
 		11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */; };
 		11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A751D751ABE00247B10 /* DWBankModel.m */; };
 		11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36A791D751AFC00247B10 /* ChineseInclude.m */; };
@@ -596,6 +598,10 @@
 		11CB8BBD1DC082470051FB62 /* HomeIndex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HomeIndex.html; sourceTree = "<group>"; };
 		11D22DCC1E824AFB0057AFFB /* KTouchPointerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTouchPointerWindow.h; sourceTree = "<group>"; };
 		11D22DCD1E824AFB0057AFFB /* KTouchPointerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTouchPointerWindow.m; sourceTree = "<group>"; };
+		11D22DCF1E8250BC0057AFFB /* MVMaterialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMaterialView.h; sourceTree = "<group>"; };
+		11D22DD01E8250BC0057AFFB /* MVMaterialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMaterialView.m; sourceTree = "<group>"; };
+		11D22DD11E8250BC0057AFFB /* MVMaterialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMaterialButton.h; sourceTree = "<group>"; };
+		11D22DD21E8250BC0057AFFB /* MVMaterialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVMaterialButton.m; sourceTree = "<group>"; };
 		11D36A711D751A5000247B10 /* SearchBankDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBankDemoViewController.h; sourceTree = "<group>"; };
 		11D36A721D751A5000247B10 /* SearchBankDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBankDemoViewController.m; sourceTree = "<group>"; };
 		11D36A741D751ABE00247B10 /* DWBankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBankModel.h; sourceTree = "<group>"; };
@@ -1203,6 +1209,10 @@
 				110AEE1A1DD2B0B300F70013 /* ShoppingCartCell.m */,
 				11D22DCC1E824AFB0057AFFB /* KTouchPointerWindow.h */,
 				11D22DCD1E824AFB0057AFFB /* KTouchPointerWindow.m */,
+				11D22DCF1E8250BC0057AFFB /* MVMaterialView.h */,
+				11D22DD01E8250BC0057AFFB /* MVMaterialView.m */,
+				11D22DD11E8250BC0057AFFB /* MVMaterialButton.h */,
+				11D22DD21E8250BC0057AFFB /* MVMaterialButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1692,6 +1702,7 @@
 				11AF50221E1B76830096B831 /* JxbCrashVC.m in Sources */,
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
 				0758E9DF1D6FF37A00E7FCE7 /* UIView+Extension.m in Sources */,
+				11D22DD31E8250BC0057AFFB /* MVMaterialView.m in Sources */,
 				0758E99B1D6FF37A00E7FCE7 /* main.m in Sources */,
 				1100BF641D7FE5570058F230 /* PollingDemoViewController.m in Sources */,
 				1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */,
@@ -1749,6 +1760,7 @@
 				0758E9A91D6FF37A00E7FCE7 /* FMDatabaseQueue.m in Sources */,
 				11D36A8A1D751AFC00247B10 /* HanyuPinyinOutputFormat.m in Sources */,
 				11C713C91DD4498900877E26 /* XLNotificationTransferDemoViewController.m in Sources */,
+				11D22DD41E8250BC0057AFFB /* MVMaterialButton.m in Sources */,
 				1117A7161D7FB45000B56974 /* FPSShowLabel.m in Sources */,
 				0758E9CD1D6FF37A00E7FCE7 /* SDWebImageDownloader.m in Sources */,
 				11AF50201E1B76830096B831 /* JxbContentVC.m in Sources */,

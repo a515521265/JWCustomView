@@ -11,6 +11,10 @@
 
 #import "JWScrollView.h"
 
+#import "MVMaterialButton.h"
+
+#import "MVMaterialView.h"
+
 @interface SpinnerDemoViewController ()<SpinnerViewDelegate>
 
 @property (nonatomic,strong) JWScrollView * scrollView;
@@ -35,13 +39,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIButton * button = [UIButton buttonWithType:UIButtonTypeSystem];
+    MVMaterialButton * button = [MVMaterialButton buttonWithType:UIButtonTypeSystem];
     button.frame = CGRectMake((kScreenWidth-150)/2, kScreenHeight-500, 150, 35);
     [button setBackgroundColor:[UIColor blueColor]];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitle:@"显示下拉列表" forState:UIControlStateNormal];
     
     [self.view addSubview:button];
+    
+    
+    MVMaterialView * tapView = [[MVMaterialView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(button.frame), kScreenWidth, 50)];
+    tapView.backgroundColor = [UIColor greenColor];
+    tapView.tintColor = [UIColor colorWithRed:217/255 green:217/255 blue:217/255 alpha:0.2];
+    tapView.colors = @[(id)UIColorFromRGB(0x9164db).CGColor, (id)UIColorFromRGB(0x46bbe3).CGColor];
+    [tapView addSingleTapEvent:^{
+        NSLog(@"??????");
+    }];
+    [self.view addSubview:tapView];
     
 //    self.scrollView.contentSize = CGSizeMake(0, CGRectGetMaxY(button.frame)+300);
     
