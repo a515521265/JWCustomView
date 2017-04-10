@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import <JSPatchPlatform/JSPatch.h>
 
+//#include "HelloWorld.java"
 
 int main(int argc, char * argv[]) {
     
@@ -21,6 +22,7 @@ int main(int argc, char * argv[]) {
         NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
         [JPEngine evaluateScript:script];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        
         
     }
 }

@@ -23,7 +23,7 @@
     self.title = self.baseDemoModel.title;
     
     [self.view addSubview:[JWLabel setLabelTitle:self.baseDemoModel.demoDescribe setLabelSize:CGSizeMake(kScreenWidth , 0) setLabelFrameX:(0) setLabelFrameY:64 setLabelColor:[UIColor redColor] setLabelFont:[UIFont systemFontOfSize:20]]];
-    
+ 
 }
 
 - (void)dealloc {

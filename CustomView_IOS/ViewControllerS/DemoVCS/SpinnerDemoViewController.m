@@ -15,6 +15,8 @@
 
 #import "MVMaterialView.h"
 
+//#import "helloC.h"
+
 @interface SpinnerDemoViewController ()<SpinnerViewDelegate>
 
 @property (nonatomic,strong) JWScrollView * scrollView;
@@ -47,6 +49,7 @@
     
     [self.view addSubview:button];
     
+//     char  * fun();
     
     MVMaterialView * tapView = [[MVMaterialView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(button.frame), kScreenWidth, 50)];
     tapView.backgroundColor = [UIColor greenColor];
