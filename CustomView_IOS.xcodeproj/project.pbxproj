@@ -229,6 +229,8 @@
 		11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36AAC1D75380600247B10 /* MonitorScreenshotDemoViewController.m */; };
 		11FBF6071D86896500208715 /* JWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6061D86896500208715 /* JWScrollView.m */; };
 		11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */; };
+		5E11F9901EB9A4FC00B903A9 /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5E11F98E1EB9A4FC00B903A9 /* rsa_public_key.pem */; };
+		5E11F9911EB9A4FC00B903A9 /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5E11F98F1EB9A4FC00B903A9 /* rsa_private_key.pem */; };
 		5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */; };
 		5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E585C271EB2E7330004DDB8 /* TextTabViewController.m */; };
 /* End PBXBuildFile section */
@@ -688,6 +690,8 @@
 		11FBF6061D86896500208715 /* JWScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollView.m; sourceTree = "<group>"; };
 		11FBF6081D868A0A00208715 /* LineLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayoutDemoViewController.h; sourceTree = "<group>"; };
 		11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayoutDemoViewController.m; sourceTree = "<group>"; };
+		5E11F98E1EB9A4FC00B903A9 /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
+		5E11F98F1EB9A4FC00B903A9 /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
 		5E54280F1D8C10E600DBE252 /* JWScrollviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWScrollviewCell.h; sourceTree = "<group>"; };
 		5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollviewCell.m; sourceTree = "<group>"; };
 		5E585C261EB2E7330004DDB8 /* TextTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTabViewController.h; sourceTree = "<group>"; };
@@ -1331,6 +1335,8 @@
 		118E0AA21DBF33B50079569B /* JSPatch */ = {
 			isa = PBXGroup;
 			children = (
+				5E11F98E1EB9A4FC00B903A9 /* rsa_public_key.pem */,
+				5E11F98F1EB9A4FC00B903A9 /* rsa_private_key.pem */,
 				118E0AA81DBF34B00079569B /* JWDemo.js */,
 				118E0AA31DBF33D20079569B /* JSPatchPlatform.framework */,
 			);
@@ -1634,6 +1640,7 @@
 				0758E9B01D6FF37A00E7FCE7 /* JPSImagePickerController.bundle in Resources */,
 				0758E99D1D6FF37A00E7FCE7 /* index.html in Resources */,
 				112296B71DC71A27002D27E4 /* common-hud3.png in Resources */,
+				5E11F9901EB9A4FC00B903A9 /* rsa_public_key.pem in Resources */,
 				118E0AA91DBF34B00079569B /* JWDemo.js in Resources */,
 				0758E99A1D6FF37A00E7FCE7 /* Info.plist in Resources */,
 				112296BD1DC71A27002D27E4 /* common-hud9.png in Resources */,
@@ -1648,6 +1655,7 @@
 				0758E9AB1D6FF37A00E7FCE7 /* Info.plist in Resources */,
 				112296B51DC71A27002D27E4 /* common-hud10.png in Resources */,
 				112296B81DC71A27002D27E4 /* common-hud4.png in Resources */,
+				5E11F9911EB9A4FC00B903A9 /* rsa_private_key.pem in Resources */,
 				0758E9951D6FF37A00E7FCE7 /* Assets.xcassets in Resources */,
 				112296BB1DC71A27002D27E4 /* common-hud7.png in Resources */,
 				112296B61DC71A27002D27E4 /* common-hud2.png in Resources */,
