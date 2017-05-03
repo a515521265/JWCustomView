@@ -100,7 +100,7 @@
         NSLog(@"finished");
     }];
     
-    KTouchPointerWindowInstall();
+//    KTouchPointerWindowInstall();
     
     return YES;
 

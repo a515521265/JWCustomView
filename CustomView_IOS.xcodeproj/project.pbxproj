@@ -230,6 +230,7 @@
 		11FBF6071D86896500208715 /* JWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6061D86896500208715 /* JWScrollView.m */; };
 		11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */; };
 		5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */; };
+		5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E585C271EB2E7330004DDB8 /* TextTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -689,6 +690,8 @@
 		11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayoutDemoViewController.m; sourceTree = "<group>"; };
 		5E54280F1D8C10E600DBE252 /* JWScrollviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWScrollviewCell.h; sourceTree = "<group>"; };
 		5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollviewCell.m; sourceTree = "<group>"; };
+		5E585C261EB2E7330004DDB8 /* TextTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTabViewController.h; sourceTree = "<group>"; };
+		5E585C271EB2E7330004DDB8 /* TextTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -854,6 +857,8 @@
 				111D4AE51E3450F0004686FC /* SandDrawDemoViewController.m */,
 				11619A281E3484D100D26F0D /* SpinnerDemoViewController.h */,
 				11619A2E1E348D0600D26F0D /* SpinnerDemoViewController.m */,
+				5E585C261EB2E7330004DDB8 /* TextTabViewController.h */,
+				5E585C271EB2E7330004DDB8 /* TextTabViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1843,6 +1848,7 @@
 				0758E9BA1D6FF37A00E7FCE7 /* MJFoundation.m in Sources */,
 				1117A7121D7FB45000B56974 /* FPSLabelContainerVC.m in Sources */,
 				0758E9C91D6FF37A00E7FCE7 /* NSData+ImageContentType.m in Sources */,
+				5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */,
 				0758E9B81D6FF37A00E7FCE7 /* MJDictionaryCache.m in Sources */,
 				11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */,
 				11AF50211E1B76830096B831 /* JxbCrashHelper.m in Sources */,
