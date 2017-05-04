@@ -231,6 +231,7 @@
 		11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */; };
 		5E11F9901EB9A4FC00B903A9 /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5E11F98E1EB9A4FC00B903A9 /* rsa_public_key.pem */; };
 		5E11F9911EB9A4FC00B903A9 /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5E11F98F1EB9A4FC00B903A9 /* rsa_private_key.pem */; };
+		5E11F9941EBAC0EE00B903A9 /* HXBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11F9931EBAC0EE00B903A9 /* HXBaseModel.m */; };
 		5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */; };
 		5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E585C271EB2E7330004DDB8 /* TextTabViewController.m */; };
 /* End PBXBuildFile section */
@@ -692,6 +693,8 @@
 		11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayoutDemoViewController.m; sourceTree = "<group>"; };
 		5E11F98E1EB9A4FC00B903A9 /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
 		5E11F98F1EB9A4FC00B903A9 /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
+		5E11F9921EBAC0EE00B903A9 /* HXBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXBaseModel.h; sourceTree = "<group>"; };
+		5E11F9931EBAC0EE00B903A9 /* HXBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXBaseModel.m; sourceTree = "<group>"; };
 		5E54280F1D8C10E600DBE252 /* JWScrollviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWScrollviewCell.h; sourceTree = "<group>"; };
 		5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollviewCell.m; sourceTree = "<group>"; };
 		5E585C261EB2E7330004DDB8 /* TextTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTabViewController.h; sourceTree = "<group>"; };
@@ -780,6 +783,8 @@
 				110AEE131DD1C38F00F70013 /* CompanyModel.m */,
 				110AEE151DD1C43F00F70013 /* SpecsModel.h */,
 				110AEE161DD1C43F00F70013 /* SpecsModel.m */,
+				5E11F9921EBAC0EE00B903A9 /* HXBaseModel.h */,
+				5E11F9931EBAC0EE00B903A9 /* HXBaseModel.m */,
 			);
 			name = Models;
 			path = ModelS;
@@ -1751,6 +1756,7 @@
 				118EADB41E9B398200661685 /* MASLayoutConstraint.m in Sources */,
 				112296A01DC7153C002D27E4 /* WKWebViewDemoViewController.m in Sources */,
 				0758E9B51D6FF37A00E7FCE7 /* MDRadialProgressTheme.m in Sources */,
+				5E11F9941EBAC0EE00B903A9 /* HXBaseModel.m in Sources */,
 				11D36A8E1D751AFC00247B10 /* PinyinHelper.m in Sources */,
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
 				110B6F7D1E8E0118004A511E /* helloC.c in Sources */,
