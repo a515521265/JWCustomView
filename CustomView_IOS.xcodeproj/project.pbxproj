@@ -234,6 +234,8 @@
 		5E11F9941EBAC0EE00B903A9 /* HXBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11F9931EBAC0EE00B903A9 /* HXBaseModel.m */; };
 		5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */; };
 		5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E585C271EB2E7330004DDB8 /* TextTabViewController.m */; };
+		5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */; };
+		5EB29ED61EBC1286003B1E84 /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED51EBC1286003B1E84 /* TextModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -699,6 +701,10 @@
 		5E5428101D8C10E600DBE252 /* JWScrollviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWScrollviewCell.m; sourceTree = "<group>"; };
 		5E585C261EB2E7330004DDB8 /* TextTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTabViewController.h; sourceTree = "<group>"; };
 		5E585C271EB2E7330004DDB8 /* TextTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTabViewController.m; sourceTree = "<group>"; };
+		5EB29ED11EBC0AF8003B1E84 /* QQTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQTextViewController.h; sourceTree = "<group>"; };
+		5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQTextViewController.m; sourceTree = "<group>"; };
+		5EB29ED41EBC1286003B1E84 /* TextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextModel.h; sourceTree = "<group>"; };
+		5EB29ED51EBC1286003B1E84 /* TextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -785,6 +791,8 @@
 				110AEE161DD1C43F00F70013 /* SpecsModel.m */,
 				5E11F9921EBAC0EE00B903A9 /* HXBaseModel.h */,
 				5E11F9931EBAC0EE00B903A9 /* HXBaseModel.m */,
+				5EB29ED41EBC1286003B1E84 /* TextModel.h */,
+				5EB29ED51EBC1286003B1E84 /* TextModel.m */,
 			);
 			name = Models;
 			path = ModelS;
@@ -868,6 +876,8 @@
 				11619A2E1E348D0600D26F0D /* SpinnerDemoViewController.m */,
 				5E585C261EB2E7330004DDB8 /* TextTabViewController.h */,
 				5E585C271EB2E7330004DDB8 /* TextTabViewController.m */,
+				5EB29ED11EBC0AF8003B1E84 /* QQTextViewController.h */,
+				5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1743,6 +1753,7 @@
 				0758E9A41D6FF37A00E7FCE7 /* XYPieChartDemoViewController.m in Sources */,
 				11AF50271E1B76830096B831 /* JxbHttpDetailVC.m in Sources */,
 				0758E9C61D6FF37A00E7FCE7 /* PDTSimpleCalendarViewHeader.m in Sources */,
+				5EB29ED61EBC1286003B1E84 /* TextModel.m in Sources */,
 				1100BFB61D7FEB3B0058F230 /* YYImageCoder.m in Sources */,
 				11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */,
 				1100BF961D7FE6E30058F230 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1799,6 +1810,7 @@
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
 				5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */,
 				11AF4FEE1E1B52830096B831 /* ZLYViewController.m in Sources */,
+				5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */,
 				110AEE141DD1C38F00F70013 /* CompanyModel.m in Sources */,
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
 				1100BF6C1D7FE64F0058F230 /* AdView.m in Sources */,

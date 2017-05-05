@@ -70,7 +70,8 @@
                       [DemoModel itemWithDcit:@{@"title":@"LoadingDemoViewController",@"demoDescribe":@"加载提示",@"className":@"LoadingDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"LoadingDemoViewController",@"demoDescribe":@"沙画效果",@"className":@"SandDrawDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"SpinnerDemoViewController",@"demoDescribe":@"下拉菜单封装",@"className":@"SpinnerDemoViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"TextTabViewController",@"demoDescribe":@"测试tabview",@"className":@"TextTabViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"TextTabViewController",@"demoDescribe":@"测试tabview",@"className":@"TextTabViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"QQTextViewController",@"demoDescribe":@"测试QQtabview",@"className":@"QQTextViewController"}]
                       ];
     
     
@@ -83,8 +84,18 @@
     NSLog(@"wifi信息---%@\n%@",[self fetchSSIDInfo],[self getLocalInfoForCurrentWiFi]);
     
     
-    NSMutableArray * arr = @[@"22",@"33",@"44",@"55",@"66",@"77",@"88"].mutableCopy;
+    NSMutableArray * arr = @[@"22",@"33",@"44",@"55",@"66",@"77",@"88",@"99",@"99"].mutableCopy;
     
+    
+    for (int i = 0; i< arr.count; i++) {
+        
+        if (i) {
+            if (i%3==0) {
+                NSLog(@"-----");
+            }
+        }
+        
+    }
     
     
 }
