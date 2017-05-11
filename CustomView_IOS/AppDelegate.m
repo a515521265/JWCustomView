@@ -228,6 +228,19 @@
 }
 
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
+    
+    NSString *urlString = [url absoluteString];
+    if ([urlString isEqualToString:@"hsxc://starapp/index"]) {
+
+        NSLog(@"链接进入app");
+        
+        return YES;
+    }
+    
+    return YES;
+}
+
 
 
 @end
