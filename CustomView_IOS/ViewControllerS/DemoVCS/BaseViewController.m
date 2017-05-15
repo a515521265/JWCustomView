@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "MBProgressHUD.h"
 
 @interface BaseViewController ()
 
@@ -32,8 +33,6 @@
     
 }
 
-
-
 extern void pushViewController(UIViewController *VC,UIViewController *sencondVC){
     [VC.navigationController pushViewController:sencondVC animated:YES];
 }
@@ -41,7 +40,8 @@ extern void presentViewController(UIViewController *VC,UIViewController *sencond
     [VC presentViewController:sencondVC animated:YES completion:nil];
 }
 extern void showHUD(){
-//    [SVProgressHUD show];
+    customHUD* hud = [[customHUD alloc]init];
+    [hud showCustomHUDWithView:[UIApplication sharedApplication].keyWindow];
 }
 extern void showHUDWithString(NSString *string){
 //    [SVProgressHUD showWithStatus:string];
@@ -68,7 +68,13 @@ extern void showHUDWithImageAndString(UIImage *image ,NSString *string){
 }
 
 extern void dismissHUD(){
-//    [SVProgressHUD dismiss];
+    
+    for (int i =0; i< [UIApplication sharedApplication].keyWindow.subviews.count; i++) {
+        UIView * vs =  [UIApplication sharedApplication].keyWindow.subviews[i];
+        if ([vs isKindOfClass:[MBProgressHUD class]]) {
+            [vs removeFromSuperview];
+        }
+    }
 }
 
 extern void dismissHUDWithDelay(NSTimeInterval timeInterval,void(^Block)()){

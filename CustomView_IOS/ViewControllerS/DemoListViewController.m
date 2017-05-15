@@ -83,19 +83,12 @@
  
     NSLog(@"wifi信息---%@\n%@",[self fetchSSIDInfo],[self getLocalInfoForCurrentWiFi]);
     
+    showHUD();
     
-    NSMutableArray * arr = @[@"22",@"33",@"44",@"55",@"66",@"77",@"88",@"99",@"99"].mutableCopy;
-    
-    
-    for (int i = 0; i< arr.count; i++) {
-        
-        if (i) {
-            if (i%3==0) {
-                NSLog(@"-----");
-            }
-        }
-        
-    }
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dismissHUD();
+    });
+
     
     
 }
