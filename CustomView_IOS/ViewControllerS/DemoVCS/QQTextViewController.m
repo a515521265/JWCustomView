@@ -122,18 +122,18 @@ static BOOL reload;
         reload = true;
         TextModel * dict = self.dataArr[section];
         dict.isShow = !dict.isShow;
-//        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
-        [UIView transitionWithView: self.tableView
-                          duration: 0.35f
-                           options: UIViewAnimationOptionTransitionCrossDissolve
-                        animations: ^(void)
-         {
-             [self.tableView reloadData];
-         }
-                        completion: ^(BOOL isFinished)
-         {
-             /* TODO: Whatever you want here */
-         }];
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:UITableViewRowAnimationFade];
+//        [UIView transitionWithView: self.tableView
+//                          duration: 0.35f
+//                           options: UIViewAnimationOptionTransitionCrossDissolve
+//                        animations: ^(void)
+//         {
+//             [self.tableView reloadData];
+//         }
+//                        completion: ^(BOOL isFinished)
+//         {
+//             /* TODO: Whatever you want here */
+//         }];
     }];
     [view addSubview:lab];
     return view;
