@@ -89,11 +89,14 @@
  
     NSLog(@"wifi信息---%@\n%@",[self fetchSSIDInfo],[self getLocalInfoForCurrentWiFi]);
     
-//    showHUD();
-//    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        dismissHUD();
-//    });
+    showHUD();
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dismissHUD();
+    });
+    
+    
+    
     
 }
 

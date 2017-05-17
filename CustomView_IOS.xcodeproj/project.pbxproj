@@ -281,6 +281,9 @@
 		5EB825631ECC28A400A35502 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825571ECC28A400A35502 /* rscode.c */; };
 		5EB825641ECC28A400A35502 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825591ECC28A400A35502 /* split.c */; };
 		5EB825651ECC28A400A35502 /* UIImage+instask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8255C1ECC28A400A35502 /* UIImage+instask.m */; };
+		5EB8256B1ECC303200A35502 /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8256A1ECC303200A35502 /* GiFHUD.m */; };
+		5EB825711ECC318B00A35502 /* load.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825701ECC318B00A35502 /* load.gif */; };
+		5EB825731ECC321500A35502 /* load1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825721ECC321500A35502 /* load1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -843,6 +846,10 @@
 		5EB8255A1ECC28A400A35502 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
 		5EB8255B1ECC28A400A35502 /* UIImage+instask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+instask.h"; sourceTree = "<group>"; };
 		5EB8255C1ECC28A400A35502 /* UIImage+instask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+instask.m"; sourceTree = "<group>"; };
+		5EB825691ECC303200A35502 /* GiFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiFHUD.h; sourceTree = "<group>"; };
+		5EB8256A1ECC303200A35502 /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
+		5EB825701ECC318B00A35502 /* load.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load.gif; sourceTree = "<group>"; };
+		5EB825721ECC321500A35502 /* load1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -942,6 +949,8 @@
 				11CB8BBF1DC0865B0051FB62 /* images */,
 				11CB8BB71DC050D30051FB62 /* HTMLFile */,
 				0758E8FA1D6FF37A00E7FCE7 /* index.html */,
+				5EB825721ECC321500A35502 /* load1.gif */,
+				5EB825701ECC318B00A35502 /* load.gif */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1255,6 +1264,8 @@
 		0758E9871D6FF37A00E7FCE7 /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				5EB825691ECC303200A35502 /* GiFHUD.h */,
+				5EB8256A1ECC303200A35502 /* GiFHUD.m */,
 				11AF506C1E1B95DD0096B831 /* XCMStatePrompt.h */,
 				11AF506D1E1B95DD0096B831 /* XCMStatePrompt.m */,
 				1194B1451DD55725008473CF /* UIImage+ColorImage.h */,
@@ -1934,8 +1945,10 @@
 				0758E9B01D6FF37A00E7FCE7 /* JPSImagePickerController.bundle in Resources */,
 				0758E99D1D6FF37A00E7FCE7 /* index.html in Resources */,
 				112296B71DC71A27002D27E4 /* common-hud3.png in Resources */,
+				5EB825711ECC318B00A35502 /* load.gif in Resources */,
 				5E11F9901EB9A4FC00B903A9 /* rsa_public_key.pem in Resources */,
 				118E0AA91DBF34B00079569B /* JWDemo.js in Resources */,
+				5EB825731ECC321500A35502 /* load1.gif in Resources */,
 				0758E99A1D6FF37A00E7FCE7 /* Info.plist in Resources */,
 				112296BD1DC71A27002D27E4 /* common-hud9.png in Resources */,
 				112296B91DC71A27002D27E4 /* common-hud5.png in Resources */,
@@ -2022,6 +2035,7 @@
 				11D36A931D75248D00247B10 /* ZFProgressView.m in Sources */,
 				118EADB81E9B398200661685 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				0758E9CB1D6FF37A00E7FCE7 /* SDWebImageCompat.m in Sources */,
+				5EB8256B1ECC303200A35502 /* GiFHUD.m in Sources */,
 				0758E9DE1D6FF37A00E7FCE7 /* NSObject+Extension.m in Sources */,
 				5EB825331ECC257F00A35502 /* UIImageView+NERChainable.m in Sources */,
 				1100BF991D7FE6E30058F230 /* AFURLResponseSerialization.m in Sources */,

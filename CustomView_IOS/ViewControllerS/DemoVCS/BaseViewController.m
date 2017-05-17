@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 #import "MBProgressHUD.h"
+#import "GiFHUD.h"
 
 @interface BaseViewController ()
 
@@ -40,8 +41,12 @@ extern void presentViewController(UIViewController *VC,UIViewController *sencond
     [VC presentViewController:sencondVC animated:YES completion:nil];
 }
 extern void showHUD(){
-    customHUD* hud = [[customHUD alloc]init];
-    [hud showCustomHUDWithView:[UIApplication sharedApplication].keyWindow];
+//    customHUD* hud = [[customHUD alloc]init];
+//    [hud showCustomHUDWithView:[UIApplication sharedApplication].keyWindow];
+    //Setup GiFHUD image
+    [GiFHUD setGifWithImageName:@"load.gif"];
+    [GiFHUD showWithOverlay];
+//    [GiFHUD show];
 }
 extern void showHUDWithString(NSString *string){
 //    [SVProgressHUD showWithStatus:string];
@@ -69,12 +74,13 @@ extern void showHUDWithImageAndString(UIImage *image ,NSString *string){
 
 extern void dismissHUD(){
     
-    for (int i =0; i< [UIApplication sharedApplication].keyWindow.subviews.count; i++) {
-        UIView * vs =  [UIApplication sharedApplication].keyWindow.subviews[i];
-        if ([vs isKindOfClass:[MBProgressHUD class]]) {
-            [vs removeFromSuperview];
-        }
-    }
+//    for (int i =0; i< [UIApplication sharedApplication].keyWindow.subviews.count; i++) {
+//        UIView * vs =  [UIApplication sharedApplication].keyWindow.subviews[i];
+//        if ([vs isKindOfClass:[MBProgressHUD class]]) {
+//            [vs removeFromSuperview];
+//        }
+//    }
+    [GiFHUD dismiss];
 }
 
 extern void dismissHUDWithDelay(NSTimeInterval timeInterval,void(^Block)()){
