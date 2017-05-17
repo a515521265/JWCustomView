@@ -118,7 +118,9 @@ static BOOL reload;
     lab.text = dict.title;
     view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     lab.font = [UIFont systemFontOfSize:13];
+    HXWeak_self
     [view addSingleTapEvent:^{
+        HXStrong_self
         reload = true;
         TextModel * dict = self.dataArr[section];
         dict.isShow = !dict.isShow;
