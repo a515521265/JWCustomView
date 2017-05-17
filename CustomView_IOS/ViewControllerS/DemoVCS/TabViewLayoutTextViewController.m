@@ -26,7 +26,12 @@ static int size = 3;
     // Do any additional setup after loading the view.
     
     
-    NSMutableArray * arr = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23"].mutableCopy;
+    NSMutableArray * arr = @[].mutableCopy;
+    
+    for (int i =0; i < 151; i++) {
+        NSString * str = [NSString stringWithFormat:@"%d",i];
+        [arr addObject:str];
+    }
     
     NSArray * allSubArr = [self splitArray:arr withSubSize:size];
     
