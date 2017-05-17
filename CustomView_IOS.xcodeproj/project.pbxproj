@@ -236,6 +236,8 @@
 		5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E585C271EB2E7330004DDB8 /* TextTabViewController.m */; };
 		5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */; };
 		5EB29ED61EBC1286003B1E84 /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED51EBC1286003B1E84 /* TextModel.m */; };
+		5EB824D01ECBE77100A35502 /* TabViewLayoutTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824CF1ECBE77100A35502 /* TabViewLayoutTextViewController.m */; };
+		5EB824D31ECBEDB200A35502 /* GridTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824D21ECBEDB200A35502 /* GridTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -705,6 +707,10 @@
 		5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQTextViewController.m; sourceTree = "<group>"; };
 		5EB29ED41EBC1286003B1E84 /* TextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextModel.h; sourceTree = "<group>"; };
 		5EB29ED51EBC1286003B1E84 /* TextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextModel.m; sourceTree = "<group>"; };
+		5EB824CE1ECBE77100A35502 /* TabViewLayoutTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewLayoutTextViewController.h; sourceTree = "<group>"; };
+		5EB824CF1ECBE77100A35502 /* TabViewLayoutTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewLayoutTextViewController.m; sourceTree = "<group>"; };
+		5EB824D11ECBEDB200A35502 /* GridTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridTableViewCell.h; sourceTree = "<group>"; };
+		5EB824D21ECBEDB200A35502 /* GridTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -878,6 +884,8 @@
 				5E585C271EB2E7330004DDB8 /* TextTabViewController.m */,
 				5EB29ED11EBC0AF8003B1E84 /* QQTextViewController.h */,
 				5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */,
+				5EB824CE1ECBE77100A35502 /* TabViewLayoutTextViewController.h */,
+				5EB824CF1ECBE77100A35502 /* TabViewLayoutTextViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1284,6 +1292,8 @@
 				11D22DD01E8250BC0057AFFB /* MVMaterialView.m */,
 				11D22DD11E8250BC0057AFFB /* MVMaterialButton.h */,
 				11D22DD21E8250BC0057AFFB /* MVMaterialButton.m */,
+				5EB824D11ECBEDB200A35502 /* GridTableViewCell.h */,
+				5EB824D21ECBEDB200A35502 /* GridTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1772,6 +1782,7 @@
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
 				110B6F7D1E8E0118004A511E /* helloC.c in Sources */,
 				0758E9C31D6FF37A00E7FCE7 /* PDTSimpleCalendarViewCell.m in Sources */,
+				5EB824D01ECBE77100A35502 /* TabViewLayoutTextViewController.m in Sources */,
 				11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */,
 				0758E9BE1D6FF37A00E7FCE7 /* NSObject+MJClass.m in Sources */,
 				1100BFD21D80FF030058F230 /* TAdLaunchImageView.m in Sources */,
@@ -1834,6 +1845,7 @@
 				1100BFA21D7FE6E30058F230 /* UIProgressView+AFNetworking.m in Sources */,
 				11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */,
 				11AF50261E1B76830096B831 /* JxbHttpDatasource.m in Sources */,
+				5EB824D31ECBEDB200A35502 /* GridTableViewCell.m in Sources */,
 				0758E99C1D6FF37A00E7FCE7 /* DemoModel.m in Sources */,
 				1100BF981D7FE6E30058F230 /* AFURLRequestSerialization.m in Sources */,
 				0758E9C51D6FF37A00E7FCE7 /* PDTSimpleCalendarViewFlowLayout.m in Sources */,
