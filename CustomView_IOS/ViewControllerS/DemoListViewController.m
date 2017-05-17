@@ -85,7 +85,7 @@
     
     
     
-    [self setStatusBarBackgroundColor:[UIColor blueColor]];
+//    [self setStatusBarBackgroundColor:[UIColor blueColor]];
  
     NSLog(@"wifi信息---%@\n%@",[self fetchSSIDInfo],[self getLocalInfoForCurrentWiFi]);
     

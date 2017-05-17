@@ -28,7 +28,7 @@ static int size = 3;
     
     NSMutableArray * arr = @[].mutableCopy;
     
-    for (int i =0; i < 151; i++) {
+    for (int i =0; i < 16; i++) {
         NSString * str = [NSString stringWithFormat:@"%d",i];
         [arr addObject:str];
     }

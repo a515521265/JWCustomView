@@ -272,6 +272,15 @@
 		5EB825461ECC257F00A35502 /* NERStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825221ECC257F00A35502 /* NERStack.m */; };
 		5EB825471ECC257F00A35502 /* UILabel+NERLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825241ECC257F00A35502 /* UILabel+NERLink.m */; };
 		5EB825481ECC257F00A35502 /* UIView+NERFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825261ECC257F00A35502 /* UIView+NERFrame.m */; };
+		5EB8255D1ECC28A400A35502 /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8254B1ECC28A400A35502 /* bitstream.c */; };
+		5EB8255E1ECC28A400A35502 /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8254D1ECC28A400A35502 /* mask.c */; };
+		5EB8255F1ECC28A400A35502 /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825501ECC28A400A35502 /* QRCodeGenerator.m */; };
+		5EB825601ECC28A400A35502 /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825511ECC28A400A35502 /* qrencode.c */; };
+		5EB825611ECC28A400A35502 /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825531ECC28A400A35502 /* qrinput.c */; };
+		5EB825621ECC28A400A35502 /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825551ECC28A400A35502 /* qrspec.c */; };
+		5EB825631ECC28A400A35502 /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825571ECC28A400A35502 /* rscode.c */; };
+		5EB825641ECC28A400A35502 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825591ECC28A400A35502 /* split.c */; };
+		5EB825651ECC28A400A35502 /* UIImage+instask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8255C1ECC28A400A35502 /* UIImage+instask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -816,6 +825,24 @@
 		5EB825241ECC257F00A35502 /* UILabel+NERLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+NERLink.m"; sourceTree = "<group>"; };
 		5EB825251ECC257F00A35502 /* UIView+NERFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NERFrame.h"; sourceTree = "<group>"; };
 		5EB825261ECC257F00A35502 /* UIView+NERFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NERFrame.m"; sourceTree = "<group>"; };
+		5EB8254B1ECC28A400A35502 /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		5EB8254C1ECC28A400A35502 /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		5EB8254D1ECC28A400A35502 /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		5EB8254E1ECC28A400A35502 /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		5EB8254F1ECC28A400A35502 /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		5EB825501ECC28A400A35502 /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		5EB825511ECC28A400A35502 /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		5EB825521ECC28A400A35502 /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		5EB825531ECC28A400A35502 /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		5EB825541ECC28A400A35502 /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		5EB825551ECC28A400A35502 /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		5EB825561ECC28A400A35502 /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		5EB825571ECC28A400A35502 /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		5EB825581ECC28A400A35502 /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		5EB825591ECC28A400A35502 /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		5EB8255A1ECC28A400A35502 /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		5EB8255B1ECC28A400A35502 /* UIImage+instask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+instask.h"; sourceTree = "<group>"; };
+		5EB8255C1ECC28A400A35502 /* UIImage+instask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+instask.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -998,6 +1025,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				5EB825491ECC28A400A35502 /* GradualQRCode */,
 				5EB824DC1ECC257F00A35502 /* NerdyUI */,
 				118EAD971E9B398200661685 /* Masonry */,
 				111D4ADB1E34500A004686FC /* AZEmitter */,
@@ -1765,6 +1793,39 @@
 			path = Public;
 			sourceTree = "<group>";
 		};
+		5EB825491ECC28A400A35502 /* GradualQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				5EB8254A1ECC28A400A35502 /* libqrencode */,
+				5EB8255B1ECC28A400A35502 /* UIImage+instask.h */,
+				5EB8255C1ECC28A400A35502 /* UIImage+instask.m */,
+			);
+			path = GradualQRCode;
+			sourceTree = "<group>";
+		};
+		5EB8254A1ECC28A400A35502 /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				5EB8254B1ECC28A400A35502 /* bitstream.c */,
+				5EB8254C1ECC28A400A35502 /* bitstream.h */,
+				5EB8254D1ECC28A400A35502 /* mask.c */,
+				5EB8254E1ECC28A400A35502 /* mask.h */,
+				5EB8254F1ECC28A400A35502 /* QRCodeGenerator.h */,
+				5EB825501ECC28A400A35502 /* QRCodeGenerator.m */,
+				5EB825511ECC28A400A35502 /* qrencode.c */,
+				5EB825521ECC28A400A35502 /* qrencode.h */,
+				5EB825531ECC28A400A35502 /* qrinput.c */,
+				5EB825541ECC28A400A35502 /* qrinput.h */,
+				5EB825551ECC28A400A35502 /* qrspec.c */,
+				5EB825561ECC28A400A35502 /* qrspec.h */,
+				5EB825571ECC28A400A35502 /* rscode.c */,
+				5EB825581ECC28A400A35502 /* rscode.h */,
+				5EB825591ECC28A400A35502 /* split.c */,
+				5EB8255A1ECC28A400A35502 /* split.h */,
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1969,17 +2030,20 @@
 				11AF50301E1B76830096B831 /* NSURLSessionTask+Data.m in Sources */,
 				114352231D7FBEB1009EE8F8 /* UITabBar+Badge.m in Sources */,
 				0758E9AF1D6FF37A00E7FCE7 /* JPSCameraButton.m in Sources */,
+				5EB825611ECC28A400A35502 /* qrinput.c in Sources */,
 				11AF50281E1B76830096B831 /* JxbHttpProtocol.m in Sources */,
 				1100BFCF1D80FEA70058F230 /* UIView+TYLaunchAnimation.m in Sources */,
 				11AF506E1E1B95DD0096B831 /* XCMStatePrompt.m in Sources */,
 				0758E9BD1D6FF37A00E7FCE7 /* MJPropertyType.m in Sources */,
 				0758E9DB1D6FF37A00E7FCE7 /* JWAlertView.m in Sources */,
 				0758E9D01D6FF37A00E7FCE7 /* SDWebImagePrefetcher.m in Sources */,
+				5EB8255D1ECC28A400A35502 /* bitstream.c in Sources */,
 				0758E9CA1D6FF37A00E7FCE7 /* SDImageCache.m in Sources */,
 				11D36A891D751AFC00247B10 /* ChineseToPinyinResource.m in Sources */,
 				0758E9A41D6FF37A00E7FCE7 /* XYPieChartDemoViewController.m in Sources */,
 				11AF50271E1B76830096B831 /* JxbHttpDetailVC.m in Sources */,
 				0758E9C61D6FF37A00E7FCE7 /* PDTSimpleCalendarViewHeader.m in Sources */,
+				5EB8255F1ECC28A400A35502 /* QRCodeGenerator.m in Sources */,
 				5EB29ED61EBC1286003B1E84 /* TextModel.m in Sources */,
 				1100BFB61D7FEB3B0058F230 /* YYImageCoder.m in Sources */,
 				11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */,
@@ -1998,7 +2062,9 @@
 				5E11F9941EBAC0EE00B903A9 /* HXBaseModel.m in Sources */,
 				11D36A8E1D751AFC00247B10 /* PinyinHelper.m in Sources */,
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
+				5EB8255E1ECC28A400A35502 /* mask.c in Sources */,
 				110B6F7D1E8E0118004A511E /* helloC.c in Sources */,
+				5EB825651ECC28A400A35502 /* UIImage+instask.m in Sources */,
 				0758E9C31D6FF37A00E7FCE7 /* PDTSimpleCalendarViewCell.m in Sources */,
 				5EB825271ECC257F00A35502 /* NERAlert+NERChainable.m in Sources */,
 				5EB824D01ECBE77100A35502 /* TabViewLayoutTextViewController.m in Sources */,
@@ -2013,6 +2079,7 @@
 				11AF50731E1B96BF0096B831 /* LoadingDemoViewController.m in Sources */,
 				114352201D7FBAF0009EE8F8 /* DynamicLoopDemoViewController.m in Sources */,
 				0758E9D31D6FF37A00E7FCE7 /* UIImage+MultiFormat.m in Sources */,
+				5EB825631ECC28A400A35502 /* rscode.c in Sources */,
 				0758E9C81D6FF37A00E7FCE7 /* MKAnnotationView+WebCache.m in Sources */,
 				1117A7171D7FB45000B56974 /* FPSWeakProxy.m in Sources */,
 				5EB825311ECC257F00A35502 /* UIFont+NERChainable.m in Sources */,
@@ -2088,6 +2155,7 @@
 				1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */,
 				11AF502C1E1B76830096B831 /* JxbResponseVC.m in Sources */,
 				0758E9AD1D6FF37A00E7FCE7 /* Foundation+Log.m in Sources */,
+				5EB825601ECC28A400A35502 /* qrencode.c in Sources */,
 				1100BFB71D7FEB3B0058F230 /* YYSpriteSheetImage.m in Sources */,
 				1100BFCE1D80FEA70058F230 /* UIImage+TYLaunchImage.m in Sources */,
 				11AF502D1E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.m in Sources */,
@@ -2118,6 +2186,7 @@
 				0758E9A11D6FF37A00E7FCE7 /* CameraDemoViewController.m in Sources */,
 				0758E9A31D6FF37A00E7FCE7 /* WebViewDemoViewController.m in Sources */,
 				0758E9BC1D6FF37A00E7FCE7 /* MJPropertyKey.m in Sources */,
+				5EB825641ECC28A400A35502 /* split.c in Sources */,
 				11AF502A1E1B76830096B831 /* JxbLogVC.m in Sources */,
 				110AEE0E1DD1728200F70013 /* ShoppingCartDemoViewController.m in Sources */,
 				0758E9B21D6FF37A00E7FCE7 /* JPSVolumeButtonHandler.m in Sources */,
@@ -2128,6 +2197,7 @@
 				5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */,
 				0758E9B81D6FF37A00E7FCE7 /* MJDictionaryCache.m in Sources */,
 				11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */,
+				5EB825621ECC28A400A35502 /* qrspec.c in Sources */,
 				11AF50211E1B76830096B831 /* JxbCrashHelper.m in Sources */,
 				111D4AE01E34501D004686FC /* AZEmitterLayer.m in Sources */,
 				118EADB21E9B398200661685 /* MASConstraint.m in Sources */,

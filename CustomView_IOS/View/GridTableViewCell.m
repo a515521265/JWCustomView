@@ -10,6 +10,9 @@
 #import "JWKitMacro.h"
 #import "JWLabel.h"
 #import "UIView+Extension.h"
+#import "QRCodeGenerator.h"
+#import "NerdyUI.h"
+#import "UIImage+instask.h"
 
 static int sizes = 3;
 
@@ -40,13 +43,24 @@ static int sizes = 3;
 
     for (int i = 0; i<models.count; i++) {
         UIView * view = [[UIView alloc]initWithFrame:CGRectMake(i*kScreenWidth/sizes, 0, kScreenWidth/sizes, kScreenWidth/sizes)];
-        view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
-        [self setviewcolor:view];
+//        view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+//        [self setviewcolor:view];
+        
+        UIImageView * qrImageV = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, view.width, view.height)];
+        UIImage *img = [QRCodeGenerator qrImageForString:@"您点击了".a(models[i]).a(@"索引") imageSize:1000 Topimg:nil withColor:[UIColor blackColor]];
+        
+        UIColor *topleftColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+        UIColor *bottomrightColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+        UIImage *bgImg = [img gradientColorImageFromColors:@[topleftColor, bottomrightColor] gradientType:GradientTypeUprightToLowleft imgSize:img.size];
+        UIColor *color = [UIColor colorWithPatternImage:bgImg];
+        qrImageV.image =[img rt_tintedImageWithColor:color];
+        [view addSubview:qrImageV];
         
         JWLabel * lab = [[JWLabel alloc]initWithFrame:CGRectMake(0, 0, view.width, view.height)];
         lab.text = models[i];
         lab.textColor = [UIColor whiteColor];
         lab.textAlignment = 1;
+        lab.backgroundColor = [UIColor clearColor];
         [view addSubview:lab];
         HXWeak_self
         HXWeak_(lab)
