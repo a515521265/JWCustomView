@@ -12,4 +12,6 @@
 
 @property (nonatomic,strong) NSArray * models;
 
+@property (nonatomic,copy) void(^tapindex) (NSString * backStr);
+
 @end

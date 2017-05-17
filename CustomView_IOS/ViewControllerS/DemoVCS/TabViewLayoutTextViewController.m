@@ -57,6 +57,12 @@ static int size = 3;
         cell = [[GridTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     cell.models = self.dataArr[indexPath.row];
+    HXWeak_self
+    cell.tapindex = ^(NSString *backStr) {
+        HXStrong_self
+        JWAlertView * alert = [[JWAlertView alloc]initJWAlertViewWithTitle:nil message:@"您点击了".a(backStr).a(@"索引") delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alert alertShow];
+    };
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }

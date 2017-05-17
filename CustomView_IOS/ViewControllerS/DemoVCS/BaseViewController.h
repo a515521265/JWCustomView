@@ -20,6 +20,8 @@
 
 #import "customHUD.h"
 
+#import "NerdyUI.h"
+
 @interface BaseViewController : UIViewController
 
 @property (nonatomic,strong) DemoModel * baseDemoModel;

@@ -8,6 +8,8 @@
 
 #import "GridTableViewCell.h"
 #import "JWKitMacro.h"
+#import "JWLabel.h"
+#import "UIView+Extension.h"
 
 static int sizes = 3;
 
@@ -40,6 +42,20 @@ static int sizes = 3;
         UIView * view = [[UIView alloc]initWithFrame:CGRectMake(i*kScreenWidth/sizes, 0, kScreenWidth/sizes, kScreenWidth/sizes)];
         view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
         [self setviewcolor:view];
+        
+        JWLabel * lab = [[JWLabel alloc]initWithFrame:CGRectMake(0, 0, view.width, view.height)];
+        lab.text = models[i];
+        lab.textColor = [UIColor whiteColor];
+        lab.textAlignment = 1;
+        [view addSubview:lab];
+        HXWeak_self
+        HXWeak_(lab)
+        [lab addSingleTapEvent:^{
+           HXStrong_self
+            HXStrong_(lab)
+            !self.tapindex ? : self.tapindex(lab.text);
+        }];
+        
         [self addSubview:view];
     }
     

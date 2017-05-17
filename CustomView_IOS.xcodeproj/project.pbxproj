@@ -238,6 +238,40 @@
 		5EB29ED61EBC1286003B1E84 /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED51EBC1286003B1E84 /* TextModel.m */; };
 		5EB824D01ECBE77100A35502 /* TabViewLayoutTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824CF1ECBE77100A35502 /* TabViewLayoutTextViewController.m */; };
 		5EB824D31ECBEDB200A35502 /* GridTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824D21ECBEDB200A35502 /* GridTableViewCell.m */; };
+		5EB825271ECC257F00A35502 /* NERAlert+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824DF1ECC257F00A35502 /* NERAlert+NERChainable.m */; };
+		5EB825281ECC257F00A35502 /* NERConstraint+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824E11ECC257F00A35502 /* NERConstraint+NERChainable.m */; };
+		5EB825291ECC257F00A35502 /* NERStack+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824E31ECC257F00A35502 /* NERStack+NERChainable.m */; };
+		5EB8252A1ECC257F00A35502 /* NERStaticTableView+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824E51ECC257F00A35502 /* NERStaticTableView+NERChainable.m */; };
+		5EB8252B1ECC257F00A35502 /* NERStyle+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824E71ECC257F00A35502 /* NERStyle+NERChainable.m */; };
+		5EB8252C1ECC257F00A35502 /* NSArray+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824E91ECC257F00A35502 /* NSArray+NERChainable.m */; };
+		5EB8252D1ECC257F00A35502 /* NSAttributedString+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824EB1ECC257F00A35502 /* NSAttributedString+NERChainable.m */; };
+		5EB8252E1ECC257F00A35502 /* NSString+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824ED1ECC257F00A35502 /* NSString+NERChainable.m */; };
+		5EB8252F1ECC257F00A35502 /* UIButton+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824EF1ECC257F00A35502 /* UIButton+NERChainable.m */; };
+		5EB825301ECC257F00A35502 /* UIColor+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824F11ECC257F00A35502 /* UIColor+NERChainable.m */; };
+		5EB825311ECC257F00A35502 /* UIFont+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824F31ECC257F00A35502 /* UIFont+NERChainable.m */; };
+		5EB825321ECC257F00A35502 /* UIImage+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824F51ECC257F00A35502 /* UIImage+NERChainable.m */; };
+		5EB825331ECC257F00A35502 /* UIImageView+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824F71ECC257F00A35502 /* UIImageView+NERChainable.m */; };
+		5EB825341ECC257F00A35502 /* UILabel+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824F91ECC257F00A35502 /* UILabel+NERChainable.m */; };
+		5EB825351ECC257F00A35502 /* UIPageControl+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824FB1ECC257F00A35502 /* UIPageControl+NERChainable.m */; };
+		5EB825361ECC257F00A35502 /* UISegmentedControl+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824FD1ECC257F00A35502 /* UISegmentedControl+NERChainable.m */; };
+		5EB825371ECC257F00A35502 /* UISlider+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824FF1ECC257F00A35502 /* UISlider+NERChainable.m */; };
+		5EB825381ECC257F00A35502 /* UIStepper+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825011ECC257F00A35502 /* UIStepper+NERChainable.m */; };
+		5EB825391ECC257F00A35502 /* UISwitch+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825031ECC257F00A35502 /* UISwitch+NERChainable.m */; };
+		5EB8253A1ECC257F00A35502 /* UITextField+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825051ECC257F00A35502 /* UITextField+NERChainable.m */; };
+		5EB8253B1ECC257F00A35502 /* UITextView+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825071ECC257F00A35502 /* UITextView+NERChainable.m */; };
+		5EB8253C1ECC257F00A35502 /* UIView+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825091ECC257F00A35502 /* UIView+NERChainable.m */; };
+		5EB8253D1ECC257F00A35502 /* UIVisualEffectView+NERChainable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8250B1ECC257F00A35502 /* UIVisualEffectView+NERChainable.m */; };
+		5EB8253E1ECC257F00A35502 /* NERAlertMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8250F1ECC257F00A35502 /* NERAlertMaker.m */; };
+		5EB8253F1ECC257F00A35502 /* NERBlockInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825111ECC257F00A35502 /* NERBlockInfo.m */; };
+		5EB825401ECC257F00A35502 /* NERConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825131ECC257F00A35502 /* NERConstraintMaker.m */; };
+		5EB825411ECC257F00A35502 /* NERPrivates.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825161ECC257F00A35502 /* NERPrivates.m */; };
+		5EB825421ECC257F00A35502 /* NERStaticTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825181ECC257F00A35502 /* NERStaticTableView.m */; };
+		5EB825431ECC257F00A35502 /* NERStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8251A1ECC257F00A35502 /* NERStyle.m */; };
+		5EB825441ECC257F00A35502 /* NERTypeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8251C1ECC257F00A35502 /* NERTypeConverter.m */; };
+		5EB825451ECC257F00A35502 /* NERUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8251F1ECC257F00A35502 /* NERUtils.m */; };
+		5EB825461ECC257F00A35502 /* NERStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825221ECC257F00A35502 /* NERStack.m */; };
+		5EB825471ECC257F00A35502 /* UILabel+NERLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825241ECC257F00A35502 /* UILabel+NERLink.m */; };
+		5EB825481ECC257F00A35502 /* UIView+NERFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB825261ECC257F00A35502 /* UIView+NERFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -711,6 +745,77 @@
 		5EB824CF1ECBE77100A35502 /* TabViewLayoutTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewLayoutTextViewController.m; sourceTree = "<group>"; };
 		5EB824D11ECBEDB200A35502 /* GridTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridTableViewCell.h; sourceTree = "<group>"; };
 		5EB824D21ECBEDB200A35502 /* GridTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridTableViewCell.m; sourceTree = "<group>"; };
+		5EB824DE1ECC257F00A35502 /* NERAlert+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NERAlert+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824DF1ECC257F00A35502 /* NERAlert+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NERAlert+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824E01ECC257F00A35502 /* NERConstraint+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NERConstraint+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824E11ECC257F00A35502 /* NERConstraint+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NERConstraint+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824E21ECC257F00A35502 /* NERStack+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NERStack+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824E31ECC257F00A35502 /* NERStack+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NERStack+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824E41ECC257F00A35502 /* NERStaticTableView+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NERStaticTableView+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824E51ECC257F00A35502 /* NERStaticTableView+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NERStaticTableView+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824E61ECC257F00A35502 /* NERStyle+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NERStyle+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824E71ECC257F00A35502 /* NERStyle+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NERStyle+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824E81ECC257F00A35502 /* NSArray+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824E91ECC257F00A35502 /* NSArray+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824EA1ECC257F00A35502 /* NSAttributedString+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824EB1ECC257F00A35502 /* NSAttributedString+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824EC1ECC257F00A35502 /* NSString+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824ED1ECC257F00A35502 /* NSString+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824EE1ECC257F00A35502 /* UIButton+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824EF1ECC257F00A35502 /* UIButton+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824F01ECC257F00A35502 /* UIColor+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824F11ECC257F00A35502 /* UIColor+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824F21ECC257F00A35502 /* UIFont+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824F31ECC257F00A35502 /* UIFont+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824F41ECC257F00A35502 /* UIImage+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824F51ECC257F00A35502 /* UIImage+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824F61ECC257F00A35502 /* UIImageView+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824F71ECC257F00A35502 /* UIImageView+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824F81ECC257F00A35502 /* UILabel+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824F91ECC257F00A35502 /* UILabel+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824FA1ECC257F00A35502 /* UIPageControl+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824FB1ECC257F00A35502 /* UIPageControl+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824FC1ECC257F00A35502 /* UISegmentedControl+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824FD1ECC257F00A35502 /* UISegmentedControl+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+NERChainable.m"; sourceTree = "<group>"; };
+		5EB824FE1ECC257F00A35502 /* UISlider+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+NERChainable.h"; sourceTree = "<group>"; };
+		5EB824FF1ECC257F00A35502 /* UISlider+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+NERChainable.m"; sourceTree = "<group>"; };
+		5EB825001ECC257F00A35502 /* UIStepper+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStepper+NERChainable.h"; sourceTree = "<group>"; };
+		5EB825011ECC257F00A35502 /* UIStepper+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStepper+NERChainable.m"; sourceTree = "<group>"; };
+		5EB825021ECC257F00A35502 /* UISwitch+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+NERChainable.h"; sourceTree = "<group>"; };
+		5EB825031ECC257F00A35502 /* UISwitch+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+NERChainable.m"; sourceTree = "<group>"; };
+		5EB825041ECC257F00A35502 /* UITextField+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+NERChainable.h"; sourceTree = "<group>"; };
+		5EB825051ECC257F00A35502 /* UITextField+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+NERChainable.m"; sourceTree = "<group>"; };
+		5EB825061ECC257F00A35502 /* UITextView+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+NERChainable.h"; sourceTree = "<group>"; };
+		5EB825071ECC257F00A35502 /* UITextView+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+NERChainable.m"; sourceTree = "<group>"; };
+		5EB825081ECC257F00A35502 /* UIView+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NERChainable.h"; sourceTree = "<group>"; };
+		5EB825091ECC257F00A35502 /* UIView+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NERChainable.m"; sourceTree = "<group>"; };
+		5EB8250A1ECC257F00A35502 /* UIVisualEffectView+NERChainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIVisualEffectView+NERChainable.h"; sourceTree = "<group>"; };
+		5EB8250B1ECC257F00A35502 /* UIVisualEffectView+NERChainable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIVisualEffectView+NERChainable.m"; sourceTree = "<group>"; };
+		5EB8250C1ECC257F00A35502 /* NerdyUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NerdyUI.h; sourceTree = "<group>"; };
+		5EB8250E1ECC257F00A35502 /* NERAlertMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERAlertMaker.h; sourceTree = "<group>"; };
+		5EB8250F1ECC257F00A35502 /* NERAlertMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NERAlertMaker.m; sourceTree = "<group>"; };
+		5EB825101ECC257F00A35502 /* NERBlockInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERBlockInfo.h; sourceTree = "<group>"; };
+		5EB825111ECC257F00A35502 /* NERBlockInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NERBlockInfo.m; sourceTree = "<group>"; };
+		5EB825121ECC257F00A35502 /* NERConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERConstraintMaker.h; sourceTree = "<group>"; };
+		5EB825131ECC257F00A35502 /* NERConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NERConstraintMaker.m; sourceTree = "<group>"; };
+		5EB825141ECC257F00A35502 /* NERDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERDefs.h; sourceTree = "<group>"; };
+		5EB825151ECC257F00A35502 /* NERPrivates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERPrivates.h; sourceTree = "<group>"; };
+		5EB825161ECC257F00A35502 /* NERPrivates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NERPrivates.m; sourceTree = "<group>"; };
+		5EB825171ECC257F00A35502 /* NERStaticTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERStaticTableView.h; sourceTree = "<group>"; };
+		5EB825181ECC257F00A35502 /* NERStaticTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NERStaticTableView.m; sourceTree = "<group>"; };
+		5EB825191ECC257F00A35502 /* NERStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERStyle.h; sourceTree = "<group>"; };
+		5EB8251A1ECC257F00A35502 /* NERStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NERStyle.m; sourceTree = "<group>"; };
+		5EB8251B1ECC257F00A35502 /* NERTypeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERTypeConverter.h; sourceTree = "<group>"; };
+		5EB8251C1ECC257F00A35502 /* NERTypeConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NERTypeConverter.m; sourceTree = "<group>"; };
+		5EB8251D1ECC257F00A35502 /* NERTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERTypes.h; sourceTree = "<group>"; };
+		5EB8251E1ECC257F00A35502 /* NERUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERUtils.h; sourceTree = "<group>"; };
+		5EB8251F1ECC257F00A35502 /* NERUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NERUtils.m; sourceTree = "<group>"; };
+		5EB825211ECC257F00A35502 /* NERStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NERStack.h; sourceTree = "<group>"; };
+		5EB825221ECC257F00A35502 /* NERStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NERStack.m; sourceTree = "<group>"; };
+		5EB825231ECC257F00A35502 /* UILabel+NERLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+NERLink.h"; sourceTree = "<group>"; };
+		5EB825241ECC257F00A35502 /* UILabel+NERLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+NERLink.m"; sourceTree = "<group>"; };
+		5EB825251ECC257F00A35502 /* UIView+NERFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NERFrame.h"; sourceTree = "<group>"; };
+		5EB825261ECC257F00A35502 /* UIView+NERFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NERFrame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -893,6 +998,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				5EB824DC1ECC257F00A35502 /* NerdyUI */,
 				118EAD971E9B398200661685 /* Masonry */,
 				111D4ADB1E34500A004686FC /* AZEmitter */,
 				11AF4FF81E1B76830096B831 /* JxbDebugTool */,
@@ -1557,6 +1663,108 @@
 			path = CustomSwitch;
 			sourceTree = "<group>";
 		};
+		5EB824DC1ECC257F00A35502 /* NerdyUI */ = {
+			isa = PBXGroup;
+			children = (
+				5EB824DD1ECC257F00A35502 /* Chainable */,
+				5EB8250C1ECC257F00A35502 /* NerdyUI.h */,
+				5EB8250D1ECC257F00A35502 /* Private */,
+				5EB825201ECC257F00A35502 /* Public */,
+			);
+			path = NerdyUI;
+			sourceTree = "<group>";
+		};
+		5EB824DD1ECC257F00A35502 /* Chainable */ = {
+			isa = PBXGroup;
+			children = (
+				5EB824DE1ECC257F00A35502 /* NERAlert+NERChainable.h */,
+				5EB824DF1ECC257F00A35502 /* NERAlert+NERChainable.m */,
+				5EB824E01ECC257F00A35502 /* NERConstraint+NERChainable.h */,
+				5EB824E11ECC257F00A35502 /* NERConstraint+NERChainable.m */,
+				5EB824E21ECC257F00A35502 /* NERStack+NERChainable.h */,
+				5EB824E31ECC257F00A35502 /* NERStack+NERChainable.m */,
+				5EB824E41ECC257F00A35502 /* NERStaticTableView+NERChainable.h */,
+				5EB824E51ECC257F00A35502 /* NERStaticTableView+NERChainable.m */,
+				5EB824E61ECC257F00A35502 /* NERStyle+NERChainable.h */,
+				5EB824E71ECC257F00A35502 /* NERStyle+NERChainable.m */,
+				5EB824E81ECC257F00A35502 /* NSArray+NERChainable.h */,
+				5EB824E91ECC257F00A35502 /* NSArray+NERChainable.m */,
+				5EB824EA1ECC257F00A35502 /* NSAttributedString+NERChainable.h */,
+				5EB824EB1ECC257F00A35502 /* NSAttributedString+NERChainable.m */,
+				5EB824EC1ECC257F00A35502 /* NSString+NERChainable.h */,
+				5EB824ED1ECC257F00A35502 /* NSString+NERChainable.m */,
+				5EB824EE1ECC257F00A35502 /* UIButton+NERChainable.h */,
+				5EB824EF1ECC257F00A35502 /* UIButton+NERChainable.m */,
+				5EB824F01ECC257F00A35502 /* UIColor+NERChainable.h */,
+				5EB824F11ECC257F00A35502 /* UIColor+NERChainable.m */,
+				5EB824F21ECC257F00A35502 /* UIFont+NERChainable.h */,
+				5EB824F31ECC257F00A35502 /* UIFont+NERChainable.m */,
+				5EB824F41ECC257F00A35502 /* UIImage+NERChainable.h */,
+				5EB824F51ECC257F00A35502 /* UIImage+NERChainable.m */,
+				5EB824F61ECC257F00A35502 /* UIImageView+NERChainable.h */,
+				5EB824F71ECC257F00A35502 /* UIImageView+NERChainable.m */,
+				5EB824F81ECC257F00A35502 /* UILabel+NERChainable.h */,
+				5EB824F91ECC257F00A35502 /* UILabel+NERChainable.m */,
+				5EB824FA1ECC257F00A35502 /* UIPageControl+NERChainable.h */,
+				5EB824FB1ECC257F00A35502 /* UIPageControl+NERChainable.m */,
+				5EB824FC1ECC257F00A35502 /* UISegmentedControl+NERChainable.h */,
+				5EB824FD1ECC257F00A35502 /* UISegmentedControl+NERChainable.m */,
+				5EB824FE1ECC257F00A35502 /* UISlider+NERChainable.h */,
+				5EB824FF1ECC257F00A35502 /* UISlider+NERChainable.m */,
+				5EB825001ECC257F00A35502 /* UIStepper+NERChainable.h */,
+				5EB825011ECC257F00A35502 /* UIStepper+NERChainable.m */,
+				5EB825021ECC257F00A35502 /* UISwitch+NERChainable.h */,
+				5EB825031ECC257F00A35502 /* UISwitch+NERChainable.m */,
+				5EB825041ECC257F00A35502 /* UITextField+NERChainable.h */,
+				5EB825051ECC257F00A35502 /* UITextField+NERChainable.m */,
+				5EB825061ECC257F00A35502 /* UITextView+NERChainable.h */,
+				5EB825071ECC257F00A35502 /* UITextView+NERChainable.m */,
+				5EB825081ECC257F00A35502 /* UIView+NERChainable.h */,
+				5EB825091ECC257F00A35502 /* UIView+NERChainable.m */,
+				5EB8250A1ECC257F00A35502 /* UIVisualEffectView+NERChainable.h */,
+				5EB8250B1ECC257F00A35502 /* UIVisualEffectView+NERChainable.m */,
+			);
+			path = Chainable;
+			sourceTree = "<group>";
+		};
+		5EB8250D1ECC257F00A35502 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				5EB8250E1ECC257F00A35502 /* NERAlertMaker.h */,
+				5EB8250F1ECC257F00A35502 /* NERAlertMaker.m */,
+				5EB825101ECC257F00A35502 /* NERBlockInfo.h */,
+				5EB825111ECC257F00A35502 /* NERBlockInfo.m */,
+				5EB825121ECC257F00A35502 /* NERConstraintMaker.h */,
+				5EB825131ECC257F00A35502 /* NERConstraintMaker.m */,
+				5EB825141ECC257F00A35502 /* NERDefs.h */,
+				5EB825151ECC257F00A35502 /* NERPrivates.h */,
+				5EB825161ECC257F00A35502 /* NERPrivates.m */,
+				5EB825171ECC257F00A35502 /* NERStaticTableView.h */,
+				5EB825181ECC257F00A35502 /* NERStaticTableView.m */,
+				5EB825191ECC257F00A35502 /* NERStyle.h */,
+				5EB8251A1ECC257F00A35502 /* NERStyle.m */,
+				5EB8251B1ECC257F00A35502 /* NERTypeConverter.h */,
+				5EB8251C1ECC257F00A35502 /* NERTypeConverter.m */,
+				5EB8251D1ECC257F00A35502 /* NERTypes.h */,
+				5EB8251E1ECC257F00A35502 /* NERUtils.h */,
+				5EB8251F1ECC257F00A35502 /* NERUtils.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		5EB825201ECC257F00A35502 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				5EB825211ECC257F00A35502 /* NERStack.h */,
+				5EB825221ECC257F00A35502 /* NERStack.m */,
+				5EB825231ECC257F00A35502 /* UILabel+NERLink.h */,
+				5EB825241ECC257F00A35502 /* UILabel+NERLink.m */,
+				5EB825251ECC257F00A35502 /* UIView+NERFrame.h */,
+				5EB825261ECC257F00A35502 /* UIView+NERFrame.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1712,8 +1920,10 @@
 				0758E9941D6FF37A00E7FCE7 /* AppDelegate.m in Sources */,
 				11D36A8C1D751AFC00247B10 /* PinyinFormatter.m in Sources */,
 				118E0AAF1DBF374F0079569B /* TooltipView.m in Sources */,
+				5EB825461ECC257F00A35502 /* NERStack.m in Sources */,
 				1100BFA11D7FE6E30058F230 /* UIImageView+AFNetworking.m in Sources */,
 				0758E9A01D6FF37A00E7FCE7 /* BaseViewController.m in Sources */,
+				5EB825341ECC257F00A35502 /* UILabel+NERChainable.m in Sources */,
 				11AF50311E1B76830096B831 /* NSURLSessionTask+Swizzling.m in Sources */,
 				114352171D7FB772009EE8F8 /* GradientAnimationView.m in Sources */,
 				118EADB91E9B398200661685 /* View+MASAdditions.m in Sources */,
@@ -1721,6 +1931,7 @@
 				112296BE1DC71A27002D27E4 /* MBProgressHUD.m in Sources */,
 				11AF50291E1B76830096B831 /* JxbHttpVC.m in Sources */,
 				0758E9D61D6FF37A00E7FCE7 /* UIImageView+WebCache.m in Sources */,
+				5EB825441ECC257F00A35502 /* NERTypeConverter.m in Sources */,
 				111D4AE11E34501D004686FC /* AZParticle.m in Sources */,
 				1143521D1D7FBAA5009EE8F8 /* DynamicLoop.m in Sources */,
 				118EADB31E9B398200661685 /* MASConstraintMaker.m in Sources */,
@@ -1729,16 +1940,20 @@
 				11D36AA31D75329700247B10 /* SavePermanentDemoViewController.m in Sources */,
 				0758E9DA1D6FF37A00E7FCE7 /* YYWeakProxy.m in Sources */,
 				0758E9B11D6FF37A00E7FCE7 /* JPSImagePickerController.m in Sources */,
+				5EB825351ECC257F00A35502 /* UIPageControl+NERChainable.m in Sources */,
 				11D36A9F1D75325B00247B10 /* KeychainHelper.m in Sources */,
 				11AF4FEB1E1B4A890096B831 /* UIColor+SDKit.m in Sources */,
+				5EB8253B1ECC257F00A35502 /* UITextView+NERChainable.m in Sources */,
 				0758E9DD1D6FF37A00E7FCE7 /* JWTextField.m in Sources */,
 				0758E9B31D6FF37A00E7FCE7 /* UIImage+DrawBlock.m in Sources */,
 				1100BFCD1D80FEA70058F230 /* TYLaunchFadeScaleAnimation.m in Sources */,
 				111D4AE61E3450F0004686FC /* SandDrawDemoViewController.m in Sources */,
+				5EB825391ECC257F00A35502 /* UISwitch+NERChainable.m in Sources */,
 				0758E9D41D6FF37A00E7FCE7 /* UIImage+WebP.m in Sources */,
 				110AEE1B1DD2B0B300F70013 /* ShoppingCartCell.m in Sources */,
 				0758E9C11D6FF37A00E7FCE7 /* NSObject+MJProperty.m in Sources */,
 				118EADB11E9B398200661685 /* MASCompositeConstraint.m in Sources */,
+				5EB8252B1ECC257F00A35502 /* NERStyle+NERChainable.m in Sources */,
 				1100BFCC1D80FEA70058F230 /* TYLaunchBaseAnimation.m in Sources */,
 				11AF4FF11E1B52A10096B831 /* ZLYWaterWave.m in Sources */,
 				11D36A8D1D751AFC00247B10 /* PinYinForObjc.m in Sources */,
@@ -1747,7 +1962,9 @@
 				118EADB81E9B398200661685 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				0758E9CB1D6FF37A00E7FCE7 /* SDWebImageCompat.m in Sources */,
 				0758E9DE1D6FF37A00E7FCE7 /* NSObject+Extension.m in Sources */,
+				5EB825331ECC257F00A35502 /* UIImageView+NERChainable.m in Sources */,
 				1100BF991D7FE6E30058F230 /* AFURLResponseSerialization.m in Sources */,
+				5EB825291ECC257F00A35502 /* NERStack+NERChainable.m in Sources */,
 				110B6F7A1E8DFDE9004A511E /* HelloWorld.java in Sources */,
 				11AF50301E1B76830096B831 /* NSURLSessionTask+Data.m in Sources */,
 				114352231D7FBEB1009EE8F8 /* UITabBar+Badge.m in Sources */,
@@ -1775,6 +1992,7 @@
 				0758E9C71D6FF37A00E7FCE7 /* PDTSimpleCalendarViewWeekdayHeader.m in Sources */,
 				1100BFA71D7FE72B0058F230 /* bannerData.m in Sources */,
 				118EADB41E9B398200661685 /* MASLayoutConstraint.m in Sources */,
+				5EB8252A1ECC257F00A35502 /* NERStaticTableView+NERChainable.m in Sources */,
 				112296A01DC7153C002D27E4 /* WKWebViewDemoViewController.m in Sources */,
 				0758E9B51D6FF37A00E7FCE7 /* MDRadialProgressTheme.m in Sources */,
 				5E11F9941EBAC0EE00B903A9 /* HXBaseModel.m in Sources */,
@@ -1782,11 +2000,14 @@
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
 				110B6F7D1E8E0118004A511E /* helloC.c in Sources */,
 				0758E9C31D6FF37A00E7FCE7 /* PDTSimpleCalendarViewCell.m in Sources */,
+				5EB825271ECC257F00A35502 /* NERAlert+NERChainable.m in Sources */,
 				5EB824D01ECBE77100A35502 /* TabViewLayoutTextViewController.m in Sources */,
 				11BC310D1DF02B000077FF9D /* HelperUtil.m in Sources */,
+				5EB825401ECC257F00A35502 /* NERConstraintMaker.m in Sources */,
 				0758E9BE1D6FF37A00E7FCE7 /* NSObject+MJClass.m in Sources */,
 				1100BFD21D80FF030058F230 /* TAdLaunchImageView.m in Sources */,
 				110AEE081DD0617800F70013 /* JWTextView.m in Sources */,
+				5EB825371ECC257F00A35502 /* UISlider+NERChainable.m in Sources */,
 				11D36A761D751ABE00247B10 /* DWBankModel.m in Sources */,
 				0758E9AC1D6FF37A00E7FCE7 /* MVVMStore.m in Sources */,
 				11AF50731E1B96BF0096B831 /* LoadingDemoViewController.m in Sources */,
@@ -1794,8 +2015,10 @@
 				0758E9D31D6FF37A00E7FCE7 /* UIImage+MultiFormat.m in Sources */,
 				0758E9C81D6FF37A00E7FCE7 /* MKAnnotationView+WebCache.m in Sources */,
 				1117A7171D7FB45000B56974 /* FPSWeakProxy.m in Sources */,
+				5EB825311ECC257F00A35502 /* UIFont+NERChainable.m in Sources */,
 				118EADB51E9B398200661685 /* MASViewAttribute.m in Sources */,
 				0758E99E1D6FF37A00E7FCE7 /* CustomLabelDemoViewController.m in Sources */,
+				5EB825451ECC257F00A35502 /* NERUtils.m in Sources */,
 				1100BF9F1D7FE6E30058F230 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				1100BF9D1D7FE6E30058F230 /* AFImageDownloader.m in Sources */,
 				110AEE111DD1B0DB00F70013 /* GoodsModel.m in Sources */,
@@ -1805,6 +2028,7 @@
 				1100BF6D1D7FE64F0058F230 /* HeadlineView.m in Sources */,
 				11D36A961D7524CB00247B10 /* CustomProgressDemoViewController.m in Sources */,
 				0758E9D21D6FF37A00E7FCE7 /* UIImage+GIF.m in Sources */,
+				5EB825381ECC257F00A35502 /* UIStepper+NERChainable.m in Sources */,
 				1100BF9C1D7FE6E30058F230 /* AFAutoPurgingImageCache.m in Sources */,
 				1100BF971D7FE6E30058F230 /* AFSecurityPolicy.m in Sources */,
 				11AF4FF71E1B57AD0096B831 /* NSMutableArray+WFExtension.m in Sources */,
@@ -1813,9 +2037,11 @@
 				11619A2F1E348D0600D26F0D /* SpinnerDemoViewController.m in Sources */,
 				0758E9D81D6FF37A00E7FCE7 /* NSObject+YYModel.m in Sources */,
 				0758E9B61D6FF37A00E7FCE7 /* MDRadialProgressView.m in Sources */,
+				5EB825361ECC257F00A35502 /* UISegmentedControl+NERChainable.m in Sources */,
 				0758E9AA1D6FF37A00E7FCE7 /* FMResultSet.m in Sources */,
 				11AF50231E1B76830096B831 /* JxbDebugTool.m in Sources */,
 				11AF4FF61E1B57AD0096B831 /* NSArray+WFExtension.m in Sources */,
+				5EB8253F1ECC257F00A35502 /* NERBlockInfo.m in Sources */,
 				1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */,
 				0758E9D91D6FF37A00E7FCE7 /* YYClassInfo.m in Sources */,
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
@@ -1823,7 +2049,9 @@
 				11AF4FEE1E1B52830096B831 /* ZLYViewController.m in Sources */,
 				5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */,
 				110AEE141DD1C38F00F70013 /* CompanyModel.m in Sources */,
+				5EB8252F1ECC257F00A35502 /* UIButton+NERChainable.m in Sources */,
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
+				5EB825481ECC257F00A35502 /* UIView+NERFrame.m in Sources */,
 				1100BF6C1D7FE64F0058F230 /* AdView.m in Sources */,
 				11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */,
 				11BC31131DF02BF30077FF9D /* NSDictionary+PropertyCode.m in Sources */,
@@ -1836,16 +2064,21 @@
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
 				0758E9DF1D6FF37A00E7FCE7 /* UIView+Extension.m in Sources */,
 				11D22DD31E8250BC0057AFFB /* MVMaterialView.m in Sources */,
+				5EB8253C1ECC257F00A35502 /* UIView+NERChainable.m in Sources */,
+				5EB825471ECC257F00A35502 /* UILabel+NERLink.m in Sources */,
 				0758E99B1D6FF37A00E7FCE7 /* main.m in Sources */,
 				1100BF641D7FE5570058F230 /* PollingDemoViewController.m in Sources */,
 				1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */,
 				0758E9DC1D6FF37A00E7FCE7 /* JWLabel.m in Sources */,
 				11FBF6071D86896500208715 /* JWScrollView.m in Sources */,
+				5EB8252E1ECC257F00A35502 /* NSString+NERChainable.m in Sources */,
 				11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */,
 				1100BFA21D7FE6E30058F230 /* UIProgressView+AFNetworking.m in Sources */,
 				11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */,
 				11AF50261E1B76830096B831 /* JxbHttpDatasource.m in Sources */,
+				5EB825431ECC257F00A35502 /* NERStyle.m in Sources */,
 				5EB824D31ECBEDB200A35502 /* GridTableViewCell.m in Sources */,
+				5EB8253E1ECC257F00A35502 /* NERAlertMaker.m in Sources */,
 				0758E99C1D6FF37A00E7FCE7 /* DemoModel.m in Sources */,
 				1100BF981D7FE6E30058F230 /* AFURLRequestSerialization.m in Sources */,
 				0758E9C51D6FF37A00E7FCE7 /* PDTSimpleCalendarViewFlowLayout.m in Sources */,
@@ -1858,12 +2091,16 @@
 				1100BFB71D7FEB3B0058F230 /* YYSpriteSheetImage.m in Sources */,
 				1100BFCE1D80FEA70058F230 /* UIImage+TYLaunchImage.m in Sources */,
 				11AF502D1E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.m in Sources */,
+				5EB8252C1ECC257F00A35502 /* NSArray+NERChainable.m in Sources */,
+				5EB825321ECC257F00A35502 /* UIImage+NERChainable.m in Sources */,
 				11D36A881D751AFC00247B10 /* ChineseInclude.m in Sources */,
 				0758E9C01D6FF37A00E7FCE7 /* NSObject+MJKeyValue.m in Sources */,
 				1100BFB51D7FEB3B0058F230 /* YYImage.m in Sources */,
 				0758E99F1D6FF37A00E7FCE7 /* DemoListViewController.m in Sources */,
+				5EB825411ECC257F00A35502 /* NERPrivates.m in Sources */,
 				1194B1471DD55725008473CF /* UIImage+ColorImage.m in Sources */,
 				11AF502F1E1B76830096B831 /* NSURLResponse+Data.m in Sources */,
+				5EB8252D1ECC257F00A35502 /* NSAttributedString+NERChainable.m in Sources */,
 				0758E9BF1D6FF37A00E7FCE7 /* NSObject+MJCoding.m in Sources */,
 				11AF502B1E1B76830096B831 /* JxbMemoryHelper.m in Sources */,
 				1100BFA01D7FE6E30058F230 /* UIButton+AFNetworking.m in Sources */,
@@ -1875,7 +2112,9 @@
 				118EADBA1E9B398200661685 /* ViewController+MASAdditions.m in Sources */,
 				1100BFA31D7FE6E30058F230 /* UIRefreshControl+AFNetworking.m in Sources */,
 				110AEE171DD1C43F00F70013 /* SpecsModel.m in Sources */,
+				5EB825281ECC257F00A35502 /* NERConstraint+NERChainable.m in Sources */,
 				0758E9B41D6FF37A00E7FCE7 /* MDRadialProgressLabel.m in Sources */,
+				5EB825421ECC257F00A35502 /* NERStaticTableView.m in Sources */,
 				0758E9A11D6FF37A00E7FCE7 /* CameraDemoViewController.m in Sources */,
 				0758E9A31D6FF37A00E7FCE7 /* WebViewDemoViewController.m in Sources */,
 				0758E9BC1D6FF37A00E7FCE7 /* MJPropertyKey.m in Sources */,
@@ -1893,7 +2132,9 @@
 				111D4AE01E34501D004686FC /* AZEmitterLayer.m in Sources */,
 				118EADB21E9B398200661685 /* MASConstraint.m in Sources */,
 				11619A2D1E3484FB00D26F0D /* SpinnerView.m in Sources */,
+				5EB825301ECC257F00A35502 /* UIColor+NERChainable.m in Sources */,
 				0758E9D11D6FF37A00E7FCE7 /* UIButton+WebCache.m in Sources */,
+				5EB8253D1ECC257F00A35502 /* UIVisualEffectView+NERChainable.m in Sources */,
 				0758E9A81D6FF37A00E7FCE7 /* FMDatabasePool.m in Sources */,
 				0758E9A91D6FF37A00E7FCE7 /* FMDatabaseQueue.m in Sources */,
 				11D36A8A1D751AFC00247B10 /* HanyuPinyinOutputFormat.m in Sources */,
@@ -1904,6 +2145,7 @@
 				11AF50201E1B76830096B831 /* JxbContentVC.m in Sources */,
 				1100BF9B1D7FE6E30058F230 /* NetworkState.m in Sources */,
 				112296B31DC71A27002D27E4 /* customHUD.m in Sources */,
+				5EB8253A1ECC257F00A35502 /* UITextField+NERChainable.m in Sources */,
 				11AF4FE81E1B45080096B831 /* MMPlaceHolder.m in Sources */,
 				1117A7151D7FB45000B56974 /* FPSLabelRootWindow.m in Sources */,
 				0758E9A51D6FF37A00E7FCE7 /* UIViewController+KeyboardCorver.m in Sources */,
