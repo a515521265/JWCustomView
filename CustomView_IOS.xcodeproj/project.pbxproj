@@ -244,6 +244,9 @@
 		5E544B0D1ECD58A10070944C /* load7.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E544B071ECD58A10070944C /* load7.gif */; };
 		5E544B0E1ECD58A10070944C /* load2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E544B081ECD58A10070944C /* load2.gif */; };
 		5E544B0F1ECD58A10070944C /* load3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5E544B091ECD58A10070944C /* load3.gif */; };
+		5E544B121ECD72E80070944C /* GetAllAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E544B111ECD72E80070944C /* GetAllAppsViewController.m */; };
+		5E544B171ECD747A0070944C /* LMApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E544B141ECD747A0070944C /* LMApp.m */; };
+		5E544B181ECD747A0070944C /* LMAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E544B161ECD747A0070944C /* LMAppController.m */; };
 		5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E585C271EB2E7330004DDB8 /* TextTabViewController.m */; };
 		5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */; };
 		5EB29ED61EBC1286003B1E84 /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED51EBC1286003B1E84 /* TextModel.m */; };
@@ -771,6 +774,12 @@
 		5E544B071ECD58A10070944C /* load7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load7.gif; sourceTree = "<group>"; };
 		5E544B081ECD58A10070944C /* load2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load2.gif; sourceTree = "<group>"; };
 		5E544B091ECD58A10070944C /* load3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load3.gif; sourceTree = "<group>"; };
+		5E544B101ECD72E80070944C /* GetAllAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAllAppsViewController.h; sourceTree = "<group>"; };
+		5E544B111ECD72E80070944C /* GetAllAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAllAppsViewController.m; sourceTree = "<group>"; };
+		5E544B131ECD747A0070944C /* LMApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMApp.h; sourceTree = "<group>"; };
+		5E544B141ECD747A0070944C /* LMApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMApp.m; sourceTree = "<group>"; };
+		5E544B151ECD747A0070944C /* LMAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAppController.h; sourceTree = "<group>"; };
+		5E544B161ECD747A0070944C /* LMAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAppController.m; sourceTree = "<group>"; };
 		5E585C261EB2E7330004DDB8 /* TextTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTabViewController.h; sourceTree = "<group>"; };
 		5E585C271EB2E7330004DDB8 /* TextTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTabViewController.m; sourceTree = "<group>"; };
 		5EB29ED11EBC0AF8003B1E84 /* QQTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQTextViewController.h; sourceTree = "<group>"; };
@@ -1064,6 +1073,8 @@
 				5E544AD01ECD3D480070944C /* LoadGIFimageViewVC.m */,
 				5E544AFD1ECD4F430070944C /* SuspensionViewController.h */,
 				5E544AFE1ECD4F430070944C /* SuspensionViewController.m */,
+				5E544B101ECD72E80070944C /* GetAllAppsViewController.h */,
+				5E544B111ECD72E80070944C /* GetAllAppsViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1639,6 +1650,10 @@
 		11BC310A1DF02AFB0077FF9D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5E544B131ECD747A0070944C /* LMApp.h */,
+				5E544B141ECD747A0070944C /* LMApp.m */,
+				5E544B151ECD747A0070944C /* LMAppController.h */,
+				5E544B161ECD747A0070944C /* LMAppController.m */,
 				11984ED21E9DC290008FEAA0 /* UIButton+Layout.h */,
 				11984ED31E9DC290008FEAA0 /* UIButton+Layout.m */,
 				11AF4FE91E1B4A890096B831 /* UIColor+SDKit.h */,
@@ -2121,6 +2136,7 @@
 				5EB8252A1ECC257F00A35502 /* NERStaticTableView+NERChainable.m in Sources */,
 				112296A01DC7153C002D27E4 /* WKWebViewDemoViewController.m in Sources */,
 				0758E9B51D6FF37A00E7FCE7 /* MDRadialProgressTheme.m in Sources */,
+				5E544B121ECD72E80070944C /* GetAllAppsViewController.m in Sources */,
 				5E11F9941EBAC0EE00B903A9 /* HXBaseModel.m in Sources */,
 				11D36A8E1D751AFC00247B10 /* PinyinHelper.m in Sources */,
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
@@ -2165,6 +2181,7 @@
 				1100BF9A1D7FE6E30058F230 /* AFURLSessionManager.m in Sources */,
 				11619A2F1E348D0600D26F0D /* SpinnerDemoViewController.m in Sources */,
 				0758E9D81D6FF37A00E7FCE7 /* NSObject+YYModel.m in Sources */,
+				5E544B181ECD747A0070944C /* LMAppController.m in Sources */,
 				0758E9B61D6FF37A00E7FCE7 /* MDRadialProgressView.m in Sources */,
 				5EB825361ECC257F00A35502 /* UISegmentedControl+NERChainable.m in Sources */,
 				0758E9AA1D6FF37A00E7FCE7 /* FMResultSet.m in Sources */,
@@ -2178,6 +2195,7 @@
 				11AF4FEE1E1B52830096B831 /* ZLYViewController.m in Sources */,
 				5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */,
 				110AEE141DD1C38F00F70013 /* CompanyModel.m in Sources */,
+				5E544B171ECD747A0070944C /* LMApp.m in Sources */,
 				5EB8252F1ECC257F00A35502 /* UIButton+NERChainable.m in Sources */,
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
 				5EB825481ECC257F00A35502 /* UIView+NERFrame.m in Sources */,
