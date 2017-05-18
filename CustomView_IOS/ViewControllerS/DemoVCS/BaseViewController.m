@@ -44,7 +44,7 @@ extern void showHUD(){
 //    customHUD* hud = [[customHUD alloc]init];
 //    [hud showCustomHUDWithView:[UIApplication sharedApplication].keyWindow];
     //Setup GiFHUD image
-    [GiFHUD setGifWithImageName:@"load.gif"];
+    [GiFHUD setGifWithImageName:@"load0.gif"];
     [GiFHUD showWithOverlay];
 //    [GiFHUD show];
 }

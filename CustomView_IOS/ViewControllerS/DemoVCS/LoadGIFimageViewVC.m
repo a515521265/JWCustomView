@@ -1,15 +1,15 @@
 //
-//  TabViewLayoutTextViewController.m
+//  LoadGIFimageViewVC.m
 //  CustomView_IOS
 //
-//  Created by 梁家文 on 2017/5/17.
+//  Created by 梁家文 on 2017/5/18.
 //
 //
 
-#import "TabViewLayoutTextViewController.h"
+#import "LoadGIFimageViewVC.h"
 #import "GridTableViewCell.h"
 
-@interface TabViewLayoutTextViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface LoadGIFimageViewVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView * tableView;
 
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation TabViewLayoutTextViewController
+@implementation LoadGIFimageViewVC
 
 static int size = 3;
 
@@ -28,8 +28,13 @@ static int size = 3;
     
     NSMutableArray * arr = @[].mutableCopy;
     
-    for (int i =0; i < 16; i++) {
-        NSString * str = [NSString stringWithFormat:@"%d",i];
+    for (int i =0; i < 37; i++) {
+        NSString * str ;
+        if (i%2==0) {
+          str = [NSString stringWithFormat:@"load0.gif"];
+        }else{
+          str = [NSString stringWithFormat:@"load1.gif"];
+        }
         [arr addObject:str];
     }
     
@@ -56,7 +61,7 @@ static int size = 3;
     if (!cell) {
         cell = [[GridTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
-    cell.models = self.dataArr[indexPath.row];
+    cell.imageArr = self.dataArr[indexPath.row];
     HXWeak_self
     cell.tapindex = ^(NSString *backStr) {
         HXStrong_self

@@ -12,6 +12,8 @@
 
 @property (nonatomic,strong) NSArray * models;
 
+@property (nonatomic,strong) NSArray * imageArr;
+
 @property (nonatomic,copy) void(^tapindex) (NSString * backStr);
 
 @end

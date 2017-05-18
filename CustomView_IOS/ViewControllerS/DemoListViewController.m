@@ -72,7 +72,8 @@
                       [DemoModel itemWithDcit:@{@"title":@"SpinnerDemoViewController",@"demoDescribe":@"下拉菜单封装",@"className":@"SpinnerDemoViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"TextTabViewController",@"demoDescribe":@"测试tabview",@"className":@"TextTabViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"QQTextViewController",@"demoDescribe":@"测试QQtabview",@"className":@"QQTextViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"TabViewLayoutTextViewController",@"demoDescribe":@"测试tabview实现图片排版",@"className":@"TabViewLayoutTextViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"TabViewLayoutTextViewController",@"demoDescribe":@"测试tabview实现图片排版",@"className":@"TabViewLayoutTextViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"LoadGIFimageViewVC",@"demoDescribe":@"加载gif图片",@"className":@"LoadGIFimageViewVC"}]
                       ];
     
 
@@ -91,7 +92,7 @@
     
     showHUD();
 
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         dismissHUD();
     });
     
