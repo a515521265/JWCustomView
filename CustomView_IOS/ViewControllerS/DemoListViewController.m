@@ -73,7 +73,8 @@
                       [DemoModel itemWithDcit:@{@"title":@"TextTabViewController",@"demoDescribe":@"测试tabview",@"className":@"TextTabViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"QQTextViewController",@"demoDescribe":@"测试QQtabview",@"className":@"QQTextViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"TabViewLayoutTextViewController",@"demoDescribe":@"测试tabview实现图片排版",@"className":@"TabViewLayoutTextViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"LoadGIFimageViewVC",@"demoDescribe":@"加载gif图片",@"className":@"LoadGIFimageViewVC"}]
+                      [DemoModel itemWithDcit:@{@"title":@"LoadGIFimageViewVC",@"demoDescribe":@"加载gif图片",@"className":@"LoadGIFimageViewVC"}],
+                      [DemoModel itemWithDcit:@{@"title":@"SuspensionViewController",@"demoDescribe":@"悬浮",@"className":@"SuspensionViewController"}]
                       ];
     
 
@@ -90,11 +91,11 @@
  
     NSLog(@"wifi信息---%@\n%@",[self fetchSSIDInfo],[self getLocalInfoForCurrentWiFi]);
     
-    showHUD();
-
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        dismissHUD();
-    });
+//    showHUD();
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        dismissHUD();
+//    });
     
     
     

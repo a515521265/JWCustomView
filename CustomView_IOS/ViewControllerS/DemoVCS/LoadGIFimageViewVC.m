@@ -28,13 +28,13 @@ static int size = 3;
     
     NSMutableArray * arr = @[].mutableCopy;
     
-    for (int i =0; i < 37; i++) {
-        NSString * str ;
-        if (i%2==0) {
-          str = [NSString stringWithFormat:@"load0.gif"];
-        }else{
-          str = [NSString stringWithFormat:@"load1.gif"];
-        }
+    for (int i =0; i < 11; i++) {
+        NSString * str = @"load".a(i).a(@".gif");
+//        if (i%2==0) {
+//          str = [NSString stringWithFormat:@"load0.gif"];
+//        }else{
+//          str = [NSString stringWithFormat:@"load1.gif"];
+//        }
         [arr addObject:str];
     }
     

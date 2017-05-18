@@ -22,6 +22,10 @@
 
 #import "NerdyUI.h"
 
+#import "YYAnimatedImageView.h"
+
+#import "YYImage.h"
+
 @interface BaseViewController : UIViewController
 
 @property (nonatomic,strong) DemoModel * baseDemoModel;
