@@ -298,6 +298,7 @@
 		5EB8256B1ECC303200A35502 /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8256A1ECC303200A35502 /* GiFHUD.m */; };
 		5EB825711ECC318B00A35502 /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825701ECC318B00A35502 /* load0.gif */; };
 		5EB825731ECC321500A35502 /* load1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825721ECC321500A35502 /* load1.gif */; };
+		5EB8B6801ECEE70B00BE185C /* ShowAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -883,6 +884,8 @@
 		5EB8256A1ECC303200A35502 /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
 		5EB825701ECC318B00A35502 /* load0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load0.gif; sourceTree = "<group>"; };
 		5EB825721ECC321500A35502 /* load1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load1.gif; sourceTree = "<group>"; };
+		5EB8B67E1ECEE70B00BE185C /* ShowAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlertViewController.h; sourceTree = "<group>"; };
+		5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlertViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1075,6 +1078,8 @@
 				5E544AFE1ECD4F430070944C /* SuspensionViewController.m */,
 				5E544B101ECD72E80070944C /* GetAllAppsViewController.h */,
 				5E544B111ECD72E80070944C /* GetAllAppsViewController.m */,
+				5EB8B67E1ECEE70B00BE185C /* ShowAlertViewController.h */,
+				5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -2063,6 +2068,7 @@
 				114352171D7FB772009EE8F8 /* GradientAnimationView.m in Sources */,
 				118EADB91E9B398200661685 /* View+MASAdditions.m in Sources */,
 				1100BF9E1D7FE6E30058F230 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				5EB8B6801ECEE70B00BE185C /* ShowAlertViewController.m in Sources */,
 				112296BE1DC71A27002D27E4 /* MBProgressHUD.m in Sources */,
 				11AF50291E1B76830096B831 /* JxbHttpVC.m in Sources */,
 				0758E9D61D6FF37A00E7FCE7 /* UIImageView+WebCache.m in Sources */,

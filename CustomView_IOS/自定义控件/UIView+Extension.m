@@ -13,9 +13,23 @@
 
 @property (nonatomic,   copy) dispatch_block_t singleTapEvent;
 
+@property (nonatomic,   copy) dispatch_block_t longTapEvent;
+
 @end
 
 @implementation UIView (Extension)
+
+-(void)setLongTapEvent:(dispatch_block_t)longTapEvent{
+    
+    objc_setAssociatedObject(self, @selector(longTapEvent), longTapEvent, OBJC_ASSOCIATION_COPY);
+    
+}
+
+-(dispatch_block_t)longTapEvent{
+    
+    return objc_getAssociatedObject(self,_cmd);
+    
+}
 
 -(void)setSingleTapEvent:(dispatch_block_t)singleTapEvent{
     objc_setAssociatedObject(self, @selector(singleTapEvent), singleTapEvent, OBJC_ASSOCIATION_COPY);
@@ -246,6 +260,32 @@
     !self.singleTapEvent ? nil:self.singleTapEvent();
     
 }
+
+-(void)addlongTapEvent:(void(^)())event{
+    
+    self.userInteractionEnabled = true;
+    
+    if (event) {
+        self.longTapEvent = event;
+    }
+    
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longTapAction:)];
+    longPress.minimumPressDuration = 1; //定义按的时间
+    longPress.numberOfTouchesRequired = 1;
+    [self addGestureRecognizer:longPress];
+    
+}
+
+- (void)longTapAction:(UILongPressGestureRecognizer *)longPress {
+    
+    if (longPress.state == UIGestureRecognizerStateBegan) {
+        !self.longTapEvent ? nil:self.longTapEvent();
+    }else {
+        
+    }
+    
+}
+
 
 - (void)makeDraggable
 {

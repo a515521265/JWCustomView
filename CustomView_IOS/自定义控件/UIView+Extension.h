@@ -35,6 +35,8 @@
 
 - (void)addSingleTapEvent:(void(^)())event;
 
+-(void)addlongTapEvent:(void(^)())event;
+
 -(void)removeAllSubviews;
 
 -(void)setViewHidden;

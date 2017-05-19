@@ -10,6 +10,7 @@
 #import "LMAppController.h"
 #import "UIImage+ColorImage.h"
 #import "JWScrollView.h"
+#import "ShowAlertViewController.h"
 
 @interface GetAllAppsViewController ()
 
@@ -68,8 +69,10 @@
         self.scrollView.contentSize = CGSizeMake(0, CGRectGetMaxY(button.frame)+64);
     }
 
-
     
+
+
+    [CABasicAnimation animationWithKeyPath:@""];
 }
 
 -(UIButton *)CreateBtnWithTitle:(NSString *)title image:(UIImage *)image{
@@ -87,6 +90,16 @@
 //    imageView.image = [UIImage imageNamed:imageStr];
     imageView.image = image;
     [button addSubview:imageView];
+    HXWeak_self
+    [button addlongTapEvent:^{
+        HXStrong_self
+        ShowAlertViewController * aletrVC = [[ShowAlertViewController alloc] init];
+        aletrVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        aletrVC.modalPresentationStyle = UIModalPresentationCustom;
+        aletrVC.showImageView = imageView;
+        [self presentViewController:aletrVC animated:YES completion:nil];
+    }];
+
     UILabel * titleLab = [[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(imageView.frame), button.width, 40)];
     titleLab.text = title;
     titleLab.textAlignment = 1;
