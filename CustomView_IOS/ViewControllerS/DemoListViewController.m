@@ -75,18 +75,9 @@
                       [DemoModel itemWithDcit:@{@"title":@"TabViewLayoutTextViewController",@"demoDescribe":@"测试tabview实现图片排版",@"className":@"TabViewLayoutTextViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"LoadGIFimageViewVC",@"demoDescribe":@"加载gif图片",@"className":@"LoadGIFimageViewVC"}],
                       [DemoModel itemWithDcit:@{@"title":@"SuspensionViewController",@"demoDescribe":@"悬浮",@"className":@"SuspensionViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"GetAllAppsViewController",@"demoDescribe":@"获取全部app列表",@"className":@"GetAllAppsViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"GetAllAppsViewController",@"demoDescribe":@"获取全部app列表",@"className":@"GetAllAppsViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"IDAuthViewController",@"demoDescribe":@"身份证扫描",@"className":@"IDAuthViewController"}]
                       ];
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
     
 //    [self setStatusBarBackgroundColor:[UIColor blueColor]];
  

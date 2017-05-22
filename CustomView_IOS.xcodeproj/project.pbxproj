@@ -299,6 +299,18 @@
 		5EB825711ECC318B00A35502 /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825701ECC318B00A35502 /* load0.gif */; };
 		5EB825731ECC321500A35502 /* load1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825721ECC321500A35502 /* load1.gif */; };
 		5EB8B6801ECEE70B00BE185C /* ShowAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */; };
+		5EE8E2BA1ED2B3AE009E0D5F /* LHSIDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B51ED2B3AE009E0D5F /* LHSIDCardScaningView.m */; };
+		5EE8E2BB1ED2B3AE009E0D5F /* RectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B71ED2B3AE009E0D5F /* RectManager.m */; };
+		5EE8E2BC1ED2B3AE009E0D5F /* IDInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B91ED2B3AE009E0D5F /* IDInfo.m */; };
+		5EE8E2C51ED2B55B009E0D5F /* AVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2BE1ED2B55B009E0D5F /* AVCaptureViewController.m */; };
+		5EE8E2C61ED2B55B009E0D5F /* IDAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2C01ED2B55B009E0D5F /* IDAuthViewController.m */; };
+		5EE8E2C71ED2B55B009E0D5F /* IDAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE8E2C11ED2B55B009E0D5F /* IDAuthViewController.xib */; };
+		5EE8E2C81ED2B55B009E0D5F /* IDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2C31ED2B55B009E0D5F /* IDInfoViewController.m */; };
+		5EE8E2C91ED2B55B009E0D5F /* IDInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE8E2C41ED2B55B009E0D5F /* IDInfoViewController.xib */; };
+		5EE8E2D01ED2B5A1009E0D5F /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = 5EE8E2CD1ED2B5A1009E0D5F /* zocr0.lib */; };
+		5EE8E2D11ED2B5A1009E0D5F /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE8E2CF1ED2B5A1009E0D5F /* libexidcardios.a */; };
+		5EE8E2D41ED2B612009E0D5F /* UIAlertController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2D31ED2B612009E0D5F /* UIAlertController+Extend.m */; };
+		5EE8E2D71ED2B67B009E0D5F /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2D61ED2B67B009E0D5F /* UIImage+Extend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -886,6 +898,28 @@
 		5EB825721ECC321500A35502 /* load1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load1.gif; sourceTree = "<group>"; };
 		5EB8B67E1ECEE70B00BE185C /* ShowAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlertViewController.h; sourceTree = "<group>"; };
 		5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlertViewController.m; sourceTree = "<group>"; };
+		5EE8E2B41ED2B3AE009E0D5F /* LHSIDCardScaningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSIDCardScaningView.h; sourceTree = "<group>"; };
+		5EE8E2B51ED2B3AE009E0D5F /* LHSIDCardScaningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHSIDCardScaningView.m; sourceTree = "<group>"; };
+		5EE8E2B61ED2B3AE009E0D5F /* RectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectManager.h; sourceTree = "<group>"; };
+		5EE8E2B71ED2B3AE009E0D5F /* RectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectManager.m; sourceTree = "<group>"; };
+		5EE8E2B81ED2B3AE009E0D5F /* IDInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDInfo.h; sourceTree = "<group>"; };
+		5EE8E2B91ED2B3AE009E0D5F /* IDInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDInfo.m; sourceTree = "<group>"; };
+		5EE8E2BD1ED2B55B009E0D5F /* AVCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureViewController.h; sourceTree = "<group>"; };
+		5EE8E2BE1ED2B55B009E0D5F /* AVCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureViewController.m; sourceTree = "<group>"; };
+		5EE8E2BF1ED2B55B009E0D5F /* IDAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAuthViewController.h; sourceTree = "<group>"; };
+		5EE8E2C01ED2B55B009E0D5F /* IDAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAuthViewController.m; sourceTree = "<group>"; };
+		5EE8E2C11ED2B55B009E0D5F /* IDAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDAuthViewController.xib; sourceTree = "<group>"; };
+		5EE8E2C21ED2B55B009E0D5F /* IDInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDInfoViewController.h; sourceTree = "<group>"; };
+		5EE8E2C31ED2B55B009E0D5F /* IDInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDInfoViewController.m; sourceTree = "<group>"; };
+		5EE8E2C41ED2B55B009E0D5F /* IDInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDInfoViewController.xib; sourceTree = "<group>"; };
+		5EE8E2CB1ED2B5A1009E0D5F /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
+		5EE8E2CD1ED2B5A1009E0D5F /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
+		5EE8E2CE1ED2B5A1009E0D5F /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
+		5EE8E2CF1ED2B5A1009E0D5F /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
+		5EE8E2D21ED2B612009E0D5F /* UIAlertController+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Extend.h"; sourceTree = "<group>"; };
+		5EE8E2D31ED2B612009E0D5F /* UIAlertController+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Extend.m"; sourceTree = "<group>"; };
+		5EE8E2D51ED2B67B009E0D5F /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		5EE8E2D61ED2B67B009E0D5F /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -898,6 +932,7 @@
 				118E0AA41DBF33D20079569B /* JSPatchPlatform.framework in Frameworks */,
 				0758E9E31D6FF3AE00E7FCE7 /* libz.tbd in Frameworks */,
 				0758E9E11D6FF3A600E7FCE7 /* libsqlite3.tbd in Frameworks */,
+				5EE8E2D11ED2B5A1009E0D5F /* libexidcardios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1087,6 +1122,7 @@
 		0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */ = {
 			isa = PBXGroup;
 			children = (
+				5EE8E2B31ED2B37E009E0D5F /* IdentityCardScan */,
 				5EB825491ECC28A400A35502 /* GradualQRCode */,
 				5EB824DC1ECC257F00A35502 /* NerdyUI */,
 				118EAD971E9B398200661685 /* Masonry */,
@@ -1894,6 +1930,51 @@
 			path = libqrencode;
 			sourceTree = "<group>";
 		};
+		5EE8E2B31ED2B37E009E0D5F /* IdentityCardScan */ = {
+			isa = PBXGroup;
+			children = (
+				5EE8E2CA1ED2B5A1009E0D5F /* libexidcard */,
+				5EE8E2B41ED2B3AE009E0D5F /* LHSIDCardScaningView.h */,
+				5EE8E2B51ED2B3AE009E0D5F /* LHSIDCardScaningView.m */,
+				5EE8E2B61ED2B3AE009E0D5F /* RectManager.h */,
+				5EE8E2B71ED2B3AE009E0D5F /* RectManager.m */,
+				5EE8E2B81ED2B3AE009E0D5F /* IDInfo.h */,
+				5EE8E2B91ED2B3AE009E0D5F /* IDInfo.m */,
+				5EE8E2BD1ED2B55B009E0D5F /* AVCaptureViewController.h */,
+				5EE8E2BE1ED2B55B009E0D5F /* AVCaptureViewController.m */,
+				5EE8E2BF1ED2B55B009E0D5F /* IDAuthViewController.h */,
+				5EE8E2C01ED2B55B009E0D5F /* IDAuthViewController.m */,
+				5EE8E2C11ED2B55B009E0D5F /* IDAuthViewController.xib */,
+				5EE8E2C21ED2B55B009E0D5F /* IDInfoViewController.h */,
+				5EE8E2C31ED2B55B009E0D5F /* IDInfoViewController.m */,
+				5EE8E2C41ED2B55B009E0D5F /* IDInfoViewController.xib */,
+				5EE8E2D21ED2B612009E0D5F /* UIAlertController+Extend.h */,
+				5EE8E2D31ED2B612009E0D5F /* UIAlertController+Extend.m */,
+				5EE8E2D51ED2B67B009E0D5F /* UIImage+Extend.h */,
+				5EE8E2D61ED2B67B009E0D5F /* UIImage+Extend.m */,
+			);
+			path = IdentityCardScan;
+			sourceTree = "<group>";
+		};
+		5EE8E2CA1ED2B5A1009E0D5F /* libexidcard */ = {
+			isa = PBXGroup;
+			children = (
+				5EE8E2CB1ED2B5A1009E0D5F /* commondef.h */,
+				5EE8E2CC1ED2B5A1009E0D5F /* dicts */,
+				5EE8E2CE1ED2B5A1009E0D5F /* excards.h */,
+				5EE8E2CF1ED2B5A1009E0D5F /* libexidcardios.a */,
+			);
+			path = libexidcard;
+			sourceTree = "<group>";
+		};
+		5EE8E2CC1ED2B5A1009E0D5F /* dicts */ = {
+			isa = PBXGroup;
+			children = (
+				5EE8E2CD1ED2B5A1009E0D5F /* zocr0.lib */,
+			);
+			path = dicts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2005,11 +2086,13 @@
 				112296B71DC71A27002D27E4 /* common-hud3.png in Resources */,
 				5E544B0D1ECD58A10070944C /* load7.gif in Resources */,
 				5EB825711ECC318B00A35502 /* load0.gif in Resources */,
+				5EE8E2C71ED2B55B009E0D5F /* IDAuthViewController.xib in Resources */,
 				5E11F9901EB9A4FC00B903A9 /* rsa_public_key.pem in Resources */,
 				118E0AA91DBF34B00079569B /* JWDemo.js in Resources */,
 				5E544AFC1ECD4F0C0070944C /* load4.gif in Resources */,
 				5EB825731ECC321500A35502 /* load1.gif in Resources */,
 				0758E99A1D6FF37A00E7FCE7 /* Info.plist in Resources */,
+				5EE8E2D01ED2B5A1009E0D5F /* zocr0.lib in Resources */,
 				112296BD1DC71A27002D27E4 /* common-hud9.png in Resources */,
 				112296B91DC71A27002D27E4 /* common-hud5.png in Resources */,
 				0758E9E61D6FF50B00E7FCE7 /* Main.storyboard in Resources */,
@@ -2026,6 +2109,7 @@
 				0758E9AB1D6FF37A00E7FCE7 /* Info.plist in Resources */,
 				112296B51DC71A27002D27E4 /* common-hud10.png in Resources */,
 				112296B81DC71A27002D27E4 /* common-hud4.png in Resources */,
+				5EE8E2C91ED2B55B009E0D5F /* IDInfoViewController.xib in Resources */,
 				5E544B0C1ECD58A10070944C /* load8.gif in Resources */,
 				5E11F9911EB9A4FC00B903A9 /* rsa_private_key.pem in Resources */,
 				0758E9951D6FF37A00E7FCE7 /* Assets.xcassets in Resources */,
@@ -2130,6 +2214,7 @@
 				1100BFB61D7FEB3B0058F230 /* YYImageCoder.m in Sources */,
 				11CB8BBC1DC055C40051FB62 /* HTMLDemoViewController.m in Sources */,
 				1100BF961D7FE6E30058F230 /* AFNetworkReachabilityManager.m in Sources */,
+				5EE8E2D71ED2B67B009E0D5F /* UIImage+Extend.m in Sources */,
 				0758E9C21D6FF37A00E7FCE7 /* NSString+MJExtension.m in Sources */,
 				0758E9CC1D6FF37A00E7FCE7 /* SDWebImageDecoder.m in Sources */,
 				0758E9A61D6FF37A00E7FCE7 /* FMDatabase.m in Sources */,
@@ -2143,6 +2228,7 @@
 				112296A01DC7153C002D27E4 /* WKWebViewDemoViewController.m in Sources */,
 				0758E9B51D6FF37A00E7FCE7 /* MDRadialProgressTheme.m in Sources */,
 				5E544B121ECD72E80070944C /* GetAllAppsViewController.m in Sources */,
+				5EE8E2BA1ED2B3AE009E0D5F /* LHSIDCardScaningView.m in Sources */,
 				5E11F9941EBAC0EE00B903A9 /* HXBaseModel.m in Sources */,
 				11D36A8E1D751AFC00247B10 /* PinyinHelper.m in Sources */,
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
@@ -2174,6 +2260,7 @@
 				1100BF9D1D7FE6E30058F230 /* AFImageDownloader.m in Sources */,
 				110AEE111DD1B0DB00F70013 /* GoodsModel.m in Sources */,
 				118E0AAC1DBF356B0079569B /* JSPatchDemoViewController.m in Sources */,
+				5EE8E2C61ED2B55B009E0D5F /* IDAuthViewController.m in Sources */,
 				0758E9BB1D6FF37A00E7FCE7 /* MJProperty.m in Sources */,
 				11984ED41E9DC290008FEAA0 /* UIButton+Layout.m in Sources */,
 				1100BF6D1D7FE64F0058F230 /* HeadlineView.m in Sources */,
@@ -2193,6 +2280,7 @@
 				0758E9AA1D6FF37A00E7FCE7 /* FMResultSet.m in Sources */,
 				11AF50231E1B76830096B831 /* JxbDebugTool.m in Sources */,
 				11AF4FF61E1B57AD0096B831 /* NSArray+WFExtension.m in Sources */,
+				5EE8E2C81ED2B55B009E0D5F /* IDInfoViewController.m in Sources */,
 				5EB8253F1ECC257F00A35502 /* NERBlockInfo.m in Sources */,
 				1117A7131D7FB45000B56974 /* FPSLabelManager.m in Sources */,
 				0758E9D91D6FF37A00E7FCE7 /* YYClassInfo.m in Sources */,
@@ -2204,6 +2292,7 @@
 				5E544B171ECD747A0070944C /* LMApp.m in Sources */,
 				5EB8252F1ECC257F00A35502 /* UIButton+NERChainable.m in Sources */,
 				11D36AA01D75325B00247B10 /* KeychainIDFA.m in Sources */,
+				5EE8E2C51ED2B55B009E0D5F /* AVCaptureViewController.m in Sources */,
 				5EB825481ECC257F00A35502 /* UIView+NERFrame.m in Sources */,
 				1100BF6C1D7FE64F0058F230 /* AdView.m in Sources */,
 				11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */,
@@ -2216,6 +2305,7 @@
 				11AF50221E1B76830096B831 /* JxbCrashVC.m in Sources */,
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
 				0758E9DF1D6FF37A00E7FCE7 /* UIView+Extension.m in Sources */,
+				5EE8E2BB1ED2B3AE009E0D5F /* RectManager.m in Sources */,
 				11D22DD31E8250BC0057AFFB /* MVMaterialView.m in Sources */,
 				5EB8253C1ECC257F00A35502 /* UIView+NERChainable.m in Sources */,
 				5EB825471ECC257F00A35502 /* UILabel+NERLink.m in Sources */,
@@ -2225,6 +2315,7 @@
 				0758E9DC1D6FF37A00E7FCE7 /* JWLabel.m in Sources */,
 				11FBF6071D86896500208715 /* JWScrollView.m in Sources */,
 				5EB8252E1ECC257F00A35502 /* NSString+NERChainable.m in Sources */,
+				5EE8E2D41ED2B612009E0D5F /* UIAlertController+Extend.m in Sources */,
 				11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */,
 				1100BFA21D7FE6E30058F230 /* UIProgressView+AFNetworking.m in Sources */,
 				11D36AAA1D75354100247B10 /* CustomSwitchDemoViewController.m in Sources */,
@@ -2242,6 +2333,7 @@
 				11AF502C1E1B76830096B831 /* JxbResponseVC.m in Sources */,
 				0758E9AD1D6FF37A00E7FCE7 /* Foundation+Log.m in Sources */,
 				5EB825601ECC28A400A35502 /* qrencode.c in Sources */,
+				5EE8E2BC1ED2B3AE009E0D5F /* IDInfo.m in Sources */,
 				1100BFB71D7FEB3B0058F230 /* YYSpriteSheetImage.m in Sources */,
 				1100BFCE1D80FEA70058F230 /* UIImage+TYLaunchImage.m in Sources */,
 				11AF502D1E1B76830096B831 /* JxbUrlSessionHook_NSURLSessionAsynchronousConvenience.m in Sources */,
@@ -2431,6 +2523,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P9265R3DPP;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomView_IOS/第三方控件/JSPatch",
@@ -2438,6 +2531,10 @@
 				INFOPLIST_FILE = CustomView_IOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomView_IOS/第三方控件/IdentityCardScan/libexidcard",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JWCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2450,6 +2547,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P9265R3DPP;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomView_IOS/第三方控件/JSPatch",
@@ -2457,6 +2555,10 @@
 				INFOPLIST_FILE = CustomView_IOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomView_IOS/第三方控件/IdentityCardScan/libexidcard",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JWCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
