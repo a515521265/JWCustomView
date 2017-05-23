@@ -229,9 +229,9 @@
 		11D36AAD1D75380600247B10 /* MonitorScreenshotDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D36AAC1D75380600247B10 /* MonitorScreenshotDemoViewController.m */; };
 		11FBF6071D86896500208715 /* JWScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6061D86896500208715 /* JWScrollView.m */; };
 		11FBF60A1D868A0A00208715 /* LineLayoutDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */; };
-		5E10858B1ED407310074C242 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E10858A1ED407310074C242 /* CustomTableViewCell.m */; };
 		5E10858E1ED4077C0074C242 /* InequalityTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E10858D1ED4077C0074C242 /* InequalityTabViewController.m */; };
 		5E1085911ED40A0A0074C242 /* CustomCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1085901ED40A0A0074C242 /* CustomCellModel.m */; };
+		5E1085931ED410D80074C242 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1085921ED410D80074C242 /* CustomTableViewCell.m */; };
 		5E11F9901EB9A4FC00B903A9 /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5E11F98E1EB9A4FC00B903A9 /* rsa_public_key.pem */; };
 		5E11F9911EB9A4FC00B903A9 /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5E11F98F1EB9A4FC00B903A9 /* rsa_private_key.pem */; };
 		5E11F9941EBAC0EE00B903A9 /* HXBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11F9931EBAC0EE00B903A9 /* HXBaseModel.m */; };
@@ -772,11 +772,11 @@
 		11FBF6081D868A0A00208715 /* LineLayoutDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayoutDemoViewController.h; sourceTree = "<group>"; };
 		11FBF6091D868A0A00208715 /* LineLayoutDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayoutDemoViewController.m; sourceTree = "<group>"; };
 		5E1085891ED407310074C242 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
-		5E10858A1ED407310074C242 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		5E10858C1ED4077C0074C242 /* InequalityTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InequalityTabViewController.h; sourceTree = "<group>"; };
 		5E10858D1ED4077C0074C242 /* InequalityTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InequalityTabViewController.m; sourceTree = "<group>"; };
 		5E10858F1ED40A0A0074C242 /* CustomCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellModel.h; sourceTree = "<group>"; };
 		5E1085901ED40A0A0074C242 /* CustomCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellModel.m; sourceTree = "<group>"; };
+		5E1085921ED410D80074C242 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		5E11F98E1EB9A4FC00B903A9 /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
 		5E11F98F1EB9A4FC00B903A9 /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
 		5E11F9921EBAC0EE00B903A9 /* HXBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXBaseModel.h; sourceTree = "<group>"; };
@@ -1542,7 +1542,7 @@
 				5EB824D11ECBEDB200A35502 /* GridTableViewCell.h */,
 				5EB824D21ECBEDB200A35502 /* GridTableViewCell.m */,
 				5E1085891ED407310074C242 /* CustomTableViewCell.h */,
-				5E10858A1ED407310074C242 /* CustomTableViewCell.m */,
+				5E1085921ED410D80074C242 /* CustomTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2323,6 +2323,7 @@
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
 				0758E9DF1D6FF37A00E7FCE7 /* UIView+Extension.m in Sources */,
 				5EE8E2BB1ED2B3AE009E0D5F /* RectManager.m in Sources */,
+				5E1085931ED410D80074C242 /* CustomTableViewCell.m in Sources */,
 				11D22DD31E8250BC0057AFFB /* MVMaterialView.m in Sources */,
 				5EB8253C1ECC257F00A35502 /* UIView+NERChainable.m in Sources */,
 				5EB825471ECC257F00A35502 /* UILabel+NERLink.m in Sources */,
@@ -2331,7 +2332,6 @@
 				1117A7141D7FB45000B56974 /* FPSLabelRootVC.m in Sources */,
 				0758E9DC1D6FF37A00E7FCE7 /* JWLabel.m in Sources */,
 				11FBF6071D86896500208715 /* JWScrollView.m in Sources */,
-				5E10858B1ED407310074C242 /* CustomTableViewCell.m in Sources */,
 				5EB8252E1ECC257F00A35502 /* NSString+NERChainable.m in Sources */,
 				5EE8E2D41ED2B612009E0D5F /* UIAlertController+Extend.m in Sources */,
 				11BC31101DF02B170077FF9D /* NSDate+LXExtension.m in Sources */,
