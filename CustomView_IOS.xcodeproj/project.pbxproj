@@ -232,6 +232,8 @@
 		5E10858E1ED4077C0074C242 /* InequalityTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E10858D1ED4077C0074C242 /* InequalityTabViewController.m */; };
 		5E1085911ED40A0A0074C242 /* CustomCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1085901ED40A0A0074C242 /* CustomCellModel.m */; };
 		5E1085931ED410D80074C242 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1085921ED410D80074C242 /* CustomTableViewCell.m */; };
+		5E1085961ED4123A0074C242 /* TestGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1085951ED4123A0074C242 /* TestGameViewController.m */; };
+		5E1085991ED412590074C242 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1085981ED412590074C242 /* GameTableViewCell.m */; };
 		5E11F9901EB9A4FC00B903A9 /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5E11F98E1EB9A4FC00B903A9 /* rsa_public_key.pem */; };
 		5E11F9911EB9A4FC00B903A9 /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 5E11F98F1EB9A4FC00B903A9 /* rsa_private_key.pem */; };
 		5E11F9941EBAC0EE00B903A9 /* HXBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E11F9931EBAC0EE00B903A9 /* HXBaseModel.m */; };
@@ -777,6 +779,10 @@
 		5E10858F1ED40A0A0074C242 /* CustomCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellModel.h; sourceTree = "<group>"; };
 		5E1085901ED40A0A0074C242 /* CustomCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellModel.m; sourceTree = "<group>"; };
 		5E1085921ED410D80074C242 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		5E1085941ED4123A0074C242 /* TestGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGameViewController.h; sourceTree = "<group>"; };
+		5E1085951ED4123A0074C242 /* TestGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGameViewController.m; sourceTree = "<group>"; };
+		5E1085971ED412590074C242 /* GameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTableViewCell.h; sourceTree = "<group>"; };
+		5E1085981ED412590074C242 /* GameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTableViewCell.m; sourceTree = "<group>"; };
 		5E11F98E1EB9A4FC00B903A9 /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
 		5E11F98F1EB9A4FC00B903A9 /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
 		5E11F9921EBAC0EE00B903A9 /* HXBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXBaseModel.h; sourceTree = "<group>"; };
@@ -1128,6 +1134,8 @@
 				5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */,
 				5E10858C1ED4077C0074C242 /* InequalityTabViewController.h */,
 				5E10858D1ED4077C0074C242 /* InequalityTabViewController.m */,
+				5E1085941ED4123A0074C242 /* TestGameViewController.h */,
+				5E1085951ED4123A0074C242 /* TestGameViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1543,6 +1551,8 @@
 				5EB824D21ECBEDB200A35502 /* GridTableViewCell.m */,
 				5E1085891ED407310074C242 /* CustomTableViewCell.h */,
 				5E1085921ED410D80074C242 /* CustomTableViewCell.m */,
+				5E1085971ED412590074C242 /* GameTableViewCell.h */,
+				5E1085981ED412590074C242 /* GameTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2249,6 +2259,7 @@
 				0758E9C41D6FF37A00E7FCE7 /* PDTSimpleCalendarViewController.m in Sources */,
 				5EB8255E1ECC28A400A35502 /* mask.c in Sources */,
 				110B6F7D1E8E0118004A511E /* helloC.c in Sources */,
+				5E1085961ED4123A0074C242 /* TestGameViewController.m in Sources */,
 				5EB825651ECC28A400A35502 /* UIImage+instask.m in Sources */,
 				0758E9C31D6FF37A00E7FCE7 /* PDTSimpleCalendarViewCell.m in Sources */,
 				5EB825271ECC257F00A35502 /* NERAlert+NERChainable.m in Sources */,
@@ -2395,6 +2406,7 @@
 				11D36A731D751A5000247B10 /* SearchBankDemoViewController.m in Sources */,
 				5EB825621ECC28A400A35502 /* qrspec.c in Sources */,
 				11AF50211E1B76830096B831 /* JxbCrashHelper.m in Sources */,
+				5E1085991ED412590074C242 /* GameTableViewCell.m in Sources */,
 				111D4AE01E34501D004686FC /* AZEmitterLayer.m in Sources */,
 				118EADB21E9B398200661685 /* MASConstraint.m in Sources */,
 				11619A2D1E3484FB00D26F0D /* SpinnerView.m in Sources */,

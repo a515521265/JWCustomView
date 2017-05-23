@@ -77,7 +77,8 @@
                       [DemoModel itemWithDcit:@{@"title":@"SuspensionViewController",@"demoDescribe":@"悬浮",@"className":@"SuspensionViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"GetAllAppsViewController",@"demoDescribe":@"获取全部app列表",@"className":@"GetAllAppsViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"IDAuthViewController",@"demoDescribe":@"身份证扫描",@"className":@"IDAuthViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"InequalityTabViewController",@"demoDescribe":@"自定义非等高cell",@"className":@"InequalityTabViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"InequalityTabViewController",@"demoDescribe":@"自定义非等高cell",@"className":@"InequalityTabViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"TestGameViewController",@"demoDescribe":@"别踩白块",@"className":@"TestGameViewController"}]
                       ];
     
 //    [self setStatusBarBackgroundColor:[UIColor blueColor]];
