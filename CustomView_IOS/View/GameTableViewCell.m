@@ -42,7 +42,15 @@
                 HXStrong_self
                 !self.tapBlack ? : self.tapBlack();
             }];
+        }else{
+            HXWeak_self
+            [progress addSingleTapEvent:^{
+                HXStrong_self
+                !self.tapWhite ? : self.tapWhite();
+            }];
+
         }
+        
         [self addSubview:progress];
         
     }

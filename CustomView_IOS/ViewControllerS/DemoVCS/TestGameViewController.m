@@ -109,15 +109,21 @@
         cell = [[GameTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     cell.cellModel = self.models[indexPath.row];
+    HXWeak_self
     cell.tapBlack = ^{
         NSLog(@"点击了第几条？--------%ld",(long)indexPath.row);
-        
+        HXStrong_self
         if (indexPath.row == self.dataArr.count-3) {
             return ;
         }
         
         NSIndexPath * indexpatch = [NSIndexPath indexPathForRow:indexPath.row+3 inSection:0];
         [self.tableView selectRowAtIndexPath:indexpatch animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+    };
+    
+    cell.tapWhite = ^{
+        HXStrong_self
+        [self failure];
     };
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -137,8 +143,18 @@
     return model.cellHeight;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 50;
+-(void)failure{
+
+    [[[JWAlertView alloc]initJWAlertViewWithTitle:nil message:@"您点击了白块！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil] alertShow];
+    
 }
+
+- (void)JWalertView:(JWAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex clickedButtonAtTitle:(NSString *)buttonTitle{
+    [self.navigationController popViewControllerAnimated:true];
+}
+
+//- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    return 50;
+//}
 
 @end

@@ -16,4 +16,6 @@
 
 @property (nonatomic,copy) void(^tapBlack) ();
 
+@property (nonatomic,copy) void(^tapWhite) ();
+
 @end
