@@ -18,7 +18,7 @@
     
     if (!_scrollView) {
         _scrollView = [[JWScrollView alloc]init];
-        _scrollView.frame = CGRectMake(0, 64, kScreenWidth, kScreenHeight);
+        _scrollView.frame = CGRectMake(0, 64, kScreenWidth, kScreenHeight-64);
         _scrollView.alwaysBounceVertical = true;
         [self.view addSubview:_scrollView];
     }
@@ -38,7 +38,7 @@
     
     NSMutableArray * viewArr = @[].mutableCopy;
     
-    for (int i = 0 ; i< 102; i++) {
+    for (int i = 0 ; i< 132; i++) {
         
         NSInteger a = i / integer;
         NSInteger b = i % integer;
@@ -58,7 +58,6 @@
                 });
             }
         });
-        
     });
 
     

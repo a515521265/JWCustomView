@@ -113,4 +113,18 @@
     
 }
 
+-(void)addSubview:(UIView *)view{
+
+    [super addSubview:view];
+
+    //最后莫名其妙的添加两个UIImageView 很奇怪，应该是滚动条吧。
+    if ([view isKindOfClass:[UIImageView class]]) {
+        
+    }else{
+        self.contentSize = CGSizeMake(0, self.subviews.lastObject.y + self.subviews.lastObject.height+self.paddingHeight);
+    }
+
+}
+
+
 @end
