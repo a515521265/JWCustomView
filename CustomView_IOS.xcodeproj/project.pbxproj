@@ -253,6 +253,7 @@
 		5E544B171ECD747A0070944C /* LMApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E544B141ECD747A0070944C /* LMApp.m */; };
 		5E544B181ECD747A0070944C /* LMAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E544B161ECD747A0070944C /* LMAppController.m */; };
 		5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E585C271EB2E7330004DDB8 /* TextTabViewController.m */; };
+		5E7D13621ED520BA00B750C9 /* ForgiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D13611ED520BA00B750C9 /* ForgiveViewController.m */; };
 		5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */; };
 		5EB29ED61EBC1286003B1E84 /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED51EBC1286003B1E84 /* TextModel.m */; };
 		5EB824D01ECBE77100A35502 /* TabViewLayoutTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824CF1ECBE77100A35502 /* TabViewLayoutTextViewController.m */; };
@@ -810,6 +811,8 @@
 		5E544B161ECD747A0070944C /* LMAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAppController.m; sourceTree = "<group>"; };
 		5E585C261EB2E7330004DDB8 /* TextTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTabViewController.h; sourceTree = "<group>"; };
 		5E585C271EB2E7330004DDB8 /* TextTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTabViewController.m; sourceTree = "<group>"; };
+		5E7D13601ED520BA00B750C9 /* ForgiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgiveViewController.h; sourceTree = "<group>"; };
+		5E7D13611ED520BA00B750C9 /* ForgiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgiveViewController.m; sourceTree = "<group>"; };
 		5EB29ED11EBC0AF8003B1E84 /* QQTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQTextViewController.h; sourceTree = "<group>"; };
 		5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQTextViewController.m; sourceTree = "<group>"; };
 		5EB29ED41EBC1286003B1E84 /* TextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextModel.h; sourceTree = "<group>"; };
@@ -1136,6 +1139,8 @@
 				5E10858D1ED4077C0074C242 /* InequalityTabViewController.m */,
 				5E1085941ED4123A0074C242 /* TestGameViewController.h */,
 				5E1085951ED4123A0074C242 /* TestGameViewController.m */,
+				5E7D13601ED520BA00B750C9 /* ForgiveViewController.h */,
+				5E7D13611ED520BA00B750C9 /* ForgiveViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -2360,6 +2365,7 @@
 				11AF502E1E1B76830096B831 /* NSURLRequest+Identify.m in Sources */,
 				1143521A1D7FB956009EE8F8 /* GradientAnimationDemoViewController.m in Sources */,
 				11AF502C1E1B76830096B831 /* JxbResponseVC.m in Sources */,
+				5E7D13621ED520BA00B750C9 /* ForgiveViewController.m in Sources */,
 				0758E9AD1D6FF37A00E7FCE7 /* Foundation+Log.m in Sources */,
 				5EB825601ECC28A400A35502 /* qrencode.c in Sources */,
 				5EE8E2BC1ED2B3AE009E0D5F /* IDInfo.m in Sources */,

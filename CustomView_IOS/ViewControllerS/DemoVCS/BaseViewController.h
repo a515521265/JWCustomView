@@ -26,6 +26,10 @@
 
 #import "YYImage.h"
 
+#import "JWScrollView.h"
+
+#import "JWScrollviewCell.h"
+
 @interface BaseViewController : UIViewController
 
 @property (nonatomic,strong) DemoModel * baseDemoModel;

@@ -78,8 +78,12 @@
                       [DemoModel itemWithDcit:@{@"title":@"GetAllAppsViewController",@"demoDescribe":@"获取全部app列表",@"className":@"GetAllAppsViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"IDAuthViewController",@"demoDescribe":@"身份证扫描",@"className":@"IDAuthViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"InequalityTabViewController",@"demoDescribe":@"自定义非等高cell",@"className":@"InequalityTabViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"TestGameViewController",@"demoDescribe":@"别踩白块",@"className":@"TestGameViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"TestGameViewController",@"demoDescribe":@"别踩白块",@"className":@"TestGameViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"ForgiveViewController",@"demoDescribe":@"原谅开关",@"className":@"ForgiveViewController"}]
                       ];
+    
+    
+    
     
 //    [self setStatusBarBackgroundColor:[UIColor blueColor]];
  
