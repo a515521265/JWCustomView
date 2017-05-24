@@ -59,6 +59,13 @@
             }
         });
     });
+    
+    
+    UIView * boomView = [[UIView alloc]initWithFrame:CGRectMake(0,CGRectGetMaxY(self.scrollView.subviews.lastObject.frame), kScreenWidth+50, 50)];
+    boomView.bgColor([UIColor redColor]);
+    [self.scrollView addSubview:boomView];
+    
+    
 
     
 
