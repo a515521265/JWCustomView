@@ -18,6 +18,8 @@
 
 @property (nonatomic,assign) CGFloat maxWidth;
 
+@property (nonatomic,assign) BOOL isAutomaticAdd;
+
 @end
 
 @implementation JWScrollView
@@ -33,6 +35,9 @@
 -(void)reloadSubViews:(NSMutableArray<UIView *> *)views{
     
     if (!views.count)return;
+    
+    self.isAutomaticAdd = true;
+    
     UIView * firstView = [views firstObject];
     firstView.tag = 1992;
     firstView.x = (kScreenWidth - firstView.width)/2;
@@ -116,18 +121,24 @@
 
 -(void)addSubview:(UIView *)view{
 
-    
+    [super addSubview:view];
+
+    if (self.isAutomaticAdd) {
+        return;
+    }
     
     if (view.width > self.maxWidth) {
         self.maxWidth = view.width;
     }
+    CGRect imageRect = CGRectMake(0, 0, 2.5, 2.5);
     
-    [super addSubview:view];
-
-
     //最后莫名其妙的添加两个UIImageView 很奇怪，应该是滚动条吧。
     if ([view isKindOfClass:[UIImageView class]]) {
-        
+        if (CGRectEqualToRect(view.frame, imageRect)) {
+            
+        }else{
+            self.contentSize = CGSizeMake(self.maxWidth, self.subviews.lastObject.y + self.subviews.lastObject.height+self.paddingHeight);
+        }
     }else{
         self.contentSize = CGSizeMake(self.maxWidth, self.subviews.lastObject.y + self.subviews.lastObject.height+self.paddingHeight);
     }
