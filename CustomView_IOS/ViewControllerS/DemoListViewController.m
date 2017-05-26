@@ -79,8 +79,10 @@
                       [DemoModel itemWithDcit:@{@"title":@"IDAuthViewController",@"demoDescribe":@"身份证扫描",@"className":@"IDAuthViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"InequalityTabViewController",@"demoDescribe":@"自定义非等高cell",@"className":@"InequalityTabViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"TestGameViewController",@"demoDescribe":@"别踩白块",@"className":@"TestGameViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"ForgiveViewController",@"demoDescribe":@"原谅开关",@"className":@"ForgiveViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"ForgiveViewController",@"demoDescribe":@"原谅开关",@"className":@"ForgiveViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"WriteViewController",@"demoDescribe":@"书写效果",@"className":@"WriteViewController"}]
                       ];
+    
     
     
     

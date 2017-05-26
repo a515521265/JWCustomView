@@ -305,6 +305,7 @@
 		5EB825711ECC318B00A35502 /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825701ECC318B00A35502 /* load0.gif */; };
 		5EB825731ECC321500A35502 /* load1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825721ECC321500A35502 /* load1.gif */; };
 		5EB8B6801ECEE70B00BE185C /* ShowAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */; };
+		5EDD061E1ED7FCE5001236A6 /* WriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD061D1ED7FCE5001236A6 /* WriteViewController.m */; };
 		5EE8E2BA1ED2B3AE009E0D5F /* LHSIDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B51ED2B3AE009E0D5F /* LHSIDCardScaningView.m */; };
 		5EE8E2BB1ED2B3AE009E0D5F /* RectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B71ED2B3AE009E0D5F /* RectManager.m */; };
 		5EE8E2BC1ED2B3AE009E0D5F /* IDInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B91ED2B3AE009E0D5F /* IDInfo.m */; };
@@ -916,6 +917,8 @@
 		5EB825721ECC321500A35502 /* load1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load1.gif; sourceTree = "<group>"; };
 		5EB8B67E1ECEE70B00BE185C /* ShowAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlertViewController.h; sourceTree = "<group>"; };
 		5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlertViewController.m; sourceTree = "<group>"; };
+		5EDD061C1ED7FCE5001236A6 /* WriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteViewController.h; sourceTree = "<group>"; };
+		5EDD061D1ED7FCE5001236A6 /* WriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteViewController.m; sourceTree = "<group>"; };
 		5EE8E2B41ED2B3AE009E0D5F /* LHSIDCardScaningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSIDCardScaningView.h; sourceTree = "<group>"; };
 		5EE8E2B51ED2B3AE009E0D5F /* LHSIDCardScaningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHSIDCardScaningView.m; sourceTree = "<group>"; };
 		5EE8E2B61ED2B3AE009E0D5F /* RectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectManager.h; sourceTree = "<group>"; };
@@ -1141,6 +1144,8 @@
 				5E1085951ED4123A0074C242 /* TestGameViewController.m */,
 				5E7D13601ED520BA00B750C9 /* ForgiveViewController.h */,
 				5E7D13611ED520BA00B750C9 /* ForgiveViewController.m */,
+				5EDD061C1ED7FCE5001236A6 /* WriteViewController.h */,
+				5EDD061D1ED7FCE5001236A6 /* WriteViewController.m */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -2220,6 +2225,7 @@
 				0758E9DE1D6FF37A00E7FCE7 /* NSObject+Extension.m in Sources */,
 				5EB825331ECC257F00A35502 /* UIImageView+NERChainable.m in Sources */,
 				1100BF991D7FE6E30058F230 /* AFURLResponseSerialization.m in Sources */,
+				5EDD061E1ED7FCE5001236A6 /* WriteViewController.m in Sources */,
 				5EB825291ECC257F00A35502 /* NERStack+NERChainable.m in Sources */,
 				110B6F7A1E8DFDE9004A511E /* HelloWorld.java in Sources */,
 				11AF50301E1B76830096B831 /* NSURLSessionTask+Data.m in Sources */,
