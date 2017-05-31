@@ -21,6 +21,8 @@
 #import <netinet/in.h>
 #import <ifaddrs.h>
 
+#import "CustomView_IOS-Swift.h"
+
 @interface DemoListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView * tableView;
@@ -80,7 +82,9 @@
                       [DemoModel itemWithDcit:@{@"title":@"InequalityTabViewController",@"demoDescribe":@"自定义非等高cell",@"className":@"InequalityTabViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"TestGameViewController",@"demoDescribe":@"别踩白块",@"className":@"TestGameViewController"}],
                       [DemoModel itemWithDcit:@{@"title":@"ForgiveViewController",@"demoDescribe":@"原谅开关",@"className":@"ForgiveViewController"}],
-                      [DemoModel itemWithDcit:@{@"title":@"WriteViewController",@"demoDescribe":@"书写效果",@"className":@"WriteViewController"}]
+                      [DemoModel itemWithDcit:@{@"title":@"WriteViewController",@"demoDescribe":@"书写效果",@"className":@"WriteViewController"}],
+                      [DemoModel itemWithDcit:@{@"title":@"TextSwiftViewController",@"demoDescribe":@"测试swift",@"className":@"TextSwiftViewController"}]
+                      
                       ];
     
     
@@ -96,9 +100,6 @@
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        dismissHUD();
 //    });
-    
-    
-    
     
 }
 
@@ -186,12 +187,19 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    BaseViewController * viewController = [NSClassFromString(self.demoList[indexPath.row].className) new];
-    viewController.hidesBottomBarWhenPushed=true;
-    if (indexPath.row) {
-        viewController.baseDemoModel = self.demoList[indexPath.row];
+    //swift class
+    if ([self.demoList[indexPath.row].className isEqualToString:@"TextSwiftViewController"]) {
+        TextSwiftViewController * viewC = [[TextSwiftViewController alloc]init];
+        [self.navigationController pushViewController:viewC animated:true];
+    }else{
+        BaseViewController * viewController = [NSClassFromString(self.demoList[indexPath.row].className) new];
+        viewController.hidesBottomBarWhenPushed=true;
+        if (indexPath.row) {
+            viewController.baseDemoModel = self.demoList[indexPath.row];
+        }
+        [self.navigationController pushViewController:viewController  animated:true];
     }
-    [self.navigationController pushViewController:viewController  animated:true];
+    
     
     
     //modal透明界面

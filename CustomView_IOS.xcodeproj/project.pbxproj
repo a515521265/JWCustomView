@@ -305,6 +305,8 @@
 		5EB825711ECC318B00A35502 /* load0.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825701ECC318B00A35502 /* load0.gif */; };
 		5EB825731ECC321500A35502 /* load1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825721ECC321500A35502 /* load1.gif */; };
 		5EB8B6801ECEE70B00BE185C /* ShowAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */; };
+		5EBB29201EDE6B4700C5106E /* TextSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB291F1EDE6B4700C5106E /* TextSwiftViewController.swift */; };
+		5EBB29231EDE98F700C5106E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB29221EDE98F700C5106E /* UIViewExtension.swift */; };
 		5EDD061E1ED7FCE5001236A6 /* WriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD061D1ED7FCE5001236A6 /* WriteViewController.m */; };
 		5EE8E2BA1ED2B3AE009E0D5F /* LHSIDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B51ED2B3AE009E0D5F /* LHSIDCardScaningView.m */; };
 		5EE8E2BB1ED2B3AE009E0D5F /* RectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B71ED2B3AE009E0D5F /* RectManager.m */; };
@@ -917,6 +919,9 @@
 		5EB825721ECC321500A35502 /* load1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load1.gif; sourceTree = "<group>"; };
 		5EB8B67E1ECEE70B00BE185C /* ShowAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlertViewController.h; sourceTree = "<group>"; };
 		5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlertViewController.m; sourceTree = "<group>"; };
+		5EBB291E1EDE6B4600C5106E /* CustomView_IOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomView_IOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		5EBB291F1EDE6B4700C5106E /* TextSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSwiftViewController.swift; sourceTree = "<group>"; };
+		5EBB29221EDE98F700C5106E /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5EDD061C1ED7FCE5001236A6 /* WriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteViewController.h; sourceTree = "<group>"; };
 		5EDD061D1ED7FCE5001236A6 /* WriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteViewController.m; sourceTree = "<group>"; };
 		5EE8E2B41ED2B3AE009E0D5F /* LHSIDCardScaningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSIDCardScaningView.h; sourceTree = "<group>"; };
@@ -997,6 +1002,7 @@
 		0758E8EA1D6FF37A00E7FCE7 /* CustomView_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				5EBB29211EDE98A500C5106E /* SwiftFile */,
 				11BC310A1DF02AFB0077FF9D /* Tools */,
 				110AEE181DD2B0A300F70013 /* View */,
 				0758E90B1D6FF37A00E7FCE7 /* 第三方控件 */,
@@ -1146,6 +1152,8 @@
 				5E7D13611ED520BA00B750C9 /* ForgiveViewController.m */,
 				5EDD061C1ED7FCE5001236A6 /* WriteViewController.h */,
 				5EDD061D1ED7FCE5001236A6 /* WriteViewController.m */,
+				5EBB291F1EDE6B4700C5106E /* TextSwiftViewController.swift */,
+				5EBB291E1EDE6B4600C5106E /* CustomView_IOS-Bridging-Header.h */,
 			);
 			path = DemoVCS;
 			sourceTree = "<group>";
@@ -1965,6 +1973,14 @@
 			path = libqrencode;
 			sourceTree = "<group>";
 		};
+		5EBB29211EDE98A500C5106E /* SwiftFile */ = {
+			isa = PBXGroup;
+			children = (
+				5EBB29221EDE98F700C5106E /* UIViewExtension.swift */,
+			);
+			path = SwiftFile;
+			sourceTree = "<group>";
+		};
 		5EE8E2B31ED2B37E009E0D5F /* IdentityCardScan */ = {
 			isa = PBXGroup;
 			children = (
@@ -2077,6 +2093,7 @@
 					0758E8B31D6FF22900E7FCE7 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = P9265R3DPP;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					0758E8CC1D6FF22900E7FCE7 = {
@@ -2325,6 +2342,7 @@
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
 				5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */,
 				11AF4FEE1E1B52830096B831 /* ZLYViewController.m in Sources */,
+				5EBB29231EDE98F700C5106E /* UIViewExtension.swift in Sources */,
 				5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */,
 				110AEE141DD1C38F00F70013 /* CompanyModel.m in Sources */,
 				5E544B171ECD747A0070944C /* LMApp.m in Sources */,
@@ -2404,6 +2422,7 @@
 				5EB825421ECC257F00A35502 /* NERStaticTableView.m in Sources */,
 				0758E9A11D6FF37A00E7FCE7 /* CameraDemoViewController.m in Sources */,
 				0758E9A31D6FF37A00E7FCE7 /* WebViewDemoViewController.m in Sources */,
+				5EBB29201EDE6B4700C5106E /* TextSwiftViewController.swift in Sources */,
 				0758E9BC1D6FF37A00E7FCE7 /* MJPropertyKey.m in Sources */,
 				5EB825641ECC28A400A35502 /* split.c in Sources */,
 				11AF502A1E1B76830096B831 /* JxbLogVC.m in Sources */,
@@ -2563,7 +2582,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P9265R3DPP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2579,6 +2600,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JWCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomView_IOS/ViewControllerS/DemoVCS/CustomView_IOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2587,7 +2611,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P9265R3DPP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2603,12 +2629,15 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JWCustomView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomView_IOS/ViewControllerS/DemoVCS/CustomView_IOS-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		0758E8E51D6FF22900E7FCE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomView_IOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2621,6 +2650,7 @@
 		0758E8E61D6FF22900E7FCE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CustomView_IOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2633,6 +2663,7 @@
 		0758E8E81D6FF22900E7FCE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CustomView_IOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.EricSun.CustomView-IOSUITests";
@@ -2645,6 +2676,7 @@
 		0758E8E91D6FF22900E7FCE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CustomView_IOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.EricSun.CustomView-IOSUITests";
