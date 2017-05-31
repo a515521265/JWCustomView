@@ -101,9 +101,24 @@
         NSLog(@"finished");
     }];
     
+//    [self systemUIDebug];
+    
 //    KTouchPointerWindowInstall();
     
     return YES;
+
+}
+
+-(void)systemUIDebug{
+
+    id debugClass = NSClassFromString(@"UIDebuggingInformationOverlay");
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [debugClass performSelector:NSSelectorFromString(@"prepareDebuggingOverlay")];
+    });
+    
+    id debugOverlayInstance = [debugClass performSelector:NSSelectorFromString(@"overlay")];
+    [debugOverlayInstance performSelector:NSSelectorFromString(@"toggleVisibility")];
 
 }
 
