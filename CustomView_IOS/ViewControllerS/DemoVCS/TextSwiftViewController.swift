@@ -14,8 +14,16 @@ class TextSwiftViewController: UIViewController {
     let JkScreenheight = UIScreen.main.bounds.size.height
     
     
+    
     //变量
     var lab = UILabel();
+    
+    
+    private  var button: UIButton {
+        let button = UIButton.creatButton(imageName: "pencil", title: "进入")
+        button.backgroundColor = UIColor.red
+        return button
+    }
     
     // override 从载方法
     override func viewDidLoad() {
@@ -31,6 +39,35 @@ class TextSwiftViewController: UIViewController {
         lab.textAlignment = NSTextAlignment(rawValue: 1)!;
         
         self.view.addSubview(lab)
+        
+        let btn = button;
+        
+        
+        btn.addTarget(self, action: #selector(testfunc), for: UIControlEvents.touchUpInside);
+        
+        btn.frame = CGRect(x:0, y:lab.frame.maxY, width:JkScreenWidth, height:30)
+        
+        self.view.addSubview(btn);
+        
+        
+        
+        //延迟执行
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            
+            UIView.animate(withDuration: 0.5, animations: {
+                
+                self.lab.frame = CGRect(x:0, y:250, width:self.JkScreenWidth, height:30)
+                
+            }) { (Bool) in
+                
+            }
+            
+        }
+
+        
+        
+
+        
         
     }
 

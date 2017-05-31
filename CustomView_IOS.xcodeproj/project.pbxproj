@@ -306,7 +306,7 @@
 		5EB825731ECC321500A35502 /* load1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5EB825721ECC321500A35502 /* load1.gif */; };
 		5EB8B6801ECEE70B00BE185C /* ShowAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */; };
 		5EBB29201EDE6B4700C5106E /* TextSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB291F1EDE6B4700C5106E /* TextSwiftViewController.swift */; };
-		5EBB29231EDE98F700C5106E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB29221EDE98F700C5106E /* UIViewExtension.swift */; };
+		5EBB29251EDE9FA300C5106E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB29241EDE9FA300C5106E /* UIViewExtension.swift */; };
 		5EDD061E1ED7FCE5001236A6 /* WriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDD061D1ED7FCE5001236A6 /* WriteViewController.m */; };
 		5EE8E2BA1ED2B3AE009E0D5F /* LHSIDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B51ED2B3AE009E0D5F /* LHSIDCardScaningView.m */; };
 		5EE8E2BB1ED2B3AE009E0D5F /* RectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E2B71ED2B3AE009E0D5F /* RectManager.m */; };
@@ -921,7 +921,7 @@
 		5EB8B67F1ECEE70B00BE185C /* ShowAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlertViewController.m; sourceTree = "<group>"; };
 		5EBB291E1EDE6B4600C5106E /* CustomView_IOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomView_IOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		5EBB291F1EDE6B4700C5106E /* TextSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSwiftViewController.swift; sourceTree = "<group>"; };
-		5EBB29221EDE98F700C5106E /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5EBB29241EDE9FA300C5106E /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5EDD061C1ED7FCE5001236A6 /* WriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteViewController.h; sourceTree = "<group>"; };
 		5EDD061D1ED7FCE5001236A6 /* WriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteViewController.m; sourceTree = "<group>"; };
 		5EE8E2B41ED2B3AE009E0D5F /* LHSIDCardScaningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSIDCardScaningView.h; sourceTree = "<group>"; };
@@ -1976,7 +1976,7 @@
 		5EBB29211EDE98A500C5106E /* SwiftFile */ = {
 			isa = PBXGroup;
 			children = (
-				5EBB29221EDE98F700C5106E /* UIViewExtension.swift */,
+				5EBB29241EDE9FA300C5106E /* UIViewExtension.swift */,
 			);
 			path = SwiftFile;
 			sourceTree = "<group>";
@@ -2342,7 +2342,6 @@
 				0758E9D71D6FF37A00E7FCE7 /* UIView+WebCacheOperation.m in Sources */,
 				5E5428111D8C10E600DBE252 /* JWScrollviewCell.m in Sources */,
 				11AF4FEE1E1B52830096B831 /* ZLYViewController.m in Sources */,
-				5EBB29231EDE98F700C5106E /* UIViewExtension.swift in Sources */,
 				5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */,
 				110AEE141DD1C38F00F70013 /* CompanyModel.m in Sources */,
 				5E544B171ECD747A0070944C /* LMApp.m in Sources */,
@@ -2407,6 +2406,7 @@
 				11AF502F1E1B76830096B831 /* NSURLResponse+Data.m in Sources */,
 				5EB8252D1ECC257F00A35502 /* NSAttributedString+NERChainable.m in Sources */,
 				0758E9BF1D6FF37A00E7FCE7 /* NSObject+MJCoding.m in Sources */,
+				5EBB29251EDE9FA300C5106E /* UIViewExtension.swift in Sources */,
 				11AF502B1E1B76830096B831 /* JxbMemoryHelper.m in Sources */,
 				1100BFA01D7FE6E30058F230 /* UIButton+AFNetworking.m in Sources */,
 				0758E9AE1D6FF37A00E7FCE7 /* YTKKeyValueStore.m in Sources */,
