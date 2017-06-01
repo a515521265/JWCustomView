@@ -109,4 +109,27 @@ class TextSwiftViewController: UIViewController {
     }
     
     
+    deinit {
+        // 返回内部类名
+        
+//        print("deinit: \(object_getClassName(self))")
+//        
+//        // 返回应用程序名+类名
+//        
+//        print("deinit: \(NSStringFromClass(type(of: self)))")
+//        
+//        // 返回应用程序名+类名+内存地址
+//        
+//        print("deinit: \(self)")
+//        
+//        // 返回应用程序名+类名+内存地址
+//        
+//        print("deinit: \(self.description)")
+//        
+//        // 返回类名
+//        
+//        print("deinit: \(type(of: self))")
+    }
+
+    
 }
