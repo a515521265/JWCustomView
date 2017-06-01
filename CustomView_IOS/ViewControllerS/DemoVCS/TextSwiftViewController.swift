@@ -67,16 +67,17 @@ class TextSwiftViewController: UIViewController {
         let viewsArr = ["1","2","3","4"];
         
         for (index, i) in viewsArr.enumerated() {
-            print(i);
+//            print(i);
             
             let vieww = getViews(str: [], type: i);
             
             vieww.frame = CGRect(x:31*index, y:300, width:30, height:30);
+            vieww.tag = Int(i)!;
+            vieww.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(testfunc)))
             
             view.addSubview(vieww);
         }
         
-    
         
         
     }
@@ -87,9 +88,10 @@ class TextSwiftViewController: UIViewController {
     
     }
     
-    func testfunc() {
+    func testfunc(sender:UIPanGestureRecognizer, str : String) {
         
-        print("点击方法")
+        
+        print(String(format: "点击方法%d", (sender.view?.tag)!))
         
     }
     
