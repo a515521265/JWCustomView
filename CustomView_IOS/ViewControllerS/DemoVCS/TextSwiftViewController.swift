@@ -64,9 +64,19 @@ class TextSwiftViewController: UIViewController {
             
         }
 
+        let viewsArr = ["1","2","3","4"];
         
+        for (index, i) in viewsArr.enumerated() {
+            print(i);
+            
+            let vieww = getViews(str: [], type: i);
+            
+            vieww.frame = CGRect(x:31*index, y:300, width:30, height:30);
+            
+            view.addSubview(vieww);
+        }
         
-
+    
         
         
     }
@@ -80,6 +90,21 @@ class TextSwiftViewController: UIViewController {
     func testfunc() {
         
         print("点击方法")
+        
+    }
+    
+    
+    func getViews(str: NSArray, type:String) -> UIView {
+        
+        let vs = UIView();
+        vs.backgroundColor = UIColor.red
+        let lab = UILabel()
+        lab.frame = vs.frame
+        lab.textAlignment = NSTextAlignment(rawValue: 1)!;
+        lab.text = type;
+        lab.frame = CGRect(x:0, y:0, width:30, height:30);
+        vs.addSubview(lab)
+        return vs;
         
     }
     
