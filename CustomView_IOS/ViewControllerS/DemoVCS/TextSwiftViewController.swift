@@ -38,7 +38,7 @@ class TextSwiftViewController: UIViewController {
         
         lab.textAlignment = NSTextAlignment(rawValue: 1)!;
         
-        self.view.addSubview(lab)
+        view.addSubview(lab)
         
         let btn = button;
         
@@ -64,17 +64,15 @@ class TextSwiftViewController: UIViewController {
             
         }
 
-        let viewsArr = ["1","2","3","4"];
+        let viewsArr = ["1","2","3","4","5","6","7","8","9"];
         
         for (index, i) in viewsArr.enumerated() {
-//            print(i);
-            
+            let a = CGFloat(index / 5);
+            let b = CGFloat(index % 5);
             let vieww = getViews(str: [], type: i);
-            
-            vieww.frame = CGRect(x:31*index, y:300, width:30, height:30);
+            vieww.frame = CGRect(x:b * (JkScreenWidth) / 5, y:300 + (a * JkScreenWidth / 5), width:JkScreenWidth / 5-1, height:JkScreenWidth / 5-1);
             vieww.tag = Int(i)!;
             vieww.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(testfunc)))
-            
             view.addSubview(vieww);
         }
         
