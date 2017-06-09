@@ -257,6 +257,7 @@
 		5E544B181ECD747A0070944C /* LMAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E544B161ECD747A0070944C /* LMAppController.m */; };
 		5E585C281EB2E7330004DDB8 /* TextTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E585C271EB2E7330004DDB8 /* TextTabViewController.m */; };
 		5E7D13621ED520BA00B750C9 /* ForgiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D13611ED520BA00B750C9 /* ForgiveViewController.m */; };
+		5E7D195C1EEA745F0067FFF4 /* UITableViewCell+leoAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7D195B1EEA745F0067FFF4 /* UITableViewCell+leoAdd.m */; };
 		5EB29ED31EBC0AF8003B1E84 /* QQTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */; };
 		5EB29ED61EBC1286003B1E84 /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB29ED51EBC1286003B1E84 /* TextModel.m */; };
 		5EB824D01ECBE77100A35502 /* TabViewLayoutTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB824CF1ECBE77100A35502 /* TabViewLayoutTextViewController.m */; };
@@ -825,6 +826,8 @@
 		5E585C271EB2E7330004DDB8 /* TextTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextTabViewController.m; sourceTree = "<group>"; };
 		5E7D13601ED520BA00B750C9 /* ForgiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgiveViewController.h; sourceTree = "<group>"; };
 		5E7D13611ED520BA00B750C9 /* ForgiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgiveViewController.m; sourceTree = "<group>"; };
+		5E7D195A1EEA745F0067FFF4 /* UITableViewCell+leoAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+leoAdd.h"; sourceTree = "<group>"; };
+		5E7D195B1EEA745F0067FFF4 /* UITableViewCell+leoAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+leoAdd.m"; sourceTree = "<group>"; };
 		5EB29ED11EBC0AF8003B1E84 /* QQTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQTextViewController.h; sourceTree = "<group>"; };
 		5EB29ED21EBC0AF8003B1E84 /* QQTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQTextViewController.m; sourceTree = "<group>"; };
 		5EB29ED41EBC1286003B1E84 /* TextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextModel.h; sourceTree = "<group>"; };
@@ -1441,6 +1444,8 @@
 				110AEE071DD0617800F70013 /* JWTextView.m */,
 				11619A2B1E3484FB00D26F0D /* SpinnerView.h */,
 				11619A2C1E3484FB00D26F0D /* SpinnerView.m */,
+				5E7D195A1EEA745F0067FFF4 /* UITableViewCell+leoAdd.h */,
+				5E7D195B1EEA745F0067FFF4 /* UITableViewCell+leoAdd.m */,
 			);
 			path = "自定义控件";
 			sourceTree = "<group>";
@@ -2376,6 +2381,7 @@
 				1100BFB31D7FEB3B0058F230 /* YYAnimatedImageView.m in Sources */,
 				11AF50221E1B76830096B831 /* JxbCrashVC.m in Sources */,
 				0758E9CF1D6FF37A00E7FCE7 /* SDWebImageManager.m in Sources */,
+				5E7D195C1EEA745F0067FFF4 /* UITableViewCell+leoAdd.m in Sources */,
 				0758E9DF1D6FF37A00E7FCE7 /* UIView+Extension.m in Sources */,
 				5E2AC68A1EE0F8B000E0B0CC /* MyCollectionReusableView.m in Sources */,
 				5EE8E2BB1ED2B3AE009E0D5F /* RectManager.m in Sources */,

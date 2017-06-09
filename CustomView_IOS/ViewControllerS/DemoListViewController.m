@@ -20,7 +20,7 @@
 #import <arpa/inet.h>
 #import <netinet/in.h>
 #import <ifaddrs.h>
-
+#import "UITableViewCell+leoAdd.h"
 #import "CustomView_IOS-Swift.h"
 
 @interface DemoListViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -235,6 +235,12 @@
     {
         statusBar.backgroundColor = color;
     }
+}
+
+// tableView 的协议方法，在这个方法中调用即可
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    // animationStyle: 动画类型
+    [cell tableView:tableView forRowAtIndexPath:indexPath animationStyle:UITableViewCellDisplayAnimationFadeIn];
 }
 
 
